@@ -1,5 +1,5 @@
-<!-- 匯入 Clicker Script 與 Noto Sans -->
-<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- 匯入 Tangerine 與 Noto Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 <header class="site-header">
     <div class="slideshow-container">
@@ -20,17 +20,44 @@
 </header>
 
 <style>
+/* 內容使用 Noto Sans */
 body { font-family: 'Noto Sans', 'Noto Sans TC', sans-serif; line-height: 1.8; color: #333; }
+
 .site-header { position: relative; width: 100%; color: #fff; text-align: center; }
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; overflow: hidden; }
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); }
 .header-content { padding: 100px 20px; }
+
 @media (max-width: 768px) { .header-content { padding: 60px 10px; } .site-header { height: 350px; } }
 @media (min-width: 769px) { .site-header { height: 550px; } }
-.site-title a { font-family: 'Clicker Script', cursive; font-size: 5rem; font-weight: 400; color: white; text-decoration: none; }
+
+/* 標題：換成 Tangerine */
+.site-title a { 
+    font-family: 'Tangerine', cursive; 
+    font-size: 6.5rem; /* Tangerine 字體較瘦小，需要更大的字級才有張力 */
+    font-weight: 700; 
+    color: white; 
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 增加一點陰影讓它在圖片上更清晰 */
+}
+
 .site-description { font-family: 'Noto Sans', 'Noto Sans TC', sans-serif; font-size: 1rem; font-style: italic; margin-bottom: 2rem; opacity: 0.9; letter-spacing: 1px; }
-.nav-link { font-family: 'Clicker Script', cursive; font-size: 2rem; color: white; margin: 0 15px; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
-.nav-link:hover { color: #e0e0e0; }
+
+/* 目錄：換成 Tangerine */
+.nav-link { 
+    font-family: 'Tangerine', cursive; 
+    font-size: 2.8rem; /* 調大字級以方便點擊 */
+    font-weight: 700;
+    color: white; 
+    margin: 0 20px; 
+    text-decoration: none; 
+    border-bottom: 1px solid transparent; 
+    transition: 0.3s; 
+}
+
+.nav-link:hover { color: #e0e0e0; border-bottom: 1px solid rgba(255,255,255,0.5); }
+
+/* 輪播動畫 */
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 5s; }
