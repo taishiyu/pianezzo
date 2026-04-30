@@ -10,7 +10,6 @@
     </div>
     <div class="header-content">
         <h1 class="site-title"><a href="{{ "/" | absURL }}">Il Giardino Nascosto</a></h1>
-        
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
@@ -20,23 +19,102 @@
 </header>
 
 <style>
-body { font-family: 'Noto Sans', 'Noto Sans TC', sans-serif; line-height: 1.8; color: #333; }
-.site-header { position: relative; width: 100%; color: #fff; text-align: center; }
-.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; overflow: hidden; }
-.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); }
-.header-content { padding: 120px 20px; } /* 稍微增加間距，讓標題更優雅 */
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Noto Sans', 'Noto Sans TC', sans-serif; 
+    line-height: 1.8; 
+    color: #333; 
+}
 
-@media (max-width: 768px) { .header-content { padding: 80px 10px; } .site-header { height: 350px; } }
-@media (min-width: 769px) { .site-header { height: 550px; } }
+.site-header { 
+    position: relative; 
+    width: 100%; 
+    color: #fff; 
+    text-align: center; 
+    overflow: hidden; 
+}
 
-.site-title a { font-family: 'Tangerine', cursive; font-size: 7rem; font-weight: 700; color: white; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.slideshow-container { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+    background-color: #111; 
+}
 
-.nav-link { font-family: 'Tangerine', cursive; font-size: 2.8rem; font-weight: 700; color: white; margin: 0 20px; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
-.nav-link:hover { color: #e0e0e0; border-bottom: 1px solid rgba(255,255,255,0.5); }
+.overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.3); 
+}
 
-.slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
+.header-content { 
+    padding: 120px 20px; 
+}
+
+@media (max-width: 768px) { 
+    .header-content { padding: 80px 10px; } 
+    .site-header { height: 350px; } 
+}
+
+@media (min-width: 769px) { 
+    .site-header { height: 650px; } 
+}
+
+/* 標題顏色改為 #f4f1ea */
+.site-title a { 
+    font-family: 'Tangerine', cursive; 
+    font-size: 7rem; 
+    font-weight: 700; 
+    color: #f4f1ea; 
+    text-decoration: none; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4); 
+}
+
+/* 目錄顏色改為 #f4f1ea */
+.nav-link { 
+    font-family: 'Tangerine', cursive; 
+    font-size: 2.8rem; 
+    font-weight: 700; 
+    color: #f4f1ea; 
+    margin: 0 20px; 
+    text-decoration: none; 
+    border-bottom: 1px solid transparent; 
+    transition: 0.3s; 
+}
+
+.nav-link:hover { 
+    color: #ffffff; 
+    border-bottom: 1px solid rgba(244, 241, 234, 0.5); 
+}
+
+.slide { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0; 
+    animation: safariFade 15s infinite; 
+}
+
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 5s; }
 .slide:nth-child(3) { animation-delay: 10s; }
-@keyframes safariFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
+
+@keyframes safariFade { 
+    0% { opacity: 0; } 
+    5% { opacity: 1; } 
+    33% { opacity: 1; } 
+    38% { opacity: 0; } 
+    100% { opacity: 0; } 
+}
 </style>
