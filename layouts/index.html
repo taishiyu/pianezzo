@@ -1,0 +1,67 @@
+{{ partial "header.html" . }}
+
+<main class="home-main">
+    <div class="container">
+        <section class="intro-content">
+            {{ .Content }}
+        </section>
+    </div>
+</main>
+
+<style>
+    body {
+        background-color: #f4f1ea; 
+    }
+
+    /* 增加頂部留白，並透過陰影與線條產生明顯的區塊感 */
+    .home-main {
+        padding: 160px 20px 120px 20px; 
+        position: relative;
+        /* 增加一條極淡的頂部細線與陰影，加強與上方照片的區隔 */
+        border-top: 1px solid rgba(0, 0, 0, 0.03);
+        box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.02);
+    }
+    
+    .container {
+        max-width: 900px; /* 稍微放寬，讓大字體排版更舒展 */
+        margin: 0 auto;
+    }
+
+    .intro-content {
+        text-align: center;
+        color: #333;
+    }
+
+    /* 調整副標題大小 */
+    .intro-content h2 {
+        font-family: 'Tangerine', cursive;
+        font-size: 5.5rem;
+        font-weight: 700;
+        color: #5d4037; 
+        margin-bottom: 50px;
+    }
+
+    /* 內容字體加大，並增加行距確保閱讀舒適 */
+    .intro-content p {
+        font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+        font-size: 1.4rem; /* 從 1.15rem 提升到 1.4rem */
+        line-height: 2.4;  /* 增加行距，讓文字更有呼吸感 */
+        margin-bottom: 2.2rem;
+        letter-spacing: 0.8px; /* 增加一點字距，適合在大背景下閱讀 */
+    }
+
+    .intro-content strong {
+        color: #8d6e63;
+        font-weight: 700;
+    }
+
+    /* 在小螢幕（手機）上稍微縮減間距，避免留白過多 */
+    @media (max-width: 768px) {
+        .home-main {
+            padding-top: 100px;
+        }
+        .intro-content p {
+            font-size: 1.25rem;
+        }
+    }
+</style>
