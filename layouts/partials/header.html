@@ -1,0 +1,57 @@
+<div class="slideshow-container">
+    <div class="slide" style="background-image: url('/images/cover1.jpg');"></div>
+    <div class="slide" style="background-image: url('/images/cover2.jpg');"></div>
+    <div class="slide" style="background-image: url('/images/cover3.jpg');"></div>
+</div>
+
+<style>
+/* --- 電腦版預設高度 --- */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+/* --- 手機版調整 (寬度小於 768px) --- */
+@media (max-width: 768px) {
+    .slideshow-container {
+        height: 300px;
+    }
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-animation: safariFade 15s infinite;
+    animation: safariFade 15s infinite;
+}
+
+.slide:nth-child(1) { -webkit-animation-delay: 0s; animation-delay: 0s; }
+.slide:nth-child(2) { -webkit-animation-delay: 5s; animation-delay: 5s; }
+.slide:nth-child(3) { -webkit-animation-delay: 10s; animation-delay: 10s; }
+
+@-webkit-keyframes safariFade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    33% { opacity: 1; }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes safariFade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    33% { opacity: 1; }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
+}
+</style>

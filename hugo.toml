@@ -1,0 +1,30 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+defaultContentLanguage = 'en'
+title = 'Il Giardino Nascosto'
+theme = 'hugo-air'
+
+[params]
+    description = "A haven in the Alps for woodworking, baking, ecology, and storytelling."
+    # Your main image from the static/images folder
+    cover = "images/giardino.jpg"
+
+[[menu.main]]
+    name = "Ecology"
+    url = "/ecology/"
+    weight = 1
+
+[[menu.main]]
+    name = "Woodworking"
+    url = "/woodworking/"
+    weight = 2
+
+[[menu.main]]
+    name = "Baking"
+    url = "/baking/"
+    weight = 3
+
+[[menu.main]]
+    name = "Narrative"
+    url = "/posts/"
+    weight = 4
