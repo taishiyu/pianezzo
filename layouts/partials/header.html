@@ -26,11 +26,15 @@
 </header>
 
 <style>
+/* 1. 基礎重置：排除主題干擾 */
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
 .site-header { 
-    position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; 
-    display: flex; flex-direction: column; justify-content: center; align-items: center;     
+    position: relative; 
+    width: 100%; 
+    overflow: hidden; 
+    /* 確保所有分頁的容器基板是一模一樣的 */
+    background-color: #111; 
 }
 
 @media (min-width: 769px) { 
@@ -38,55 +42,80 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     .site-header.is-page { height: 500px !important; } 
 }
 
-.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
-.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1; }
+.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: 0; }
 
-/* 🔴 絕對鎖定：將容器設為 flex，並用 gap 強制拉開 50px 的絕對距離 */
+/* 2. 核心修正：座標定位法 */
 .header-content { 
-    position: relative; 
+    position: absolute; 
+    top: 50%;      /* 從頂部往下 50% */
+    left: 50%;     /* 從左側往右 50% */
+    transform: translate(-50%, -50%); /* 往回補償自身長寬的一半，達成絕對中心 */
     z-index: 10; 
     width: 100%;
+    text-align: center;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
     align-items: center !important;
-    gap: 50px !important; /* <--- 這就是魔法，它無法被任何 Margin 覆寫 */
+    /* 這裡鎖定標題與選單的間隙 */
+    gap: 40px !important; 
     padding: 0 !important;
     margin: 0 !important;
 }
 
-/* 將所有預設推擠歸零，全權交給上面的 gap 處理 */
-.site-title { margin: 0 !important; padding: 0 !important; line-height: 1 !important; }
+/* 3. 標題與選單：消除所有外距影響 */
+.site-title { 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    line-height: 1 !important; /* 防止字體行高造成的位移 */
+}
+
 .site-title a { 
-    font-family: 'Tangerine', cursive; font-size: 7.5rem !important; font-weight: 700; color: #f4f1ea; 
-    text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
-    transition: all 0.4s ease; margin: 0 !important; padding: 0 !important;
+    font-family: 'Tangerine', cursive; 
+    font-size: 7.5rem !important; 
+    font-weight: 700; 
+    color: #f4f1ea; 
+    text-decoration: none; 
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
+    display: inline-block;
+    margin: 0 !important;
 }
 
 .site-nav { 
-    margin: 0 !important; padding: 0 !important; 
-    display: flex !important; justify-content: center !important; flex-wrap: wrap !important; 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    display: flex !important; 
+    justify-content: center !important; 
+    flex-wrap: wrap !important;
+    line-height: 1 !important;
 }
 
 .nav-link { 
-    font-family: 'Tangerine', cursive; font-size: 3.5rem !important; font-weight: 700; color: #f4f1ea; 
-    margin: 0 30px !important; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: inline-block; transition: all 0.4s ease;
+    font-family: 'Tangerine', cursive; 
+    font-size: 3.5rem !important; 
+    font-weight: 700; 
+    color: #f4f1ea; 
+    margin: 0 30px !important; 
+    text-decoration: none; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: inline-block; 
+    transition: transform 0.4s ease;
 }
 
 .site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
 
+/* 手機版適配：同樣維持中心定位 */
 @media (max-width: 768px) { 
     .site-header.is-home { height: 100vh !important; }
     .site-header.is-page { height: 70vh !important; }
+    .header-content { gap: 20px !important; }
     .site-title a { font-size: 4.5rem !important; }
-    .header-content { gap: 30px !important; } /* 手機版間距 */
     .site-nav { flex-direction: column !important; }
-    .nav-link { font-size: 3.2rem !important; margin: 10px 0 !important; }
+    .nav-link { font-size: 3.2rem !important; margin: 8px 0 !important; }
 }
 
-/* 輪播動畫 */
-.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+/* 輪播動畫 (保持原樣) */
+.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 5s; }
