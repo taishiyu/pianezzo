@@ -1,13 +1,21 @@
+<!-- 🔵 Header 必須放在 main 之外，確保它能抓取全螢幕寬度 -->
 {{ partial "header.html" . }}
-<main class="main-body">
-    <div class="article-wrap">
-        <h1 class="article-title">{{ .Title }}</h1>
-        <div class="article-content">{{ .Content }}</div>
-    </div>
+
+<main class="page-content">
+    <article class="article-container">
+        <header class="article-header">
+            <h1 class="article-title">{{ .Title }}</h1>
+        </header>
+        <section class="article-body">
+            {{ .Content }}
+        </section>
+    </article>
 </main>
+
 <style>
-    .main-body { padding: 60px 20px; background-color: #f4f1ea; min-height: 50vh; }
-    .article-wrap { max-width: 800px; margin: 0 auto; text-align: center; }
-    .article-title { font-family: 'Tangerine', cursive; font-size: 5.5rem; color: #5d4037; }
-    .article-content { font-family: 'Lora', serif; font-size: 1.3rem; line-height: 1.8; color: #333; margin-top: 2rem; }
+/* 🔴 這裡控制內文的寬度，不影響上方的 Header */
+.page-content { padding: 60px 20px; background-color: #f4f1ea; }
+.article-container { max-width: 800px; margin: 0 auto; text-align: center; }
+.article-title { font-family: 'Tangerine', cursive; font-size: 5.5rem; color: #5d4037; margin-bottom: 30px; }
+.article-body { font-family: 'Lora', serif; font-size: 1.4rem; line-height: 2; color: #333; }
 </style>

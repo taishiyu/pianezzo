@@ -1,78 +1,130 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<header class="site-banner {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
-    <!-- 背景層：確保圖片填滿 -->
-    <div class="banner-bg">
+<header class="full-bleed-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
+    <!-- 背景層 -->
+    <div class="header-canvas">
         {{ if .IsHome }}
-            <div class="bg-slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
-            <div class="bg-slide" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
-            <div class="bg-slide" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
+            <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
+            <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
+            <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
         {{ else }}
-            <div class="bg-static" style="background-image: url('{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ "images/cover1.jpg" | absURL }}{{ end }}');"></div>
+            <div class="canvas-img static-img" style="background-image: url('{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ "images/cover1.jpg" | absURL }}{{ end }}');"></div>
         {{ end }}
     </div>
-    <div class="banner-mask"></div>
+    <div class="header-mask"></div>
 
-    <!-- 內容層：Flexbox 自動對齊 -->
-    <div class="banner-content">
-        <a href="{{ .Site.BaseURL }}" class="banner-logo">Il Giardino Nascosto</a>
-        <nav class="banner-nav">
+    <!-- 文字內容 -->
+    <div class="header-info">
+        <a href="{{ .Site.BaseURL }}" class="header-logo">Il Giardino Nascosto</a>
+        <nav class="header-nav">
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL | absURL }}" class="banner-link">{{ .Name }}</a>
+            <a href="{{ .URL | absURL }}" class="nav-item">{{ .Name }}</a>
             {{ end }}
         </nav>
     </div>
 </header>
 
 <style>
-/* 🔴 基礎架構 */
-.site-banner { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+/* 🔴 破框核心：無視父容器寬度 */
+.full-bleed-header {
+    position: relative;
+    width: 100vw !important;  /* 強制佔滿視窗寬度 */
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+}
 
 @media (min-width: 769px) {
-    .is-home { height: 600px; }
-    .is-page { height: 500px; }
+    .is-home { height: 600px !important; }
+    .is-page { height: 500px !important; }
 }
 
-.banner-bg, .banner-mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.banner-mask { background: rgba(0,0,0,0.35); z-index: 2; }
-.bg-slide, .bg-static { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; }
-
-/* 🔵 內容佈局：解決位移根本問題 */
-.banner-content {
-    position: relative; z-index: 10; text-align: center;
-    display: flex; flex-direction: column; align-items: center;
-    gap: 3.5rem; /* 標題與選單的固定間距 */
+/* 🔵 背景撐滿與縮放 */
+.header-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
-.banner-logo {
-    font-family: 'Tangerine', cursive; font-size: 7.5rem; font-weight: 700; color: #f4f1ea;
-    text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
-    transition: all 0.4s ease; /* 恢復動畫 */
+.canvas-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important; /* 核心：照片填滿 */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
-.banner-nav { display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; }
-
-.banner-link {
-    font-family: 'Tangerine', cursive; font-size: 3.5rem; font-weight: 700; color: #f4f1ea;
-    text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    transition: all 0.4s ease; /* 恢復動畫 */
+.header-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 2;
 }
 
-/* 🟢 動畫效果：觸碰時輕微浮起 */
-.banner-logo:hover, .banner-link:hover { color: #fff; transform: translateY(-5px) scale(1.05); }
+/* 🟢 文字與動畫效果 */
+.header-info {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 
-/* 輪播動畫 */
-.bg-slide { opacity: 0; animation: fadeEffect 15s infinite; }
-.bg-slide:nth-child(1) { animation-delay: 0s; }
-.bg-slide:nth-child(2) { animation-delay: 5s; }
-.bg-slide:nth-child(3) { animation-delay: 10s; }
-@keyframes fadeEffect { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
+.header-logo {
+    font-family: 'Tangerine', cursive;
+    font-size: 7.5rem;
+    font-weight: 700;
+    color: #f4f1ea;
+    text-decoration: none;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
+}
+
+.header-nav { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+
+.nav-item {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #f4f1ea;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
+}
+
+.header-logo:hover, .nav-item:hover {
+    color: #fff !important;
+    transform: translateY(-8px) scale(1.05);
+}
+
+/* 🟡 輪播動畫 */
+.anim-fade { opacity: 0; animation: simpleFade 15s infinite; }
+.anim-fade:nth-child(1) { animation-delay: 0s; }
+.anim-fade:nth-child(2) { animation-delay: 5s; }
+.anim-fade:nth-child(3) { animation-delay: 10s; }
+@keyframes simpleFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
 
 @media (max-width: 768px) {
-    .is-home { height: 100vh; }
-    .is-page { height: 60vh; }
-    .banner-logo { font-size: 4.5rem; }
-    .banner-nav { flex-direction: column; gap: 0.5rem; }
-    .banner-link { font-size: 3rem; }
+    .is-home { height: 100vh !important; }
+    .is-page { height: 60vh !important; }
+    .header-logo { font-size: 4.5rem; }
+    .header-nav { flex-direction: column; gap: 10px; }
+    .nav-item { font-size: 3rem; }
 }
 </style>
+html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
