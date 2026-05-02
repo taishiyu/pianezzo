@@ -1,3 +1,4 @@
+<!-- 匯入字體 -->
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 <header class="site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
@@ -14,8 +15,8 @@
         </div>
     {{ end }}
 
+    <!-- 核心容器：強制鎖定內部對齊 -->
     <div class="header-content">
-        <!-- 標題連結：直接指向設定檔中的 BaseURL -->
         <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
@@ -26,57 +27,88 @@
 </header>
 
 <style>
+/* 1. 歸零所有邊距與基礎設定 */
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
 .site-header { 
-    position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; 
-    display: flex; flex-direction: column; justify-content: center; align-items: center;     
+    position: relative; 
+    width: 100%; 
+    overflow: hidden;
+    display: flex; /* 使用 Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
 }
 
-/* 鎖定照片高度 */
+/* 2. 強制高度鎖定 (!important 是必要的，因為主題可能會覆蓋) */
 @media (min-width: 769px) { 
     .site-header.is-home { height: 600px !important; }
     .site-header.is-page { height: 500px !important; } 
 }
 
-.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
-
-.header-content { position: relative; z-index: 10; width: 100%; }
-
-.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
-
-/* 🔴 強制鎖定所有頁面的標題大小 */
-.site-title { margin: 0 !important; }
-.site-title a { 
-    font-family: 'Tangerine', cursive; 
-    font-size: 7.5rem !important; /* 強制所有頁面標題大小一致 */
-    font-weight: 700; color: #f4f1ea; text-decoration: none; 
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
-    transition: all 0.4s ease;
+/* 3. 內容容器：消除所有推擠效果 */
+.header-content { 
+    position: relative; 
+    z-index: 10; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-/* 🔴 強制鎖定所有頁面的目錄間距 */
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
+.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
+
+/* 4. 標題：鎖定字體與間距 */
+.site-title { 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    line-height: 1.1 !important; 
+}
+.site-title a { 
+    font-family: 'Tangerine', cursive; 
+    font-size: 7.5rem !important; 
+    font-weight: 700; color: #f4f1ea; 
+    text-decoration: none; 
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
+    display: inline-block;
+    transition: 0.4s;
+}
+
+/* 5. 目錄導覽：關鍵間距鎖定 */
 .site-nav { 
-    margin-top: 60px !important; /* 強制標題與目錄間距一致 */
-    display: flex; justify-content: center; flex-wrap: wrap; 
+    margin-top: 60px !important; /* 這個 60px 是標題到底部的黃金距離 */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    padding: 0 !important;
 }
 
 .nav-link { 
-    font-family: 'Tangerine', cursive; font-size: 3.5rem; font-weight: 700; color: #f4f1ea; 
-    margin: 0 30px; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: inline-block; transition: all 0.4s ease;
+    font-family: 'Tangerine', cursive; 
+    font-size: 3.5rem !important; 
+    font-weight: 700; color: #f4f1ea; 
+    margin: 0 30px; 
+    text-decoration: none; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: inline-block; 
+    transition: 0.4s;
 }
 
 .site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
 
+/* 手機版適配 */
 @media (max-width: 768px) { 
     .site-header.is-home { height: 100vh !important; }
     .site-header.is-page { height: 70vh !important; }
     .site-title a { font-size: 4.5rem !important; }
-    .site-nav { flex-direction: column; margin-top: 30px !important; }
+    .site-nav { flex-direction: column; margin-top: 40px !important; }
     .nav-link { font-size: 3.2rem; margin: 10px 0; }
 }
 
+/* 輪播動畫 */
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
