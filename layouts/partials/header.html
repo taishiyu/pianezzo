@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
-<header class="site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
+<header class="custom-site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
     {{ if .IsHome }}
         <div class="slideshow-container">
             <div class="slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
@@ -14,89 +14,85 @@
         </div>
     {{ end }}
 
-    <div class="header-anchor">
-        <div class="header-content">
-            <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
-            <nav class="site-nav">
-                {{ range .Site.Menus.main }}
-                <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                {{ end }}
-            </nav>
-        </div>
+    <!-- 絕對鎖定區：直接指定座標，不受主題 HTML 影響 -->
+    <div class="absolute-center-box">
+        <h1 class="site-title-custom"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
+        <nav class="site-nav-custom">
+            {{ range .Site.Menus.main }}
+            <a class="nav-link-custom" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            {{ end }}
+        </nav>
     </div>
 </header>
 
 <style>
-/* 1. 全域樣式鎖定 */
+/* 1. 基礎強制重置 */
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
-.site-header { position: relative; width: 100%; overflow: hidden; background-color: #111; }
-
-/* 🔴 強制鎖定：無論是 Single 還是 List，只要不是 Home，高度通通 500px */
-@media (min-width: 769px) { 
-    .site-header.is-home { height: 600px !important; }
-    .site-header:not(.is-home) { height: 500px !important; } 
+.custom-site-header { 
+    position: relative !important; 
+    width: 100% !important; 
+    overflow: hidden !important; 
+    display: block !important;
 }
 
-.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1; }
-.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: 0; }
+@media (min-width: 769px) { 
+    .custom-site-header.is-home { height: 600px !important; }
+    .custom-site-header.is-page { height: 500px !important; } 
+}
 
-/* 🔴 座標釘死法：強制無視任何父層 Padding */
-.header-anchor {
-    position: absolute;
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 5; }
+.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: 1; }
+
+/* 2. 絕對座標法：釘死在 50% 的位置 */
+.absolute-center-box {
+    position: absolute !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    width: 100%;
-    z-index: 10;
-    text-align: center;
-}
-
-.header-content { 
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 60px !important; /* 強制標題與目錄間距為 60px */
-    padding: 0 !important;
+    width: 100% !important;
+    z-index: 10 !important;
+    text-align: center !important;
     margin: 0 !important;
+    padding: 0 !important;
 }
 
-.site-title { margin: 0 !important; padding: 0 !important; line-height: 1 !important; }
-.site-title a { 
-    font-family: 'Tangerine', cursive; 
+/* 3. 標題與選單：移除所有可能被主題繼承的 Margin */
+.site-title-custom { margin: 0 !important; padding: 0 !important; line-height: 1 !important; }
+.site-title-custom a { 
+    font-family: 'Tangerine', cursive !important; 
     font-size: 7.5rem !important; 
-    font-weight: 700; color: #f4f1ea; text-decoration: none; 
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
-    transition: 0.4s;
+    color: #f4f1ea !important; 
+    text-decoration: none !important; 
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5) !important;
 }
 
-.site-nav { 
-    margin: 0 !important; padding: 0 !important; 
-    display: flex !important; justify-content: center !important; flex-wrap: wrap !important;
-    line-height: 1 !important;
+.site-nav-custom { 
+    margin-top: 55px !important; /* 精確鎖定間距 */
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 60px !important; /* 使用橫向間距 */
 }
 
-.nav-link { 
-    font-family: 'Tangerine', cursive; 
+.nav-link-custom { 
+    font-family: 'Tangerine', cursive !important; 
     font-size: 3.5rem !important; 
-    font-weight: 700; color: #f4f1ea; 
-    margin: 0 30px !important; 
-    text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: inline-block; transition: 0.4s;
+    color: #f4f1ea !important; 
+    text-decoration: none !important; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
 }
-
-.site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
 
 @media (max-width: 768px) { 
-    .site-header.is-home { height: 100vh !important; }
-    .site-header:not(.is-home) { height: 70vh !important; }
-    .header-content { gap: 30px !important; }
-    .site-title a { font-size: 4.5rem !important; }
-    .nav-link { font-size: 3.2rem !important; margin: 10px 0 !important; }
+    .custom-site-header.is-home { height: 100vh !important; }
+    .custom-site-header.is-page { height: 70vh !important; }
+    .site-title-custom a { font-size: 4.5rem !important; }
+    .site-nav-custom { flex-direction: column !important; gap: 15px !important; margin-top: 30px !important; }
+    .nav-link-custom { font-size: 3.2rem !important; }
 }
 
-/* 輪播動畫 (維持原樣) */
-.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+/* 輪播動畫 */
+.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 5s; }
