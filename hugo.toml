@@ -4,26 +4,26 @@ title = 'Il Giardino Nascosto'
 theme = 'ananke'
 
 [[menus.main]]
+    name = 'Land'
+    url = '/land/'
+    weight = 1
+
+[[menus.main]]
     name = 'Spring'
     url = '/spring/'
-    weight = 1
+    weight = 2
 
 [[menus.main]]
     name = 'Summer'
     url = '/summer/'
-    weight = 2
+    weight = 3
 
 [[menus.main]]
     name = 'Autumn'
     url = '/autumn/'
-    weight = 3
+    weight = 4
 
 [[menus.main]]
     name = 'Winter'
     url = '/winter/'
-    weight = 4
-
-[[menus.main]]
-    name = 'Life'
-    url = '/life/'
     weight = 5
