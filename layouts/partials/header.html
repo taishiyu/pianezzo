@@ -24,7 +24,8 @@ body { margin: 0; padding: 0; font-family: 'Noto Sans', 'Noto Sans TC', sans-ser
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); }
 
-.header-content { padding: 100px 20px; }
+/* 電腦版樣式 */
+.header-content { padding: 80px 20px; } /* 配合高度降低，稍微減少上下內距 */
 .site-title a { 
     font-family: 'Tangerine', cursive; 
     font-size: 7.5rem; 
@@ -34,47 +35,47 @@ body { margin: 0; padding: 0; font-family: 'Noto Sans', 'Noto Sans TC', sans-ser
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
 }
 
-.site-nav { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
+/* 2. 標題與目錄間距拉遠 */
+.site-nav { margin-top: 60px; display: flex; justify-content: center; flex-wrap: wrap; }
 
 .nav-link { 
     font-family: 'Tangerine', cursive; 
-    font-size: 3.2rem; 
+    /* 3. 目錄字體加大 */
+    font-size: 3.8rem; 
     font-weight: 700; 
     color: #f4f1ea; 
-    /* 2. 目錄間距拉大（左右各 40px，總共 80px 距離） */
-    margin: 0 40px; 
+    margin: 0 35px; /* 稍微縮小左右間距，因為有了五個項目 */
     text-decoration: none; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     display: inline-block;
-    /* 設定動畫過渡時間，讓變動看起來很滑順 */
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* 1. 游標經過時的反應：放大且輕微上浮 */
 .nav-link:hover { 
     color: #ffffff; 
-    transform: scale(1.15) translateY(-8px); /* 放大 1.15 倍並往上浮動 8 像素 */
-    text-shadow: 4px 8px 12px rgba(0,0,0,0.6); /* 增加陰影讓它更有「浮起」的立體感 */
+    transform: scale(1.15) translateY(-8px); 
+    text-shadow: 4px 8px 12px rgba(0,0,0,0.6); 
 }
 
+/* 手機版優化：高度不鎖定全螢幕，改為彈性高度 */
 @media (max-width: 768px) { 
-    .site-header { height: auto; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .site-header { height: auto; min-height: 80vh; display: flex; align-items: center; justify-content: center; }
     .header-content { padding: 40px 10px; width: 100%; }
     .site-title a { font-size: 5rem; }
     
-    .site-nav { flex-direction: column; align-items: center; margin-top: 30px; }
+    .site-nav { flex-direction: column; align-items: center; margin-top: 40px; }
     
     .nav-link { 
-        font-size: 3.5rem; 
-        margin: 25px 0; /* 手機版的上下間距也拉大 */
+        font-size: 4rem; /* 手機上的目錄字體也相對拉大 */
+        margin: 20px 0; 
     }
-    /* 手機版移除上浮效果，改為單純放大，避免點擊時畫面跳動太厲害 */
     .nav-link:active, .nav-link:hover {
         transform: scale(1.1);
     }
 }
 
-@media (min-width: 769px) { .site-header { height: 750px; } }
+/* 1. 照片高度減少：從 750px 降到 600px */
+@media (min-width: 769px) { .site-header { height: 600px; } }
 
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
