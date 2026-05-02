@@ -1,5 +1,5 @@
 baseURL = 'https://taishiyu.github.io/pianezzo/'
-languageCode = 'en-us'
+defaultContentLanguage = 'en-us' # 修正這裡，把原本的 languageCode 改掉
 title = 'Il Giardino Nascosto'
 theme = 'ananke'
 
