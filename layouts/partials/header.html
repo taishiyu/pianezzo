@@ -1,14 +1,21 @@
-<!-- 匯入 Tangerine (標題) 與 Lora (內文)，移除 Noto Sans -->
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 <header class="site-header">
-    <div class="slideshow-container">
-        <div class="slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
-        <div class="slide" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
-        <div class="slide" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
-        <div class="overlay"></div>
-    </div>
+    {{ if .IsHome }}
+        <div class="slideshow-container">
+            <div class="slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
+            <div class="slide" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
+            <div class="slide" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
+            <div class="overlay"></div>
+        </div>
+    {{ else }}
+        <div class="static-banner" style="background-image: url('{{ .Params.featured_image | absURL }}');">
+            <div class="overlay"></div>
+        </div>
+    {{ end }}
+
     <div class="header-content">
+        <!-- 標題即是 Home 鍵 -->
         <h1 class="site-title"><a href="{{ "/" | absURL }}">Il Giardino Nascosto</a></h1>
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
@@ -19,14 +26,15 @@
 </header>
 
 <style>
-/* 關鍵變更：將全站預設字體改為 Lora */
-body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-height: 1.8; color: #333; }
-
+body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-height: 1.8; color: #333; background-color: #f4f1ea; }
 .site-header { position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; }
-.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); }
 
+.static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
+
 .header-content { padding: 80px 20px; }
+
+/* 標題樣式與浮動特效 */
 .site-title a { 
     font-family: 'Tangerine', cursive; 
     font-size: 7.5rem; 
@@ -34,6 +42,15 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-h
     color: #f4f1ea; 
     text-decoration: none; 
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* 標題游標經過時：放大並上浮 */
+.site-title a:hover {
+    transform: scale(1.05) translateY(-5px);
+    color: #ffffff;
+    text-shadow: 4px 8px 15px rgba(0,0,0,0.6);
 }
 
 .site-nav { margin-top: 60px; display: flex; justify-content: center; flex-wrap: wrap; }
@@ -56,19 +73,16 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-h
     text-shadow: 4px 8px 12px rgba(0,0,0,0.6); 
 }
 
+@media (min-width: 769px) { .site-header { height: {{ if .IsHome }}600px{{ else }}450px{{ end }}; } }
+
 @media (max-width: 768px) { 
-    .site-header { height: auto; min-height: 80vh; display: flex; align-items: center; justify-content: center; }
-    .header-content { padding: 40px 10px; width: 100%; }
+    .site-header { min-height: {{ if .IsHome }}100vh{{ else }}70vh{{ end }}; display: flex; align-items: center; }
     .site-title a { font-size: 5rem; }
-    
-    .site-nav { flex-direction: column; align-items: center; margin-top: 40px; }
-    
-    .nav-link { font-size: 4rem; margin: 20px 0; }
-    .nav-link:active, .nav-link:hover { transform: scale(1.1); }
+    .site-nav { flex-direction: column; }
+    .nav-link { font-size: 4rem; margin: 25px 0; }
 }
 
-@media (min-width: 769px) { .site-header { height: 600px; } }
-
+.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 5s; }
