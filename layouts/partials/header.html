@@ -27,17 +27,12 @@
 </header>
 
 <style>
-/* 基礎重置 */
+/* 1. 全域樣式鎖定 */
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
-.site-header { 
-    position: relative; 
-    width: 100%; 
-    overflow: hidden; 
-    background-color: #111; 
-}
+.site-header { position: relative; width: 100%; overflow: hidden; background-color: #111; }
 
-/* 🔵 強制鎖定：無論是 single 還是 list，只要不是 Home，高度通通 500px */
+/* 🔴 強制鎖定：無論是 Single 還是 List，只要不是 Home，高度通通 500px */
 @media (min-width: 769px) { 
     .site-header.is-home { height: 600px !important; }
     .site-header:not(.is-home) { height: 500px !important; } 
@@ -46,7 +41,7 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1; }
 .static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: 0; }
 
-/* 🔵 絕對中心定位：不受任何頁面類型影響 */
+/* 🔴 座標釘死法：強制無視任何父層 Padding */
 .header-anchor {
     position: absolute;
     top: 50% !important;
@@ -61,7 +56,7 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap: 55px !important; /* 固定間距 */
+    gap: 60px !important; /* 強制標題與目錄間距為 60px */
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -72,6 +67,7 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     font-size: 7.5rem !important; 
     font-weight: 700; color: #f4f1ea; text-decoration: none; 
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
+    transition: 0.4s;
 }
 
 .site-nav { 
@@ -86,8 +82,7 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     font-weight: 700; color: #f4f1ea; 
     margin: 0 30px !important; 
     text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: inline-block; 
-    transition: transform 0.4s ease;
+    display: inline-block; transition: 0.4s;
 }
 
 .site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
@@ -95,11 +90,12 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
 @media (max-width: 768px) { 
     .site-header.is-home { height: 100vh !important; }
     .site-header:not(.is-home) { height: 70vh !important; }
-    .header-content { gap: 25px !important; }
+    .header-content { gap: 30px !important; }
     .site-title a { font-size: 4.5rem !important; }
-    .nav-link { font-size: 3.2rem !important; margin: 8px 0 !important; }
+    .nav-link { font-size: 3.2rem !important; margin: 10px 0 !important; }
 }
 
+/* 輪播動畫 (維持原樣) */
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }

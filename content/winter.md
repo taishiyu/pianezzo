@@ -1,4 +1,7 @@
 ---
-title: "Winter in Pianezzo"
+title: "Winter"
+featured_image: "images/winter.jpg"
+layout: "single"
+draft: false
 ---
-The quiet, snow-covered garden resting under the winter sky.
+The quiet, snow-covered garden at 1,100 meters.
