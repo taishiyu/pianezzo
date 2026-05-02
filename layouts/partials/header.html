@@ -1,82 +1,78 @@
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<header class="garden-header {{ if .IsHome }}h-home{{ else }}h-page{{ end }}">
-    <div class="header-bg-container">
+<header class="site-banner {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
+    <!-- 背景層：確保圖片填滿 -->
+    <div class="banner-bg">
         {{ if .IsHome }}
-            <div class="garden-slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
-            <div class="garden-slide" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
-            <div class="garden-slide" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
+            <div class="bg-slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
+            <div class="bg-slide" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
+            <div class="bg-slide" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
         {{ else }}
-            <div class="garden-static-bg" style="background-image: url('{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ "images/cover1.jpg" | absURL }}{{ end }}');"></div>
+            <div class="bg-static" style="background-image: url('{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ "images/cover1.jpg" | absURL }}{{ end }}');"></div>
         {{ end }}
     </div>
-    <div class="garden-overlay"></div>
+    <div class="banner-mask"></div>
 
-    <div class="garden-content-box">
-        <h1 class="garden-site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
-        <nav class="garden-site-nav">
+    <!-- 內容層：Flexbox 自動對齊 -->
+    <div class="banner-content">
+        <a href="{{ .Site.BaseURL }}" class="banner-logo">Il Giardino Nascosto</a>
+        <nav class="banner-nav">
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL | absURL }}" class="garden-nav-link">{{ .Name }}</a>
+            <a href="{{ .URL | absURL }}" class="banner-link">{{ .Name }}</a>
             {{ end }}
         </nav>
     </div>
 </header>
 
 <style>
-/* 🔴 移除所有預設推擠 */
-.garden-header, .garden-header * { box-sizing: border-box; margin: 0; padding: 0; }
-
-.garden-header { position: relative; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #111; }
+/* 🔴 基礎架構 */
+.site-banner { position: relative; width: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden; }
 
 @media (min-width: 769px) {
-    .h-home { height: 600px !important; }
-    .h-page { height: 500px !important; }
+    .is-home { height: 600px; }
+    .is-page { height: 500px; }
 }
 
-.header-bg-container, .garden-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.garden-overlay { background: rgba(0,0,0,0.35); z-index: 2; }
-.garden-slide, .garden-static-bg { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; }
+.banner-bg, .banner-mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.banner-mask { background: rgba(0,0,0,0.35); z-index: 2; }
+.bg-slide, .bg-static { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; }
 
-/* 🔵 核心：座標鎖定與間距 */
-.garden-content-box {
-    position: relative; z-index: 10; width: 100%;
-    display: flex !important; flex-direction: column !important;
-    align-items: center !important; 
-    gap: 55px !important; /* 標題與選單的固定間隙 */
+/* 🔵 內容佈局：解決位移根本問題 */
+.banner-content {
+    position: relative; z-index: 10; text-align: center;
+    display: flex; flex-direction: column; align-items: center;
+    gap: 3.5rem; /* 標題與選單的固定間距 */
 }
 
-.garden-site-title { line-height: 1 !important; }
-.garden-site-title a { 
-    font-family: 'Tangerine', cursive !important; font-size: 7.5rem !important; 
-    font-weight: 700 !important; color: #f4f1ea !important; text-decoration: none !important; 
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.5) !important;
+.banner-logo {
+    font-family: 'Tangerine', cursive; font-size: 7.5rem; font-weight: 700; color: #f4f1ea;
+    text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    transition: all 0.4s ease; /* 恢復動畫 */
 }
 
-.garden-site-nav { display: flex !important; gap: 40px !important; justify-content: center !important; flex-wrap: wrap !important; }
+.banner-nav { display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; }
 
-.garden-nav-link {
-    font-family: 'Tangerine', cursive !important; font-size: 3.8rem !important; /* 確保字體在各頁一致 */
-    font-weight: 700 !important; color: #f4f1ea !important; text-decoration: none !important;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
-    transition: transform 0.4s ease;
+.banner-link {
+    font-family: 'Tangerine', cursive; font-size: 3.5rem; font-weight: 700; color: #f4f1ea;
+    text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: all 0.4s ease; /* 恢復動畫 */
 }
 
-.garden-site-title a:hover, .garden-nav-link:hover { color: #fff !important; transform: translateY(-5px); }
-
-/* 📱 手機版適配 */
-@media (max-width: 768px) {
-    .h-home { height: 100vh !important; }
-    .h-page { height: 70vh !important; }
-    .garden-content-box { gap: 30px !important; }
-    .garden-site-title a { font-size: 4.5rem !important; }
-    .garden-site-nav { flex-direction: column !important; gap: 10px !important; }
-    .garden-nav-link { font-size: 3.2rem !important; }
-}
+/* 🟢 動畫效果：觸碰時輕微浮起 */
+.banner-logo:hover, .banner-link:hover { color: #fff; transform: translateY(-5px) scale(1.05); }
 
 /* 輪播動畫 */
-.garden-slide { opacity: 0; animation: gardenFade 15s infinite; }
-.garden-slide:nth-child(1) { animation-delay: 0s; }
-.garden-slide:nth-child(2) { animation-delay: 5s; }
-.garden-slide:nth-child(3) { animation-delay: 10s; }
-@keyframes gardenFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
+.bg-slide { opacity: 0; animation: fadeEffect 15s infinite; }
+.bg-slide:nth-child(1) { animation-delay: 0s; }
+.bg-slide:nth-child(2) { animation-delay: 5s; }
+.bg-slide:nth-child(3) { animation-delay: 10s; }
+@keyframes fadeEffect { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
+
+@media (max-width: 768px) {
+    .is-home { height: 100vh; }
+    .is-page { height: 60vh; }
+    .banner-logo { font-size: 4.5rem; }
+    .banner-nav { flex-direction: column; gap: 0.5rem; }
+    .banner-link { font-size: 3rem; }
+}
 </style>

@@ -1,29 +1,13 @@
 {{ partial "header.html" . }}
-<main class="page-main">
-    <article class="container">
-        <header class="page-header">
-            <h1 class="page-title">{{ .Title }}</h1>
-        </header>
-        <div class="page-content">
-            {{ .Content }}
-        </div>
-    </article>
+<main class="main-body">
+    <div class="article-wrap">
+        <h1 class="article-title">{{ .Title }}</h1>
+        <div class="article-content">{{ .Content }}</div>
+    </div>
 </main>
 <style>
-    .page-main { padding: 60px 20px; background-color: #f4f1ea; min-height: 500px; }
-    .container { max-width: 800px; margin: 0 auto; text-align: center; }
-    .page-header { margin: 0 0 50px 0; padding: 0; }
-    .page-title { 
-        font-family: 'Tangerine', cursive; 
-        font-size: 5.5rem; 
-        color: #5d4037; 
-        margin: 0; 
-        line-height: 1.2;
-    }
-    .page-content { 
-        font-family: 'Lora', serif; 
-        font-size: 1.4rem; 
-        line-height: 2; 
-        color: #333; 
-    }
+    .main-body { padding: 60px 20px; background-color: #f4f1ea; min-height: 50vh; }
+    .article-wrap { max-width: 800px; margin: 0 auto; text-align: center; }
+    .article-title { font-family: 'Tangerine', cursive; font-size: 5.5rem; color: #5d4037; }
+    .article-content { font-family: 'Lora', serif; font-size: 1.3rem; line-height: 1.8; color: #333; margin-top: 2rem; }
 </style>
