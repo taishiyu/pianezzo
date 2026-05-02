@@ -1,3 +1,4 @@
+<!-- 匯入字體 -->
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 <header class="site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
@@ -15,7 +16,8 @@
     {{ end }}
 
     <div class="header-content">
-        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
+        <!-- 🔴 標題連結：使用 relURL "/" 並配合 BaseURL 確保絕對路徑正確 -->
+        <h1 class="site-title"><a href="{{ .Site.BaseURL | relURL }}/">Il Giardino Nascosto</a></h1>
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
@@ -25,10 +27,8 @@
 </header>
 
 <style>
-/* 基礎設定歸零 */
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
-/* 🔴 強制鎖定 Header 容器高度與對齊方式 */
 .site-header { 
     position: relative; 
     width: 100%; 
@@ -37,34 +37,33 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     overflow: hidden; 
     display: flex; 
     flex-direction: column;
-    justify-content: center; /* 垂直置中 */
-    align-items: center;     /* 水平置中 */
+    justify-content: center; 
+    align-items: center;     
 }
 
+/* 鎖定 Header 總高度 */
 @media (min-width: 769px) { 
     .site-header.is-home { height: 600px !important; }
     .site-header.is-page { height: 500px !important; } 
 }
-@media (max-width: 768px) { 
-    .site-header.is-home { height: 100vh !important; }
-    .site-header.is-page { height: 70vh !important; }
-}
 
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
 
-/* 🔴 關鍵修正：將 Header 內容區塊的 Padding 固定，避免 Life 頁面被推擠 */
 .header-content { 
     position: relative; 
     z-index: 10; 
-    padding: 0 !important; /* 移除自動 padding */
+    padding: 0 !important; 
     margin: 0 !important;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
 
-/* 標題字體與高度修正 */
-.site-title { margin: 0; line-height: 1; }
+/* 標題設定 */
+.site-title { margin: 0 !important; padding: 0 !important; line-height: 1 !important; }
 .site-title a { 
     font-family: 'Tangerine', cursive; 
     font-size: 7.5rem; 
@@ -75,10 +74,15 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     display: inline-block;
     transition: all 0.4s ease;
 }
-.site-title a:hover { transform: scale(1.05) translateY(-5px); color: #ffffff; }
 
-/* 導覽列 */
-.site-nav { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
+/* 🔴 核心修正：強制所有分頁的目錄與標題間距為 60px，解決 Spring/Summer 縮短問題 */
+.site-nav { 
+    margin-top: 60px !important; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
 .nav-link { 
     font-family: 'Tangerine', cursive; 
     font-size: 3.5rem; 
@@ -90,7 +94,16 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     display: inline-block; 
     transition: all 0.4s ease;
 }
-.nav-link:hover { color: #ffffff; transform: scale(1.1) translateY(-5px); }
+
+.site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
+
+@media (max-width: 768px) { 
+    .site-header.is-home { height: 100vh !important; }
+    .site-header.is-page { height: 70vh !important; }
+    .site-title a { font-size: 4.5rem; }
+    .site-nav { flex-direction: column; margin-top: 30px !important; }
+    .nav-link { font-size: 3.2rem; margin: 10px 0; }
+}
 
 /* 輪播動畫 */
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
@@ -99,10 +112,4 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
 .slide:nth-child(2) { animation-delay: 5s; }
 .slide:nth-child(3) { animation-delay: 10s; }
 @keyframes safariFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
-
-@media (max-width: 768px) { 
-    .site-title a { font-size: 4.5rem; }
-    .site-nav { flex-direction: column; margin-top: 20px; }
-    .nav-link { font-size: 3.2rem; margin: 10px 0; }
-}
 </style>
