@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+<main class="page-main">
+    <article class="container">
+        <header class="page-header">
+            <h1 class="page-title">{{ .Title }}</h1>
+        </header>
+        <div class="page-content">
+            {{ .Content }}
+        </div>
+    </article>
+</main>
+<style>
+    .page-main { padding: 60px 20px; background-color: #f4f1ea; min-height: 500px; }
+    .container { max-width: 800px; margin: 0 auto; text-align: center; }
+    .page-header { margin: 0 0 50px 0; padding: 0; }
+    .page-title { 
+        font-family: 'Tangerine', cursive; 
+        font-size: 5.5rem; 
+        color: #5d4037; 
+        margin: 0; 
+        line-height: 1.2;
+    }
+    .page-content { 
+        font-family: 'Lora', serif; 
+        font-size: 1.4rem; 
+        line-height: 2; 
+        color: #333; 
+    }
+</style>
