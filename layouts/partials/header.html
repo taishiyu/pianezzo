@@ -1,4 +1,3 @@
-<!-- 匯入字體 -->
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 <header class="site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
@@ -16,8 +15,8 @@
     {{ end }}
 
     <div class="header-content">
-        <!-- 🔴 標題連結：使用 relURL "/" 並配合 BaseURL 確保絕對路徑正確 -->
-        <h1 class="site-title"><a href="{{ .Site.BaseURL | relURL }}/">Il Giardino Nascosto</a></h1>
+        <!-- 標題連結：直接指向設定檔中的 BaseURL -->
+        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
@@ -30,18 +29,11 @@
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
 .site-header { 
-    position: relative; 
-    width: 100%; 
-    color: #fff; 
-    text-align: center; 
-    overflow: hidden; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;     
+    position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; 
+    display: flex; flex-direction: column; justify-content: center; align-items: center;     
 }
 
-/* 鎖定 Header 總高度 */
+/* 鎖定照片高度 */
 @media (min-width: 769px) { 
     .site-header.is-home { height: 600px !important; }
     .site-header.is-page { height: 500px !important; } 
@@ -49,50 +41,30 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
 
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
 
-.header-content { 
-    position: relative; 
-    z-index: 10; 
-    padding: 0 !important; 
-    margin: 0 !important;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.header-content { position: relative; z-index: 10; width: 100%; }
 
 .static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
 
-/* 標題設定 */
-.site-title { margin: 0 !important; padding: 0 !important; line-height: 1 !important; }
+/* 🔴 強制鎖定所有頁面的標題大小 */
+.site-title { margin: 0 !important; }
 .site-title a { 
     font-family: 'Tangerine', cursive; 
-    font-size: 7.5rem; 
-    font-weight: 700; 
-    color: #f4f1ea; 
-    text-decoration: none; 
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
-    display: inline-block;
+    font-size: 7.5rem !important; /* 強制所有頁面標題大小一致 */
+    font-weight: 700; color: #f4f1ea; text-decoration: none; 
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
     transition: all 0.4s ease;
 }
 
-/* 🔴 核心修正：強制所有分頁的目錄與標題間距為 60px，解決 Spring/Summer 縮短問題 */
+/* 🔴 強制鎖定所有頁面的目錄間距 */
 .site-nav { 
-    margin-top: 60px !important; 
-    display: flex; 
-    justify-content: center; 
-    flex-wrap: wrap; 
+    margin-top: 60px !important; /* 強制標題與目錄間距一致 */
+    display: flex; justify-content: center; flex-wrap: wrap; 
 }
 
 .nav-link { 
-    font-family: 'Tangerine', cursive; 
-    font-size: 3.5rem; 
-    font-weight: 700; 
-    color: #f4f1ea; 
-    margin: 0 30px; 
-    text-decoration: none; 
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: inline-block; 
-    transition: all 0.4s ease;
+    font-family: 'Tangerine', cursive; font-size: 3.5rem; font-weight: 700; color: #f4f1ea; 
+    margin: 0 30px; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: inline-block; transition: all 0.4s ease;
 }
 
 .site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
@@ -100,13 +72,12 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
 @media (max-width: 768px) { 
     .site-header.is-home { height: 100vh !important; }
     .site-header.is-page { height: 70vh !important; }
-    .site-title a { font-size: 4.5rem; }
+    .site-title a { font-size: 4.5rem !important; }
     .site-nav { flex-direction: column; margin-top: 30px !important; }
     .nav-link { font-size: 3.2rem; margin: 10px 0; }
 }
 
-/* 輪播動畫 */
-.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
+.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 5s; }
