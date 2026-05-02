@@ -1,4 +1,3 @@
-<!-- 匯入字體 -->
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 <header class="site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
@@ -15,28 +14,30 @@
         </div>
     {{ end }}
 
-    <div class="header-content">
-        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
-        <nav class="site-nav">
-            {{ range .Site.Menus.main }}
-            <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
-            {{ end }}
-        </nav>
+    <div class="header-anchor">
+        <div class="header-content">
+            <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
+            <nav class="site-nav">
+                {{ range .Site.Menus.main }}
+                <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                {{ end }}
+            </nav>
+        </div>
     </div>
 </header>
 
 <style>
-/* 1. 基礎重置：排除主題干擾 */
+/* 1. 全域重置：徹底切斷主題 CSS 的干擾 */
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
 .site-header { 
     position: relative; 
     width: 100%; 
     overflow: hidden; 
-    /* 確保所有分頁的容器基板是一模一樣的 */
-    background-color: #111; 
+    background-color: #111;
 }
 
+/* 鎖定外層容器高度 */
 @media (min-width: 769px) { 
     .site-header.is-home { height: 600px !important; }
     .site-header.is-page { height: 500px !important; } 
@@ -45,31 +46,33 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 1; }
 .static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: 0; }
 
-/* 2. 核心修正：座標定位法 */
+/* 2. 座標鎖定：建立一個與 Header 同寬高的錨點容器 */
+.header-anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 強制垂直置中 */
+}
+
+/* 3. 內容區塊：不再受任何 Margin 或 Padding 影響 */
 .header-content { 
-    position: absolute; 
-    top: 50%;      /* 從頂部往下 50% */
-    left: 50%;     /* 從左側往右 50% */
-    transform: translate(-50%, -50%); /* 往回補償自身長寬的一半，達成絕對中心 */
-    z-index: 10; 
     width: 100%;
     text-align: center;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    /* 這裡鎖定標題與選單的間隙 */
-    gap: 40px !important; 
+    gap: 60px !important; /* 標題與目錄的固定間距 */
     padding: 0 !important;
     margin: 0 !important;
 }
 
-/* 3. 標題與選單：消除所有外距影響 */
-.site-title { 
-    margin: 0 !important; 
-    padding: 0 !important; 
-    line-height: 1 !important; /* 防止字體行高造成的位移 */
-}
-
+/* 4. 標題與選單字體細節 */
+.site-title { margin: 0 !important; padding: 0 !important; line-height: 0.8 !important; }
 .site-title a { 
     font-family: 'Tangerine', cursive; 
     font-size: 7.5rem !important; 
@@ -78,7 +81,7 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     text-decoration: none; 
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
     display: inline-block;
-    margin: 0 !important;
+    transition: 0.4s;
 }
 
 .site-nav { 
@@ -99,19 +102,19 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; backgr
     text-decoration: none; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     display: inline-block; 
-    transition: transform 0.4s ease;
+    transition: 0.4s;
 }
 
 .site-title a:hover, .nav-link:hover { color: #ffffff; transform: translateY(-5px); }
 
-/* 手機版適配：同樣維持中心定位 */
+/* 手機版適配 */
 @media (max-width: 768px) { 
     .site-header.is-home { height: 100vh !important; }
     .site-header.is-page { height: 70vh !important; }
-    .header-content { gap: 20px !important; }
+    .header-content { gap: 30px !important; }
     .site-title a { font-size: 4.5rem !important; }
     .site-nav { flex-direction: column !important; }
-    .nav-link { font-size: 3.2rem !important; margin: 8px 0 !important; }
+    .nav-link { font-size: 3.2rem !important; margin: 10px 0 !important; }
 }
 
 /* 輪播動畫 (保持原樣) */
