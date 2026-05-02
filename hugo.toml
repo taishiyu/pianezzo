@@ -1,30 +1,24 @@
 baseURL = 'https://taishiyu.github.io/pianezzo/'
 languageCode = 'en-us'
-defaultContentLanguage = 'en'
 title = 'Il Giardino Nascosto'
-theme = 'hugo-air'
+theme = 'ananke'
 
-[params]
-    description = "A haven in the Alps for woodworking, baking, ecology, and storytelling."
-    # Your main image from the static/images folder
-    cover = "images/giardino.jpg"
-
-[[menu.main]]
-    name = "Ecology"
-    url = "/ecology/"
+[[menus.main]]
+    name = 'Spring'
+    url = '/spring/'
     weight = 1
 
-[[menu.main]]
-    name = "Woodworking"
-    url = "/woodworking/"
+[[menus.main]]
+    name = 'Summer'
+    url = '/summer/'
     weight = 2
 
-[[menu.main]]
-    name = "Baking"
-    url = "/baking/"
+[[menus.main]]
+    name = 'Autumn'
+    url = '/autumn/'
     weight = 3
 
-[[menu.main]]
-    name = "Narrative"
-    url = "/posts/"
+[[menus.main]]
+    name = 'Winter'
+    url = '/winter/'
     weight = 4
