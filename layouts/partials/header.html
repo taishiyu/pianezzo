@@ -1,6 +1,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
-<header class="site-header">
+<header class="site-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
     {{ if .IsHome }}
         <div class="slideshow-container">
             <div class="slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
@@ -15,7 +15,7 @@
     {{ end }}
 
     <div class="header-content">
-        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
+        <h1 class="site-title"><a href="{{ absURL "/" }}">Il Giardino Nascosto</a></h1>
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
@@ -28,21 +28,21 @@
 body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-height: 1.8; color: #333; background-color: #f4f1ea; }
 .site-header { position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; display: flex; align-items: center; justify-content: center; }
 
-/* 統一高度設定 */
+/* 🔴 強制統一高度邏輯 */
 @media (min-width: 769px) { 
-    .site-header { height: {{ if .IsHome }}600px{{ else }}500px{{ end }}; } 
+    .site-header.is-home { height: 600px; }
+    .site-header.is-page { height: 500px !important; } /* 使用 !important 確保所有分頁一致 */
 }
 @media (max-width: 768px) { 
-    .site-header { min-height: {{ if .IsHome }}100vh{{ else }}60vh{{ end }}; }
+    .site-header.is-home { min-height: 100vh; }
+    .site-header.is-page { min-height: 70vh !important; }
 }
 
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
 .header-content { position: relative; z-index: 10; padding: 40px 20px; width: 100%; }
 
-/* 分頁靜態圖 */
 .static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
 
-/* 標題與 Home 鍵特效 */
 .site-title a { 
     font-family: 'Tangerine', cursive; font-size: 7.5rem; font-weight: 700; color: #f4f1ea; 
     text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
@@ -50,20 +50,13 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-h
 }
 .site-title a:hover { transform: scale(1.05) translateY(-5px); color: #ffffff; }
 
-/* 導覽選單 */
 .site-nav { margin-top: 40px; display: flex; justify-content: center; flex-wrap: wrap; }
 .nav-link { 
     font-family: 'Tangerine', cursive; font-size: 3.5rem; font-weight: 700; color: #f4f1ea; 
     margin: 0 30px; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     display: inline-block; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.nav-link:hover { color: #ffffff; transform: scale(1.1) translateY(-5px); }
-
-@media (max-width: 768px) { 
-    .site-title a { font-size: 4.5rem; }
-    .site-nav { flex-direction: column; margin-top: 30px; }
-    .nav-link { font-size: 3.5rem; margin: 15px 0; }
-}
+.nav-link:hover { color: #ffffff; transform: scale(1.15) translateY(-8px); }
 
 /* 輪播動畫 */
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
