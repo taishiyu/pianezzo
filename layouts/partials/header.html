@@ -15,7 +15,7 @@
     {{ end }}
 
     <div class="header-content">
-        <h1 class="site-title"><a href="{{ absURL "/" }}">Il Giardino Nascosto</a></h1>
+        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">Il Giardino Nascosto</a></h1>
         <nav class="site-nav">
             {{ range .Site.Menus.main }}
             <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
@@ -25,38 +25,72 @@
 </header>
 
 <style>
-body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-height: 1.8; color: #333; background-color: #f4f1ea; }
-.site-header { position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+/* 基礎設定歸零 */
+body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; background-color: #f4f1ea; }
 
-/* 🔴 強制統一高度邏輯 */
+/* 🔴 強制鎖定 Header 容器高度與對齊方式 */
+.site-header { 
+    position: relative; 
+    width: 100%; 
+    color: #fff; 
+    text-align: center; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; /* 垂直置中 */
+    align-items: center;     /* 水平置中 */
+}
+
 @media (min-width: 769px) { 
-    .site-header.is-home { height: 600px; }
-    .site-header.is-page { height: 500px !important; } /* 使用 !important 確保所有分頁一致 */
+    .site-header.is-home { height: 600px !important; }
+    .site-header.is-page { height: 500px !important; } 
 }
 @media (max-width: 768px) { 
-    .site-header.is-home { min-height: 100vh; }
-    .site-header.is-page { min-height: 70vh !important; }
+    .site-header.is-home { height: 100vh !important; }
+    .site-header.is-page { height: 70vh !important; }
 }
 
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); z-index: 0; }
-.header-content { position: relative; z-index: 10; padding: 40px 20px; width: 100%; }
+
+/* 🔴 關鍵修正：將 Header 內容區塊的 Padding 固定，避免 Life 頁面被推擠 */
+.header-content { 
+    position: relative; 
+    z-index: 10; 
+    padding: 0 !important; /* 移除自動 padding */
+    margin: 0 !important;
+    width: 100%;
+}
 
 .static-banner { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; z-index: -1; }
 
+/* 標題字體與高度修正 */
+.site-title { margin: 0; line-height: 1; }
 .site-title a { 
-    font-family: 'Tangerine', cursive; font-size: 7.5rem; font-weight: 700; color: #f4f1ea; 
-    text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); display: inline-block;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-family: 'Tangerine', cursive; 
+    font-size: 7.5rem; 
+    font-weight: 700; 
+    color: #f4f1ea; 
+    text-decoration: none; 
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
+    display: inline-block;
+    transition: all 0.4s ease;
 }
 .site-title a:hover { transform: scale(1.05) translateY(-5px); color: #ffffff; }
 
-.site-nav { margin-top: 40px; display: flex; justify-content: center; flex-wrap: wrap; }
+/* 導覽列 */
+.site-nav { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; }
 .nav-link { 
-    font-family: 'Tangerine', cursive; font-size: 3.5rem; font-weight: 700; color: #f4f1ea; 
-    margin: 0 30px; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: inline-block; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-family: 'Tangerine', cursive; 
+    font-size: 3.5rem; 
+    font-weight: 700; 
+    color: #f4f1ea; 
+    margin: 0 30px; 
+    text-decoration: none; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: inline-block; 
+    transition: all 0.4s ease;
 }
-.nav-link:hover { color: #ffffff; transform: scale(1.15) translateY(-8px); }
+.nav-link:hover { color: #ffffff; transform: scale(1.1) translateY(-5px); }
 
 /* 輪播動畫 */
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
@@ -65,4 +99,10 @@ body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-h
 .slide:nth-child(2) { animation-delay: 5s; }
 .slide:nth-child(3) { animation-delay: 10s; }
 @keyframes safariFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
+
+@media (max-width: 768px) { 
+    .site-title a { font-size: 4.5rem; }
+    .site-nav { flex-direction: column; margin-top: 20px; }
+    .nav-link { font-size: 3.2rem; margin: 10px 0; }
+}
 </style>
