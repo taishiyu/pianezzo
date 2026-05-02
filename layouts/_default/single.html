@@ -1,0 +1,58 @@
+{{ partial "header.html" . }}
+
+<main class="page-main">
+    <article class="container">
+        <header class="page-header">
+            <h1 class="page-title">{{ .Title }}</h1>
+        </header>
+        <div class="page-content">
+            {{ .Content }}
+        </div>
+    </article>
+</main>
+
+<style>
+    body { background-color: #f4f1ea; }
+    
+    .page-main {
+        padding: 60px 20px;
+        animation: fadeIn 1s ease-in;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .page-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .page-title {
+        font-family: 'Tangerine', cursive;
+        font-size: 5.5rem;
+        color: #5d4037;
+        margin: 0;
+    }
+
+    .page-content {
+        font-family: 'Lora', serif;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: #333;
+    }
+
+    .page-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin: 2rem 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
