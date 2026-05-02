@@ -1,29 +1,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-<header class="full-bleed-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
-    <div class="header-canvas">
+<header class="garden-banner {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
+    <div class="banner-canvas">
         {{ if .IsHome }}
-            <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
-            <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
-            <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
+            <div class="canvas-item anim-slide" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
+            <div class="canvas-item anim-slide" style="background-image: url('{{ "images/cover2.jpg" | absURL }}');"></div>
+            <div class="canvas-item anim-slide" style="background-image: url('{{ "images/cover3.jpg" | absURL }}');"></div>
         {{ else }}
-            <div class="canvas-img static-img" style="background-image: url('{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ "images/cover1.jpg" | absURL }}{{ end }}');"></div>
+            <div class="canvas-item static-item" style="background-image: url('{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ "images/cover1.jpg" | absURL }}{{ end }}');"></div>
         {{ end }}
     </div>
-    <div class="header-mask"></div>
+    <div class="banner-overlay"></div>
 
-    <div class="header-info">
-        <a href="{{ .Site.BaseURL }}" class="header-logo">Il Giardino Nascosto</a>
-        <nav class="header-nav">
+    <div class="banner-content">
+        <a href="{{ .Site.BaseURL }}" class="banner-title">Il Giardino Nascosto</a>
+        <nav class="banner-menu">
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL | absURL }}" class="nav-item">{{ .Name }}</a>
+            <a href="{{ .URL | absURL }}" class="menu-item">{{ .Name }}</a>
             {{ end }}
         </nav>
     </div>
 </header>
 
 <style>
-/* 🔵 全局 Reset：防止白邊出現 */
+/* 🔴 關鍵：強制全寬與消除白邊 */
 html, body { 
     margin: 0 !important; 
     padding: 0 !important; 
@@ -31,12 +31,12 @@ html, body {
     overflow-x: hidden !important; 
 }
 
-/* 🔴 標頭佈局 */
-.full-bleed-header {
+.garden-banner {
     position: relative;
-    width: 100vw !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    /* 這裡使用 vw (Viewport Width) 確保無視外層容器寬度 */
+    width: 100vw !important; 
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,29 +49,73 @@ html, body {
     .is-page { height: 500px !important; }
 }
 
-.header-canvas, .header-mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.header-mask { background: rgba(0, 0, 0, 0.35); z-index: 2; }
-.canvas-img { position: absolute; width: 100%; height: 100%; background-size: cover !important; background-position: center !important; }
+.banner-canvas, .banner-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
 
-/* 🟢 內容與動畫 */
-.header-info { position: relative; z-index: 10; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 50px; }
-.header-logo { font-family: 'Tangerine', cursive; font-size: 7.5rem; color: #f4f1ea; text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); transition: 0.4s; }
-.header-nav { display: flex; gap: 40px; }
-.nav-item { font-family: 'Tangerine', cursive; font-size: 3.5rem; color: #f4f1ea; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); transition: 0.4s; }
-.header-logo:hover, .nav-item:hover { color: #fff !important; transform: translateY(-8px) scale(1.05); }
+.banner-overlay { background: rgba(0, 0, 0, 0.35); z-index: 2; }
+
+.canvas-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important; /* 強制照片填滿 */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* 🟢 文字內容與動畫 */
+.banner-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-title {
+    font-family: 'Tangerine', cursive !important;
+    font-size: 7.5rem !important;
+    color: #f4f1ea !important;
+    text-decoration: none !important;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5) !important;
+    transition: all 0.4s ease;
+}
+
+.banner-menu { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+
+.menu-item {
+    font-family: 'Tangerine', cursive !important;
+    font-size: 3.5rem !important;
+    color: #f4f1ea !important;
+    text-decoration: none !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+    transition: all 0.4s ease;
+}
+
+.banner-title:hover, .menu-item:hover {
+    color: #fff !important;
+    transform: translateY(-8px) scale(1.05);
+}
 
 /* 🟡 輪播動畫 */
-.anim-fade { opacity: 0; animation: simpleFade 15s infinite; }
-.anim-fade:nth-child(1) { animation-delay: 0s; }
-.anim-fade:nth-child(2) { animation-delay: 5s; }
-.anim-fade:nth-child(3) { animation-delay: 10s; }
-@keyframes simpleFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
+.anim-slide { opacity: 0; animation: fadeAnim 15s infinite; }
+.anim-slide:nth-child(1) { animation-delay: 0s; }
+.anim-slide:nth-child(2) { animation-delay: 5s; }
+.anim-slide:nth-child(3) { animation-delay: 10s; }
+@keyframes fadeAnim { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
 
 @media (max-width: 768px) {
-    .full-bleed-header.is-home { height: 100vh !important; }
-    .full-bleed-header.is-page { height: 60vh !important; }
-    .header-logo { font-size: 4.5rem; }
-    .header-nav { flex-direction: column; gap: 10px; }
-    .nav-item { font-size: 3rem; }
+    .is-home { height: 100vh !important; }
+    .is-page { height: 60vh !important; }
+    .banner-title { font-size: 4.5rem !important; }
+    .banner-menu { flex-direction: column; gap: 10px; }
+    .menu-item { font-size: 3rem !important; }
 }
 </style>
