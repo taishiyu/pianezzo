@@ -13,17 +13,15 @@
         background-color: #f4f1ea; 
     }
 
-    /* 增加頂部留白，並透過陰影與線條產生明顯的區塊感 */
     .home-main {
         padding: 160px 20px 120px 20px; 
         position: relative;
-        /* 增加一條極淡的頂部細線與陰影，加強與上方照片的區隔 */
         border-top: 1px solid rgba(0, 0, 0, 0.03);
         box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.02);
     }
     
     .container {
-        max-width: 900px; /* 稍微放寬，讓大字體排版更舒展 */
+        max-width: 900px; 
         margin: 0 auto;
     }
 
@@ -32,7 +30,6 @@
         color: #333;
     }
 
-    /* 調整副標題大小 */
     .intro-content h2 {
         font-family: 'Tangerine', cursive;
         font-size: 5.5rem;
@@ -41,13 +38,13 @@
         margin-bottom: 50px;
     }
 
-    /* 內容字體加大，並增加行距確保閱讀舒適 */
+    /* 關鍵變更：首頁內容段落改為 Lora 字體 */
     .intro-content p {
-        font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
-        font-size: 1.4rem; /* 從 1.15rem 提升到 1.4rem */
-        line-height: 2.4;  /* 增加行距，讓文字更有呼吸感 */
+        font-family: 'Lora', 'Noto Sans TC', serif;
+        font-size: 1.4rem; 
+        line-height: 2.2;  /* Lora 字體視覺上較寬，稍微調降行距讓排版緊湊些 */
         margin-bottom: 2.2rem;
-        letter-spacing: 0.8px; /* 增加一點字距，適合在大背景下閱讀 */
+        letter-spacing: 0.5px; /* Lora 本身間距剛好，稍微減少額外的字距 */
     }
 
     .intro-content strong {
@@ -55,7 +52,6 @@
         font-weight: 700;
     }
 
-    /* 在小螢幕（手機）上稍微縮減間距，避免留白過多 */
     @media (max-width: 768px) {
         .home-main {
             padding-top: 100px;

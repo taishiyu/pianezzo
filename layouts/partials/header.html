@@ -1,4 +1,5 @@
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- 匯入 Tangerine (標題) 與 Lora (內文)，移除 Noto Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 <header class="site-header">
     <div class="slideshow-container">
@@ -18,14 +19,14 @@
 </header>
 
 <style>
-body { margin: 0; padding: 0; font-family: 'Noto Sans', 'Noto Sans TC', sans-serif; line-height: 1.8; color: #333; }
+/* 關鍵變更：將全站預設字體改為 Lora */
+body { margin: 0; padding: 0; font-family: 'Lora', 'Noto Sans TC', serif; line-height: 1.8; color: #333; }
 
 .site-header { position: relative; width: 100%; color: #fff; text-align: center; overflow: hidden; }
 .slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: #111; }
 .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); }
 
-/* 電腦版樣式 */
-.header-content { padding: 80px 20px; } /* 配合高度降低，稍微減少上下內距 */
+.header-content { padding: 80px 20px; }
 .site-title a { 
     font-family: 'Tangerine', cursive; 
     font-size: 7.5rem; 
@@ -35,16 +36,14 @@ body { margin: 0; padding: 0; font-family: 'Noto Sans', 'Noto Sans TC', sans-ser
     text-shadow: 3px 3px 6px rgba(0,0,0,0.5); 
 }
 
-/* 2. 標題與目錄間距拉遠 */
 .site-nav { margin-top: 60px; display: flex; justify-content: center; flex-wrap: wrap; }
 
 .nav-link { 
     font-family: 'Tangerine', cursive; 
-    /* 3. 目錄字體加大 */
     font-size: 3.8rem; 
     font-weight: 700; 
     color: #f4f1ea; 
-    margin: 0 35px; /* 稍微縮小左右間距，因為有了五個項目 */
+    margin: 0 35px; 
     text-decoration: none; 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     display: inline-block;
@@ -57,7 +56,6 @@ body { margin: 0; padding: 0; font-family: 'Noto Sans', 'Noto Sans TC', sans-ser
     text-shadow: 4px 8px 12px rgba(0,0,0,0.6); 
 }
 
-/* 手機版優化：高度不鎖定全螢幕，改為彈性高度 */
 @media (max-width: 768px) { 
     .site-header { height: auto; min-height: 80vh; display: flex; align-items: center; justify-content: center; }
     .header-content { padding: 40px 10px; width: 100%; }
@@ -65,16 +63,10 @@ body { margin: 0; padding: 0; font-family: 'Noto Sans', 'Noto Sans TC', sans-ser
     
     .site-nav { flex-direction: column; align-items: center; margin-top: 40px; }
     
-    .nav-link { 
-        font-size: 4rem; /* 手機上的目錄字體也相對拉大 */
-        margin: 20px 0; 
-    }
-    .nav-link:active, .nav-link:hover {
-        transform: scale(1.1);
-    }
+    .nav-link { font-size: 4rem; margin: 20px 0; }
+    .nav-link:active, .nav-link:hover { transform: scale(1.1); }
 }
 
-/* 1. 照片高度減少：從 750px 降到 600px */
 @media (min-width: 769px) { .site-header { height: 600px; } }
 
 .slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; animation: safariFade 15s infinite; }
