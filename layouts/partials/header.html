@@ -1,7 +1,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 <header class="full-bleed-header {{ if .IsHome }}is-home{{ else }}is-page{{ end }}">
-    <!-- 背景層 -->
     <div class="header-canvas">
         {{ if .IsHome }}
             <div class="canvas-img anim-fade" style="background-image: url('{{ "images/cover1.jpg" | absURL }}');"></div>
@@ -13,7 +12,6 @@
     </div>
     <div class="header-mask"></div>
 
-    <!-- 文字內容 -->
     <div class="header-info">
         <a href="{{ .Site.BaseURL }}" class="header-logo">Il Giardino Nascosto</a>
         <nav class="header-nav">
@@ -25,14 +23,20 @@
 </header>
 
 <style>
-/* 🔴 破框核心：無視父容器寬度 */
+/* 🔵 全局 Reset：防止白邊出現 */
+html, body { 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    width: 100% !important; 
+    overflow-x: hidden !important; 
+}
+
+/* 🔴 標頭佈局 */
 .full-bleed-header {
     position: relative;
-    width: 100vw !important;  /* 強制佔滿視窗寬度 */
+    width: 100vw !important;
     left: 50% !important;
-    right: 50% !important;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
+    transform: translateX(-50%) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,72 +49,16 @@
     .is-page { height: 500px !important; }
 }
 
-/* 🔵 背景撐滿與縮放 */
-.header-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
+.header-canvas, .header-mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.header-mask { background: rgba(0, 0, 0, 0.35); z-index: 2; }
+.canvas-img { position: absolute; width: 100%; height: 100%; background-size: cover !important; background-position: center !important; }
 
-.canvas-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover !important; /* 核心：照片填滿 */
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-.header-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: 2;
-}
-
-/* 🟢 文字與動畫效果 */
-.header-info {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.header-logo {
-    font-family: 'Tangerine', cursive;
-    font-size: 7.5rem;
-    font-weight: 700;
-    color: #f4f1ea;
-    text-decoration: none;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
-    transition: all 0.4s ease;
-}
-
-.header-nav { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
-
-.nav-item {
-    font-family: 'Tangerine', cursive;
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #f4f1ea;
-    text-decoration: none;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    transition: all 0.4s ease;
-}
-
-.header-logo:hover, .nav-item:hover {
-    color: #fff !important;
-    transform: translateY(-8px) scale(1.05);
-}
+/* 🟢 內容與動畫 */
+.header-info { position: relative; z-index: 10; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 50px; }
+.header-logo { font-family: 'Tangerine', cursive; font-size: 7.5rem; color: #f4f1ea; text-decoration: none; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); transition: 0.4s; }
+.header-nav { display: flex; gap: 40px; }
+.nav-item { font-family: 'Tangerine', cursive; font-size: 3.5rem; color: #f4f1ea; text-decoration: none; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); transition: 0.4s; }
+.header-logo:hover, .nav-item:hover { color: #fff !important; transform: translateY(-8px) scale(1.05); }
 
 /* 🟡 輪播動畫 */
 .anim-fade { opacity: 0; animation: simpleFade 15s infinite; }
@@ -120,11 +68,10 @@
 @keyframes simpleFade { 0% { opacity: 0; } 5% { opacity: 1; } 33% { opacity: 1; } 38% { opacity: 0; } 100% { opacity: 0; } }
 
 @media (max-width: 768px) {
-    .is-home { height: 100vh !important; }
-    .is-page { height: 60vh !important; }
+    .full-bleed-header.is-home { height: 100vh !important; }
+    .full-bleed-header.is-page { height: 60vh !important; }
     .header-logo { font-size: 4.5rem; }
     .header-nav { flex-direction: column; gap: 10px; }
     .nav-item { font-size: 3rem; }
 }
 </style>
-html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
