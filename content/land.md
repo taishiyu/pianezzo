@@ -100,65 +100,74 @@ layout: "single"
 </div>
 
 <style>
+/* 修改全域背景，移除白底 */
+:root {
+    --bg-color: #f7f3e9; /* 溫潤的米色底 */
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
 .land-exploration { 
-    width: 96%; 
+    max-width: 75%; /* 鎖定版面佔比 75% */
     margin: 0 auto; 
     padding: 0;
-    background-color: #ffffff; 
+    background-color: var(--bg-color); 
 }
 
 .land-section { 
     display: flex; 
     align-items: flex-start; 
-    gap: 80px; 
-    padding: 120px 2%; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+    gap: 60px; 
+    padding: 100px 0; 
+    border-bottom: 1px solid rgba(62, 39, 35, 0.1); 
 }
 
 .land-section:nth-child(even) { flex-direction: row-reverse; }
 .land-section:last-child { border-bottom: none; }
 
-/* 圖片佔 3 份比例 */
+/* 圖片與文字比例維持 3:2，並確保在大版面下比例和諧 */
 .land-image { flex: 3; }
 .land-image img { 
     width: 100%; 
     height: auto; 
-    border-radius: 4px; 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12); 
+    border-radius: 2px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
 }
 
-/* 文字區域加長，佔 2 份比例 */
 .land-text { 
     flex: 2; 
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .land-text h3 { 
     font-family: 'Tangerine', cursive; 
-    font-size: 4rem; 
+    font-size: 3.8rem; 
     color: #3e2723; 
     margin-top: 0; 
-    margin-bottom: 25px; 
-    white-space: nowrap; /* 強制標題不換行 */
+    margin-bottom: 20px; 
+    white-space: nowrap; 
 }
 
 .land-text p { 
     font-family: 'Lora', serif; 
-    font-size: 1.3rem; 
+    font-size: 1.25rem; 
     line-height: 1.8; 
-    color: #333; 
+    color: #444; 
 }
 
-@media (max-width: 1200px) {
-    .land-text h3 { font-size: 3.2rem; } /* 縮小螢幕時微調字級以維持單行 */
+@media (max-width: 1400px) {
+    .land-exploration { max-width: 85%; } /* 稍小螢幕放寬一點避免太窄 */
 }
 
 @media (max-width: 768px) {
+    .land-exploration { max-width: 92%; }
     .land-section, .land-section:nth-child(even) { 
         flex-direction: column; 
-        padding: 60px 5%; 
+        padding: 50px 0; 
         gap: 30px; 
     }
-    .land-text h3 { white-space: normal; font-size: 3.5rem; } /* 手機版則允許換行以利閱讀 */
+    .land-text h3 { white-space: normal; font-size: 3.2rem; }
 }
 </style>
