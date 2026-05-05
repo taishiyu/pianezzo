@@ -3,6 +3,10 @@ defaultContentLanguage = 'en-us'
 title = 'Il Giardino Nascosto'
 theme = 'ananke'
 
+# 核心修正：允許 Markdown 呈現 HTML 標籤
+[markup.goldmark.renderer]
+    unsafe = true
+
 [[menus.main]]
     name = 'Land'
     url = '/land/'
