@@ -100,9 +100,8 @@ layout: "single"
 </div>
 
 <style>
-/* 修改全域背景，移除白底 */
 :root {
-    --bg-color: #f7f3e9; /* 溫潤的米色底 */
+    --bg-color: #f7f3e9; /* 米色底色 */
 }
 
 body {
@@ -110,25 +109,30 @@ body {
 }
 
 .land-exploration { 
-    max-width: 75%; /* 鎖定版面佔比 75% */
+    max-width: 75%; /* 鎖定 75% 寬度 */
     margin: 0 auto; 
     padding: 0;
-    background-color: var(--bg-color); 
 }
 
 .land-section { 
     display: flex; 
-    align-items: flex-start; 
-    gap: 60px; 
-    padding: 100px 0; 
+    align-items: flex-start; /* 頂部對齊 */
+    gap: 50px; /* 照片與文字的距離 */
+    padding: 100px 0; /* 上下間距 */
     border-bottom: 1px solid rgba(62, 39, 35, 0.1); 
 }
 
-.land-section:nth-child(even) { flex-direction: row-reverse; }
+/* 自動反轉偶數項目的位置 */
+.land-section:nth-child(even) { 
+    flex-direction: row-reverse; 
+}
+
 .land-section:last-child { border-bottom: none; }
 
-/* 圖片與文字比例維持 3:2，並確保在大版面下比例和諧 */
-.land-image { flex: 3; }
+/* 紅線範圍：照片區塊佔據約 65% 的內部寬度 */
+.land-image { 
+    flex: 1.8; 
+}
 .land-image img { 
     width: 100%; 
     height: auto; 
@@ -136,29 +140,29 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
 }
 
+/* 黃線範圍：文字區塊佔據約 35% 的內部寬度 */
 .land-text { 
-    flex: 2; 
-    padding-top: 5px;
+    flex: 1; 
 }
 
 .land-text h3 { 
     font-family: 'Tangerine', cursive; 
     font-size: 3.8rem; 
     color: #3e2723; 
-    margin-top: 0; 
+    margin-top: -10px; /* 向上微調以確保視覺上與大圖頂部切齊 */
     margin-bottom: 20px; 
-    white-space: nowrap; 
+    white-space: nowrap; /* 標題不換行 */
 }
 
 .land-text p { 
     font-family: 'Lora', serif; 
-    font-size: 1.25rem; 
-    line-height: 1.8; 
+    font-size: 1.2rem; 
+    line-height: 1.7; 
     color: #444; 
 }
 
 @media (max-width: 1400px) {
-    .land-exploration { max-width: 85%; } /* 稍小螢幕放寬一點避免太窄 */
+    .land-exploration { max-width: 85%; }
 }
 
 @media (max-width: 768px) {
@@ -168,6 +172,6 @@ body {
         padding: 50px 0; 
         gap: 30px; 
     }
-    .land-text h3 { white-space: normal; font-size: 3.2rem; }
+    .land-text h3 { white-space: normal; font-size: 3rem; }
 }
 </style>
