@@ -1,6 +1,6 @@
 ---
 title: "The Land"
-featured_image: "images/land-cover.jpg"
+featured_image: "images/land.jpg"
 description: "A walk through the ten realms of Alpe Pianezzo."
 layout: "single"
 ---
@@ -140,3 +140,4 @@ color: #444;
 .land-text h3 { font-size: 3rem; }
 }
 </style>
+EDF
