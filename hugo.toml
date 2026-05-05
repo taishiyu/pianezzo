@@ -6,24 +6,19 @@ theme = 'ananke'
 [[menus.main]]
     name = 'Land'
     url = '/land/'
-    weight = 1
+    weight = 10
 
 [[menus.main]]
-    name = 'Spring'
-    url = '/spring/'
-    weight = 2
+    name = 'Seasons'
+    url = '/seasons/'
+    weight = 20
 
 [[menus.main]]
-    name = 'Summer'
-    url = '/summer/'
-    weight = 3
+    name = 'Projects'
+    url = '/projects/'
+    weight = 30
 
 [[menus.main]]
-    name = 'Autumn'
-    url = '/autumn/'
-    weight = 4
-
-[[menus.main]]
-    name = 'Winter'
-    url = '/winter/'
-    weight = 5
+    name = 'Contact'
+    url = '/contact/'
+    weight = 40
