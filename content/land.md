@@ -7,151 +7,158 @@ layout: "single"
 
 <div class="land-exploration">
 
+<!-- 1. 小木屋 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/cabin.jpg" alt="The First Shelter"></div>
 <div class="land-text">
 <h3>The First Shelter</h3>
-<p>Where the dream took its first shape. Built stone by stone by Thomas Gorner in the late 1970s.</p>
+<p>Where the dream took its first shape. Built stone by stone by Thomas Gorner in the late 1970s, this cabin marks the beginning of a lifelong bond with the Antrona Valley.</p>
 </div>
 </section>
 
+<!-- 2. 大屋 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/main-house.jpg" alt="The Alpine Homestead"></div>
 <div class="land-text">
 <h3>The Alpine Homestead</h3>
-<p>The evolving heart of our mountain life at 1,100 meters, overlooking the vastness of Val d'Ossola.</p>
+<p>The evolving heart of our mountain life at 1,100 meters. A sanctuary that has witnessed decades of seasons, overlooking the vastness of Val d'Ossola.</p>
 </div>
 </section>
 
+<!-- 3. 工具坊 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/workshop.jpg" alt="The Maker’s Atelier"></div>
 <div class="land-text">
 <h3>The Maker’s Atelier</h3>
-<p>The space of precision and craft, where timber is transformed and energy is captured.</p>
+<p>The space of precision and craft. Here, mountain timber is transformed into functional art, and the 100% hydroelectric power is managed.</p>
 </div>
 </section>
 
+<!-- 4. 大草坪 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/lawn.jpg" alt="The Dancing Green"></div>
 <div class="land-text">
 <h3>The Dancing Green</h3>
-<p>A vast, open meadow that has transitioned from a grazing pasture to a wild sanctuary.</p>
+<p>A vast, open meadow that transitioned from a short-cropped pasture for goats to a wild, flourishing sanctuary for mountain flora.</p>
 </div>
 </section>
 
+<!-- 5. 佛園 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/buddha.jpg" alt="The Sanctuary of Stillness"></div>
 <div class="land-text">
 <h3>The Sanctuary of Stillness</h3>
-<p>A quiet corner for meditation, where the silence of the Alps meets Eastern wisdom.</p>
+<p>A quiet corner for meditation tucked within the peaks, where the silence of the Alps harmonizes with Eastern philosophical roots.</p>
 </div>
 </section>
 
+<!-- 6. 柿園 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/persimmon.jpg" alt="The Golden Orchard"></div>
 <div class="land-text">
 <h3>The Golden Orchard</h3>
-<p>Bearing fruit against the high-altitude chill, these trees are a testament to resilience.</p>
+<p>Proof of resilience against the high-altitude chill. Every autumn, these trees offer a burst of honey-like sweetness to the cooling air.</p>
 </div>
 </section>
 
+<!-- 7. 花徑 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/flower-path.jpg" alt="The Pollinator’s Trail"></div>
 <div class="land-text">
 <h3>The Pollinator’s Trail</h3>
-<p>A vibrant corridor of life, ensuring the buzz of bees and the flutter of wings across the land.</p>
+<p>A vibrant corridor of life, carefully curated to ensure that bees, butterflies, and birds thrive within the garden’s ecosystem.</p>
 </div>
 </section>
 
+<!-- 8. 栗坡 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/chestnut.jpg" alt="The Ancient Bank"></div>
 <div class="land-text">
 <h3>The Ancient Bank</h3>
-<p>The sloping forest of chestnuts, providing shade and sustenance for generations.</p>
+<p>The sloping forest of chestnuts, which once provided essential sustenance and now forms the foundation of our ecological oasis.</p>
 </div>
 </section>
 
+<!-- 9. 池塘 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/pond.jpg" alt="The Sky Mirror"></div>
 <div class="land-text">
 <h3>The Sky Mirror</h3>
-<p>A biodiverse haven reflecting the changing clouds and the peak of Pizzo Ton.</p>
+<p>A biodiverse haven reflecting the changing alpine clouds and the sharp silhouette of Pizzo Ton in its calm waters.</p>
 </div>
 </section>
 
+<!-- 10. 水徑 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/water-path.jpg" alt="The Alpine Current"></div>
 <div class="land-text">
 <h3>The Alpine Current</h3>
-<p>Our source of life and power, channeling the 100% hydroelectric descent of water from 1,800 meters.</p>
+<p>Our source of life and power. Descending from 1,800 meters, this pure water fuels our home and breathes life into the soil.</p>
 </div>
 </section>
 
 </div>
 
 <style>
-/* 全域容器設定 */
 .land-exploration { 
-    width: 100%;
-    margin: 0;
+    width: 96%; 
+    margin: 0 auto; 
     padding: 0;
+    background-color: #ffffff; 
 }
 
-/* 每個區塊的基礎設定 */
 .land-section { 
     display: flex; 
     align-items: flex-start; 
     gap: 80px; 
-    padding: 100px 5%; /* 使用內距產生左右空白，並增加上下間距 */
-    border-bottom: 1px solid rgba(93, 64, 55, 0.1); /* 淡淡的棕色橫線 */
-    transition: background-color 0.3s ease;
+    padding: 120px 2%; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
 }
 
-/* 偶數區塊：改變背景色、反轉方向 */
-.land-section:nth-child(even) { 
-    background-color: #faf8f5; /* 極淡的奶油色 */
-    flex-direction: row-reverse; 
-}
-
-/* 移除最後一個區塊的底線 */
+.land-section:nth-child(even) { flex-direction: row-reverse; }
 .land-section:last-child { border-bottom: none; }
 
-.land-image { flex: 1; }
+/* 圖片佔 3 份比例 */
+.land-image { flex: 3; }
 .land-image img { 
     width: 100%; 
     height: auto; 
-    border-radius: 2px; 
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+    border-radius: 4px; 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12); 
 }
 
-.land-text { flex: 1; }
+/* 文字區域加長，佔 2 份比例 */
+.land-text { 
+    flex: 2; 
+    padding-top: 10px;
+}
+
 .land-text h3 { 
     font-family: 'Tangerine', cursive; 
     font-size: 4rem; 
-    color: #5d4037; 
+    color: #3e2723; 
     margin-top: 0; 
     margin-bottom: 25px; 
+    white-space: nowrap; /* 強制標題不換行 */
 }
 
 .land-text p { 
     font-family: 'Lora', serif; 
-    font-size: 1.25rem; 
-    line-height: 1.9; 
-    color: #444; 
+    font-size: 1.3rem; 
+    line-height: 1.8; 
+    color: #333; 
 }
 
-/* 行動裝置適配 */
-@media (max-width: 1024px) {
-    .land-section { gap: 40px; padding: 60px 5%; }
+@media (max-width: 1200px) {
+    .land-text h3 { font-size: 3.2rem; } /* 縮小螢幕時微調字級以維持單行 */
 }
 
 @media (max-width: 768px) {
     .land-section, .land-section:nth-child(even) { 
         flex-direction: column; 
-        padding: 40px 5%; 
+        padding: 60px 5%; 
         gap: 30px; 
     }
-    .land-text { text-align: left; }
-    .land-text h3 { font-size: 3.2rem; }
+    .land-text h3 { white-space: normal; font-size: 3.5rem; } /* 手機版則允許換行以利閱讀 */
 }
 </style>
