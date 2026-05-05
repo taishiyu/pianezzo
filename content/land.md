@@ -101,53 +101,57 @@ layout: "single"
 
 <style>
 .land-exploration { 
-    max-width: 90%; /* 縮小兩旁空白，讓內容寬度增加 */
+    max-width: 95%; /* 擴大範圍，讓內容更寬，兩旁空白縮小 */
     margin: 0 auto; 
-    padding: 40px 0; 
+    padding: 60px 0; 
 }
 
 .land-section { 
     display: flex; 
-    align-items: flex-start; /* 圖片與文字頂部對齊 */
-    gap: 40px; 
-    margin-bottom: 80px; 
+    align-items: flex-start; /* 確保圖片與文字頂部對齊 */
+    gap: 80px; /* 增加照片與文字之間的距離 */
+    margin-bottom: 120px; /* 增加區塊間的垂直距離 */
 }
 
 .land-section.reverse { flex-direction: row-reverse; }
 
 .land-image { 
-    flex: 1; /* 圖片佔 1 份比例 */
+    flex: 1; /* 照片佔 1 份 */
 }
 
 .land-image img { 
     width: 100%; 
     height: auto; 
     border-radius: 4px; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); 
 }
 
 .land-text { 
-    flex: 2; /* 文字佔 2 份比例 */
+    flex: 1; /* 文字也佔 1 份，達成 1:1 配置 */
 }
 
 .land-text h3 { 
     font-family: 'Tangerine', cursive; 
-    font-size: 3.5rem; 
+    font-size: 3.8rem; 
     color: #5d4037; 
-    margin-top: 0; /* 確保標題頂部與圖片切齊 */
-    margin-bottom: 15px; 
+    margin-top: 0; /* 標題頂部與圖片切齊 */
+    margin-bottom: 20px; 
 }
 
 .land-text p { 
     font-family: 'Lora', serif; 
-    font-size: 1.1rem; 
-    line-height: 1.7; 
+    font-size: 1.2rem; 
+    line-height: 1.8; 
     color: #333; 
+}
+
+@media (max-width: 1024px) {
+    .land-section { gap: 40px; }
 }
 
 @media (max-width: 768px) {
     .land-exploration { max-width: 95%; }
-    .land-section, .land-section.reverse { flex-direction: column; gap: 20px; }
+    .land-section, .land-section.reverse { flex-direction: column; gap: 30px; }
     .land-text { text-align: left; }
 }
 </style>
