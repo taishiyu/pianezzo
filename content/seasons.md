@@ -1,6 +1,6 @@
 ---
-title: "Spring"
-featured_image: "images/spring.jpg"
+title: "Seasons"
+featured_image: "images/seasons.jpg"
 layout: "single"
 draft: false
 ---
