@@ -1,5 +1,5 @@
 ---
-title: "The Land"
+title: "Pianezzo Map"
 featured_image: "/pianezzo/images/land.jpg"
 description: "A walk through the ten realms of Alpe Pianezzo."
 layout: "single"
@@ -103,7 +103,7 @@ body { background-color: var(--bg-color); }
 .land-section { 
     display: flex; 
     align-items: flex-start; /* 讓內容靠頂部對齊 */
-    gap: 60px; 
+    gap: 70px; 
     padding: 120px 0; 
     border-bottom: 1px solid rgba(62, 39, 35, 0.1); 
 }
@@ -113,19 +113,19 @@ body { background-color: var(--bg-color); }
 
 /* 修正照片比例：移除固定高度，改用寬度控制 */
 .land-image { 
-    flex: 10; /* 圖片佔比 (你可以試試 1.5 或 2) */
+    flex: 60 0 0; /* 圖片佔比 (你可以試試 1.5 或 2) */
 }
 .land-image img { 
     width: 100%; 
     height: auto; /* 讓高度隨比例自動增長，不再細長 */
     display: block;
     border-radius: 2px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1); 
 }
 
 /* 文字區域 */
 .land-text { 
-    flex: 1; 
+    flex: 40 0 0%; 
 }
 
 .land-text h3 { 
@@ -135,13 +135,13 @@ body { background-color: var(--bg-color); }
     /* 關鍵：使用負邊距將文字往上拉到圖片的上緣 (黃線) */
     margin-top: -4px; 
     margin-bottom: 25px; 
-    line-height: 1;
+    line-height: 1.1;
     white-space: nowrap; /* 保持單行 */
 }
 
 .land-text p { 
     font-family: 'Lora', serif; 
-    font-size: 1.25rem; 
+    font-size: 1.3rem; 
     line-height: 1.8; 
     color: #333; 
 }
