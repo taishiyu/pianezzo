@@ -133,7 +133,7 @@ body { background-color: var(--bg-color); }
     font-size: 4.5rem; 
     color: #3e2723; 
     /* 關鍵：使用負邊距將文字往上拉到圖片的上緣 (黃線) */
-    margin-top: -12px; 
+    margin-top: -8px; 
     margin-bottom: 25px; 
     line-height: 1;
     white-space: nowrap; /* 保持單行 */
