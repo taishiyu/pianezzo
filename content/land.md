@@ -59,7 +59,7 @@ body {
 
 .land-image img { 
     width: 100%; 
-    height: 600px;
+    height: 300px;
     object-fit: cover; 
     border-radius: 2px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
