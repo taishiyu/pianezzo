@@ -113,7 +113,7 @@ body { background-color: var(--bg-color); }
 
 /* 修正照片比例：移除固定高度，改用寬度控制 */
 .land-image { 
-    flex: 3; /* 圖片佔比 (你可以試試 1.5 或 2) */
+    flex: 5; /* 圖片佔比 (你可以試試 1.5 或 2) */
 }
 .land-image img { 
     width: 100%; 
@@ -133,7 +133,7 @@ body { background-color: var(--bg-color); }
     font-size: 4.5rem; 
     color: #3e2723; 
     /* 關鍵：使用負邊距將文字往上拉到圖片的上緣 (黃線) */
-    margin-top: -22px; 
+    margin-top: -12px; 
     margin-bottom: 25px; 
     line-height: 1;
     white-space: nowrap; /* 保持單行 */
