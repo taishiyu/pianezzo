@@ -95,7 +95,7 @@ layout: "single"
 body { background-color: var(--bg-color); }
 
 .land-exploration { 
-    max-width: 80%; /* 佔滿 75% 版面 */
+    max-width: 100%; /* 佔滿 75% 版面 */
     margin: 0 auto; 
     padding: 0; 
 }
