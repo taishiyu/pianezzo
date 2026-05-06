@@ -7,6 +7,7 @@ layout: "single"
 
 <div class="land-exploration">
 
+<!-- 1. 小木屋 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/cabin.jpg" alt="The First Shelter"></div>
 <div class="land-text">
@@ -15,6 +16,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 2. 大屋 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/main-house.jpg" alt="The Alpine Homestead"></div>
 <div class="land-text">
@@ -23,6 +25,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 3. 工具坊 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/workshop.jpg" alt="The Maker’s Atelier"></div>
 <div class="land-text">
@@ -31,6 +34,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 4. 大草坪 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/lawn.jpg" alt="The Dancing Green"></div>
 <div class="land-text">
@@ -39,6 +43,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 5. 佛園 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/buddha.jpg" alt="The Sanctuary of Stillness"></div>
 <div class="land-text">
@@ -47,6 +52,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 6. 柿園 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/persimmon.jpg" alt="The Golden Orchard"></div>
 <div class="land-text">
@@ -55,6 +61,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 7. 花徑 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/flower-path.jpg" alt="The Pollinator’s Trail"></div>
 <div class="land-text">
@@ -63,6 +70,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 8. 栗坡 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/chestnut.jpg" alt="The Ancient Bank"></div>
 <div class="land-text">
@@ -71,6 +79,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 9. 池塘 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/pond.jpg" alt="The Sky Mirror"></div>
 <div class="land-text">
@@ -79,6 +88,7 @@ layout: "single"
 </div>
 </section>
 
+<!-- 10. 水徑 -->
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/water-path.jpg" alt="The Alpine Current"></div>
 <div class="land-text">
@@ -90,82 +100,50 @@ layout: "single"
 </div>
 
 <style>
-/* 設定全域背景色 */
-:root {
-    --bg-color: #f4f1ea; 
-}
+:root { --bg-color: #f4f1ea; }
+body { background-color: var(--bg-color); }
 
-body {
-    background-color: var(--bg-color);
-}
+.land-exploration { max-width: 80%; margin: 0 auto; padding: 0; background-color: var(--bg-color); }
 
-.land-exploration { 
-    max-width: 75%; 
-    margin: 0 auto; 
-    padding: 0;
-    background-color: var(--bg-color); 
-}
-
+/* 這裡的樣式會「一次修改全部」十個區域 */
 .land-section { 
     display: flex; 
-    align-items: flex-start; 
-    gap: 80px; 
-    padding: 120px 0; 
+    align-items: flex-start; /* 頂部對齊 */
+    gap: 60px; 
+    padding: 100px 0; 
     border-bottom: 1px solid rgba(62, 39, 35, 0.1); 
 }
 
-/* 偶數項自動反轉 */
-.land-section:nth-child(even) { 
-    flex-direction: row-reverse; 
-}
-
+.land-section:nth-child(even) { flex-direction: row-reverse; }
 .land-section:last-child { border-bottom: none; }
 
-/* 圖片佔 2 份，文字佔 1 份 (紅線大於黃線比例) */
-.land-image { 
-    flex: 2; 
-}
+.land-image { flex: 3; }
 .land-image img { 
+    display: block;
     width: 100%; 
-    height: 450px; /* 固定高度為 550px */
-    object-fit: cover; /* 保護圖片不變形 */
+    height: 400px; 
+    object-fit: cover; 
     border-radius: 2px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
 }
 
-.land-text { 
-    flex: 1; 
-}
+.land-text { flex: 2; }
 
 .land-text h3 { 
     font-family: 'Tangerine', cursive; 
-    font-size: 3.8rem; 
+    font-size: 4.2rem; 
     color: #3e2723; 
-    margin-top: -10px; 
-    margin-bottom: 25px; 
+    margin-top: -25px; /* 修正字體留白，讓全部標題一起上移對齊圖片 */
+    margin-bottom: 20px; 
+    line-height: 1;
     white-space: nowrap; 
 }
 
-.land-text p { 
-    font-family: 'Lora', serif; 
-    font-size: 1.2rem; 
-    line-height: 1.8; 
-    color: #444; 
-}
-
-/* 行動裝置調整 */
-@media (max-width: 1400px) {
-    .land-exploration { max-width: 85%; }
-}
+.land-text p { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.7; color: #444; }
 
 @media (max-width: 768px) {
-    .land-exploration { max-width: 92%; }
-    .land-section, .land-section:nth-child(even) { 
-        flex-direction: column; 
-        padding: 60px 0; 
-        gap: 30px; 
-    }
+    .land-section, .land-section:nth-child(even) { flex-direction: column; padding: 60px 0; gap: 30px; }
     .land-image img { height: 350px; }
-    .land-text h3 { white-space: normal; font-size: 3rem; }
+    .land-text h3 { margin-top: 0; white-space: normal; font-size: 3rem; }
 }
 </style>
