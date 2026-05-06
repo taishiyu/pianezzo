@@ -113,11 +113,11 @@ body { background-color: var(--bg-color); }
 
 /* 修正照片比例：移除固定高度，改用寬度控制 */
 .land-image { 
-    flex: 5; /* 圖片佔比 (你可以試試 1.5 或 2) */
+    flex: 6; /* 圖片佔比 (你可以試試 1.5 或 2) */
 }
 .land-image img { 
     width: 100%; 
-    height: auto; /* 讓高度隨比例自動增長，不再細長 */
+    height: 300px; /* 讓高度隨比例自動增長，不再細長 */
     display: block;
     border-radius: 2px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
