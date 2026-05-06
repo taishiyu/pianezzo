@@ -10,7 +10,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/cabin.jpg" alt="The First Shelter"></div>
 <div class="land-text">
-<h3>The First Shelter</h3>
+<h3>The Cabin</h3>
 <p>Where the dream took its first shape. Built stone by stone by Thomas Gorner in the late 1970s, this cabin marks the beginning of a lifelong bond with the Antrona Valley.</p>
 </div>
 </section>
@@ -18,7 +18,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/main-house.jpg" alt="The Alpine Homestead"></div>
 <div class="land-text">
-<h3>The Alpine Homestead</h3>
+<h3>Main House</h3>
 <p>The evolving heart of our mountain life at 1,100 meters. A sanctuary that has witnessed decades of seasons, overlooking the vastness of Val d'Ossola.</p>
 </div>
 </section>
@@ -26,7 +26,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/workshop.jpg" alt="The Maker’s Atelier"></div>
 <div class="land-text">
-<h3>The Maker’s Atelier</h3>
+<h3>Workshop</h3>
 <p>The space of precision and craft. Here, mountain timber is transformed into functional art, and the 100% hydroelectric power is managed.</p>
 </div>
 </section>
@@ -34,7 +34,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/lawn.jpg" alt="The Dancing Green"></div>
 <div class="land-text">
-<h3>The Dancing Green</h3>
+<h3>The Lawn</h3>
 <p>A vast, open meadow that transitioned from a short-cropped pasture for goats to a wild, flourishing sanctuary for mountain flora.</p>
 </div>
 </section>
@@ -42,7 +42,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/buddha.jpg" alt="The Sanctuary of Stillness"></div>
 <div class="land-text">
-<h3>The Sanctuary of Stillness</h3>
+<h3>Buddha Garden</h3>
 <p>A quiet corner for meditation tucked within the peaks, where the silence of the Alps harmonizes with Eastern philosophical roots.</p>
 </div>
 </section>
@@ -50,7 +50,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/persimmon.jpg" alt="The Golden Orchard"></div>
 <div class="land-text">
-<h3>The Golden Orchard</h3>
+<h3>Kaki Garden</h3>
 <p>Proof of resilience against the high-altitude chill. Every autumn, these trees offer a burst of honey-like sweetness to the cooling air.</p>
 </div>
 </section>
@@ -58,7 +58,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/flower-path.jpg" alt="The Pollinator’s Trail"></div>
 <div class="land-text">
-<h3>The Pollinator’s Trail</h3>
+<h3>Flower Trail</h3>
 <p>A vibrant corridor of life, carefully curated to ensure that bees, butterflies, and birds thrive within the garden’s ecosystem.</p>
 </div>
 </section>
@@ -66,7 +66,7 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/chestnut.jpg" alt="The Ancient Bank"></div>
 <div class="land-text">
-<h3>The Ancient Bank</h3>
+<h3>Chestnut Slope</h3>
 <p>The sloping forest of chestnuts, which once provided essential sustenance and now forms the foundation of our ecological oasis.</p>
 </div>
 </section>
@@ -74,15 +74,15 @@ layout: "single"
 <section class="land-section">
 <div class="land-image"><img src="/pianezzo/images/pond.jpg" alt="The Sky Mirror"></div>
 <div class="land-text">
-<h3>The Sky Mirror</h3>
+<h3>The Pond</h3>
 <p>A biodiverse haven reflecting the changing alpine clouds and the sharp silhouette of Pizzo Ton in its calm waters.</p>
 </div>
 </section>
 
 <section class="land-section">
-<div class="land-image"><img src="/pianezzo/images/water-path.jpg" alt="The Alpine Current"></div>
+<div class="land-image"><img src="/pianezzo/images/current.jpg" alt="The Alpine Current"></div>
 <div class="land-text">
-<h3>The Alpine Current</h3>
+<h3>The Current</h3>
 <p>Our source of life and power. Descending from 1,800 meters, this pure water fuels our home and breathes life into the soil.</p>
 </div>
 </section>
@@ -95,7 +95,7 @@ layout: "single"
 body { background-color: var(--bg-color); }
 
 .land-exploration { 
-    max-width: 75%; /* 佔滿 75% 版面 */
+    max-width: 100%; /* 佔滿 75% 版面 */
     margin: 0 auto; 
     padding: 0; 
 }
@@ -113,7 +113,7 @@ body { background-color: var(--bg-color); }
 
 /* 修正照片比例：移除固定高度，改用寬度控制 */
 .land-image { 
-    flex: 1.5; /* 圖片佔比 (你可以試試 1.5 或 2) */
+    flex: 10; /* 圖片佔比 (你可以試試 1.5 或 2) */
 }
 .land-image img { 
     width: 100%; 
@@ -133,7 +133,7 @@ body { background-color: var(--bg-color); }
     font-size: 4.5rem; 
     color: #3e2723; 
     /* 關鍵：使用負邊距將文字往上拉到圖片的上緣 (黃線) */
-    margin-top: -32px; 
+    margin-top: -4px; 
     margin-bottom: 25px; 
     line-height: 1;
     white-space: nowrap; /* 保持單行 */
