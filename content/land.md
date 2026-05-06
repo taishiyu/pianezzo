@@ -148,7 +148,7 @@ body { background-color: var(--bg-color); }
 
 /* 行動裝置適配 */
 @media (max-width: 1024px) {
-    .land-text h3 { font-size: 3.5rem; margin-top: -20px; }
+    .land-text h3 { font-size: 3.5rem; margin-top: 20px; }
 }
 
 @media (max-width: 768px) {
