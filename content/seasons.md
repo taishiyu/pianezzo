@@ -58,12 +58,25 @@ layout: "single"
     </div>
 </section>
 
+<section id="summer" class="season-container">
+    <div class="sticky-bg">
+        <img src="/pianezzo/images/summer-bg.jpg" alt="Summer Atmosphere">
+        <div class="bg-overlay"></div>
+    </div>
+    <div class="cards-track">
+        <div class="content-card text-only">
+            <span class="season-tag">Summer 01</span>
+            <h3>Sunlight & Abundance</h3>
+            <p>The mountain enters the fullness of summer. The massive canopy deepens into a rich, dense green, weaving a shaded sanctuary across the land.</p>
+        </div>
+    </div>
+</section>
+
 </div>
 
 <style>
 html { scroll-behavior: smooth; }
 
-/* 破框設定 */
 .seasons-wrapper {
     width: 100vw;
     position: relative;
@@ -74,7 +87,6 @@ html { scroll-behavior: smooth; }
     background-color: #f4f1ea;
 }
 
-/* 懸浮導覽列 */
 .season-quick-nav {
     position: fixed; top: 30px; right: 4%; z-index: 1000;
     background: rgba(255, 255, 255, 0.9);
@@ -83,13 +95,8 @@ html { scroll-behavior: smooth; }
 }
 .season-quick-nav a { font-family: 'Lora', serif; color: #3e2723; text-decoration: none; font-size: 0.9rem; font-weight: bold; }
 
-/* 季節容器：緊湊連接 */
-.season-container {
-    position: relative;
-    width: 100%;
-}
+.season-container { position: relative; width: 100%; }
 
-/* 粘性背景：背景鎖定核心 */
 .sticky-bg {
     position: sticky;
     top: 0;
@@ -98,51 +105,56 @@ html { scroll-behavior: smooth; }
     z-index: 1;
 }
 .sticky-bg img { width: 100%; height: 100%; object-fit: cover; }
-.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); }
+.bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.15); }
 
-/* 卡片軌道：讓卡片在背景上滑動 */
 .cards-track {
     position: relative;
     z-index: 2;
-    margin-top: -100vh; /* 覆蓋在背景上 */
-    padding-bottom: 50px; /* 縮小與下個季節的間距 */
+    margin-top: -100vh;
+    padding-bottom: 50px;
 }
 
-/* 基礎字卡樣式：加大適合閱讀 */
+/* 字卡樣式：全數向左對齊 */
 .content-card {
     background: rgba(244, 241, 234, 0.98);
-    margin: 100px auto; /* 卡片之間的距離 */
-    padding: 60px;
-    max-width: 1000px; /* 加大字卡範圍 */
+    margin: 150px 0 150px 8%; /* 關鍵：卡片本身靠左對齊，留 8% 左邊距 */
+    padding: 80px;
+    max-width: 900px;
     min-height: 500px;
     border-radius: 2px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left; /* 文字向左對齊 */
 }
 
-/* 第一頁：純文字置中 */
-.text-only { text-align: center; }
+/* 移除原本的置中樣式 */
+.text-only { text-align: left; }
+.winter-card { text-align: left; }
 
-/* 二三四頁：左圖右文佈局 */
+/* 分欄佈局：圖片在左，文字在右（本身就是左對齊趨向） */
 .split-layout {
     flex-direction: row;
-    gap: 50px;
+    gap: 60px;
     align-items: center;
 }
-.card-image { flex: 1; }
+.card-image { flex: 1.2; }
 .card-image img { width: 100%; height: auto; border-radius: 2px; }
 .card-text { flex: 1; }
 
-/* 文字美學 */
+/* 文字樣式 */
 .season-tag { font-family: 'Lora', serif; font-size: 0.8rem; letter-spacing: 3px; color: #A67C52; margin-bottom: 20px; display: block; text-transform: uppercase; }
-.content-card h3 { font-family: 'Lora', serif; font-size: 2.2rem; color: #1a1a1a; margin-bottom: 25px; }
-.content-card p { font-family: 'Lora', serif; font-size: 1.15rem; line-height: 1.8; color: #333; text-align: justify; }
+.content-card h3 { font-family: 'Lora', serif; font-size: 2.8rem; color: #1a1a1a; margin-bottom: 30px; line-height: 1.1; }
+.content-card p { font-family: 'Lora', serif; font-size: 1.2rem; line-height: 1.9; color: #333; }
 
-/* 行動裝置優化 */
+/* 手機版適配：回歸單欄且靠左 */
 @media (max-width: 1024px) {
-    .split-layout { flex-direction: column; padding: 40px; }
-    .content-card { max-width: 90%; margin: 60px auto; }
+    .split-layout { flex-direction: column; align-items: flex-start; padding: 40px; }
+    .content-card { 
+        margin: 80px auto; /* 手機版還是建議稍微置中或維持小間距 */
+        max-width: 92%; 
+        padding: 40px;
+    }
 }
 </style>
