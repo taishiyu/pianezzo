@@ -23,6 +23,11 @@ theme = 'ananke'
     weight = 30
 
 [[menus.main]]
+    name = 'Ｃraft'
+    url = '/craft/'
+    weight = 40
+
+[[menus.main]]
     name = 'Contact'
     url = '/contact/'
-    weight = 40
+    weight = 50
