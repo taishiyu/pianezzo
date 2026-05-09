@@ -19,7 +19,7 @@ layout: "single"
 <img src="/pianezzo/images/spring-bg.jpg" alt="Spring Awakening">
 <div class="bg-overlay"></div>
 </div>
-<div class="scroll-content layout-left">
+<div class="scroll-content">
 <div class="content-card">
 <span class="season-tag">Spring Awakening</span>
 <h3>The Sequence of Life</h3>
@@ -35,7 +35,7 @@ layout: "single"
 <img src="/pianezzo/images/summer-bg.jpg" alt="Summer Fullness">
 <div class="bg-overlay"></div>
 </div>
-<div class="scroll-content layout-right">
+<div class="scroll-content">
 <div class="content-card">
 <span class="season-tag">Summer Fullness</span>
 <h3>Sunlight & Abundance</h3>
@@ -51,7 +51,7 @@ layout: "single"
 <img src="/pianezzo/images/autumn-bg.jpg" alt="Autumn Resonance">
 <div class="bg-overlay"></div>
 </div>
-<div class="scroll-content layout-left">
+<div class="scroll-content">
 <div class="content-card">
 <span class="season-tag">Autumn Resonance</span>
 <h3>Colors & Echoes</h3>
@@ -67,7 +67,7 @@ layout: "single"
 <img src="/pianezzo/images/winter-bg.jpg" alt="Winter Silence">
 <div class="bg-overlay"></div>
 </div>
-<div class="scroll-content layout-center">
+<div class="scroll-content">
 <div class="content-card winter-card">
 <span class="season-tag">Winter Silence</span>
 <h3>The Great Rest</h3>
@@ -82,30 +82,135 @@ layout: "single"
 
 <style>
 html { scroll-behavior: smooth; }
-.seasons-wrapper { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background-color: #f4f1ea; box-sizing: border-box; }
-.season-quick-nav { position: fixed; top: 30px; right: 4%; z-index: 1000; background: rgba(244, 241, 234, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 8px 24px; border-radius: 50px; display: flex; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid rgba(62, 39, 35, 0.1); }
-.season-quick-nav a { font-family: 'Lora', serif; color: #3e2723; text-decoration: none; font-size: 0.95rem; font-weight: bold; transition: color 0.3s ease; }
-.season-quick-nav a:hover { color: #A67C52; }
-.season-container { position: relative; min-height: 220vh; scroll-margin-top: 0px; }
-#winter { min-height: 150vh; }
-.sticky-bg { position: sticky; top: 0; width: 100vw; height: 100vh; height: 100svh; z-index: 1; overflow: hidden; will-change: transform; }
-.sticky-bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.bg-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.35) 100%); }
-.scroll-content { position: relative; z-index: 2; padding-top: 80vh; padding-bottom: 40vh; max-width: 1200px; margin: 0 auto; display: flex; box-sizing: border-box; padding-left: 5%; padding-right: 5%; }
-.layout-left { justify-content: flex-start; }
-.layout-right { justify-content: flex-end; }
-.layout-center { justify-content: center; align-items: center; padding-top: 50vh; }
-.content-card { background-color: #f4f1ea; padding: 70px 60px; border-radius: 2px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); max-width: 550px; border-top: 3px solid #A67C52; }
-.winter-card { max-width: 650px; text-align: center; border-top: none; background-color: rgba(244, 241, 234, 0.95); }
-.season-tag { display: block; font-family: 'Lora', serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: #A67C52; margin-bottom: 15px; }
-.content-card h3 { font-family: 'Lora', serif; font-size: 2.5rem; color: #3e2723; margin-top: 0; margin-bottom: 25px; line-height: 1.2; font-weight: bold; }
-.content-card p { font-family: 'Lora', serif; font-size: 1.15rem; line-height: 2.1; color: #2b2b2b; margin: 0; text-align: justify; }
-.winter-card p { text-align: center; }
+
+/* 破框全螢幕設定 */
+.seasons-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #f4f1ea;
+}
+
+/* 懸浮導覽列 */
+.season-quick-nav {
+    position: fixed;
+    top: 30px;
+    right: 4%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 10px 25px;
+    border-radius: 50px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.season-quick-nav a {
+    font-family: 'Lora', serif;
+    color: #3e2723;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* 季節容器：行程增長確保翻動感 */
+.season-container {
+    position: relative;
+    min-height: 250vh; 
+}
+
+/* 固定背景層 */
+.sticky-bg {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.sticky-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+/* 內容層：改為雙向置中佈局 */
+.scroll-content {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    margin-top: -100vh; /* 讓內容回到背景上方 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    pointer-events: none; /* 讓滾動能穿透到下層 */
+}
+
+/* 加大後的字卡樣式 */
+.content-card {
+    pointer-events: auto; /* 恢復卡片內的互動 */
+    background-color: rgba(244, 241, 234, 0.96); /* 帶點透明更有呼吸感 */
+    padding: 80px;
+    border-radius: 4px;
+    box-shadow: 0 30px 100px rgba(0,0,0,0.3);
+    max-width: 850px; /* 加大範圍 */
+    width: 100%;
+    border-top: 4px solid #A67C52;
+    text-align: left;
+    transition: transform 0.5s ease;
+}
+
+.winter-card {
+    text-align: center;
+    border-top: none;
+}
+
+.season-tag {
+    display: block;
+    font-family: 'Lora', serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #A67C52;
+    margin-bottom: 20px;
+}
+
+.content-card h3 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 35px;
+    line-height: 1.1;
+}
+
+.content-card p {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #333;
+    text-align: justify;
+}
+
+/* 手機版適配 */
 @media (max-width: 768px) {
-.season-quick-nav { top: 15px; right: 50%; transform: translateX(50%); padding: 6px 18px; gap: 12px; width: max-content; }
-.scroll-content { padding-top: 65vh; padding-bottom: 25vh; }
-.content-card { padding: 40px 30px; max-width: 100%; }
-.content-card h3 { font-size: 2rem; }
-.content-card p { font-size: 1.05rem; line-height: 1.9; }
+    .content-card {
+        padding: 40px 30px;
+    }
+    .content-card h3 { font-size: 2rem; }
+    .content-card p { font-size: 1.1rem; }
+    .season-quick-nav { top: 15px; right: 50%; transform: translateX(50%); width: max-content; padding: 8px 15px; }
 }
 </style>
