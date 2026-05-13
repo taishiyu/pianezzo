@@ -188,6 +188,37 @@ card.classList.remove('active-card');
 });
 }
 document.querySelectorAll('.cards-deck').forEach(updateCardZIndex);
+
+// 使用 Intersection Observer 監控季節區塊
+const observerOptions = {
+root: null,
+rootMargin: '0px',
+threshold: 0.6 // 當季節區塊佔據畫面 60% 以上時觸發
+};
+
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+// 取得當前區塊的 ID (例如 spring, summer)
+const id = entry.target.getAttribute('id');
+            
+// 移除所有導覽連結的 active 類別
+document.querySelectorAll('.season-quick-nav a').forEach(navLink => {
+navLink.classList.remove('active');
+});
+            
+// 為對應的連結加上 active 類別
+const activeLink = document.querySelector(`.season-quick-nav a[href="#${id}"]`);
+if (activeLink) { activeLink.classList.add('active'); }
+}
+});
+}, observerOptions);
+
+// 監控所有的季節區塊
+document.querySelectorAll('.season-deck-container').forEach(section => {
+observer.observe(section);
+});
+
 </script>
 
 <style>
@@ -264,6 +295,14 @@ pointer-events: none;
 .season-quick-nav { position: fixed; top: 50%; right: 40px; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 20px; text-align: right; background: rgba(244, 241, 234, 0.4); padding: 20px 10px; border-radius: 4px; backdrop-filter: blur(5px); }
 .season-quick-nav a { font-family: 'Lora', serif; color: #5d4037; text-decoration: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; writing-mode: horizontal-tb; display: block;}
 .season-quick-nav a:hover { color: #A67C52; transform: scale(1.1); }
+.season-quick-nav a.active {
+    color: #A67C52; /* 亮起的古銅色 */
+    font-weight: 900;
+    transform: scale(1.1) translateX(-5px); }
+.season-quick-nav a.active::after {
+    content: " •";
+    font-size: 1.2rem;
+    vertical-align: middle; }
 
 
 @media (max-width: 1024px) {
