@@ -261,8 +261,8 @@ pointer-events: none;
 .flip-hint { margin-top: auto; font-size: 0.8rem; color: #A67C52; font-style: italic; opacity: 0.6; text-align: left; padding-top: 20px; }
 
 /* 修正後的專屬導覽列美學 */
-.season-quick-nav { position: fixed; top: 50%; right: 40px; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 30px; text-align: right; background: rgba(244, 241, 234, 0.4); padding: 20px 10px; border-radius: 4px; backdrop-filter: blur(5px); }
-.season-quick-nav a { font-family: 'Lora', serif; color: #5d4037; text-decoration: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; writing-mode: vertical-rl; text-orientation: mixed; }
+.season-quick-nav { position: fixed; top: 50%; right: 40px; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 20px; text-align: right; background: rgba(244, 241, 234, 0.4); padding: 20px 10px; border-radius: 4px; backdrop-filter: blur(5px); }
+.season-quick-nav a { font-family: 'Lora', serif; color: #5d4037; text-decoration: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; writing-mode: horizontal-tb; display: block;}
 .season-quick-nav a:hover { color: #A67C52; transform: scale(1.1); }
 
 
