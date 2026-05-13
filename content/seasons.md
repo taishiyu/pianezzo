@@ -260,8 +260,38 @@ pointer-events: none;
 .content-card p { font-family: 'Lora', serif; font-size: 1.15rem; line-height: 1.8; color: #333; text-align: left; margin: 0; }
 .flip-hint { margin-top: auto; font-size: 0.8rem; color: #A67C52; font-style: italic; opacity: 0.6; text-align: left; padding-top: 20px; }
 
-.season-quick-nav { position: fixed; top: 30px; right: 4%; z-index: 1000; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); padding: 10px 25px; border-radius: 50px; display: flex; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-.season-quick-nav a { font-family: 'Lora', serif; color: #3e2723; text-decoration: none; font-size: 0.9rem; font-weight: bold; }
+/* 修正後的專屬導覽列美學 */
+.season-quick-nav { 
+    position: fixed; 
+    top: 140px; /* 關鍵下移：避開主選單與大標題干擾 */
+    right: 6%;  /* 稍微往內收，對齊內文視角 */
+    z-index: 1000; 
+    background: rgba(244, 241, 234, 0.85); /* 改用山屋專屬米色調，降低視覺突兀感 */
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 22px; 
+    border-radius: 30px; /* 稍微收斂圓角，顯得更沉穩 */
+    display: flex; 
+    gap: 18px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06); /* 陰影放柔 */
+    border: 1px solid rgba(166, 124, 82, 0.2); /* 加上一圈淡淡的古銅色邊框呼應字卡 */
+}
+
+.season-quick-nav a { 
+    font-family: 'Lora', serif; 
+    color: #5d4037; /* 預設字體顏色調柔和 */
+    text-decoration: none; 
+    font-size: 0.85rem; 
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* 滑鼠移入時的優雅回饋 */
+.season-quick-nav a:hover {
+    color: #A67C52;
+    transform: translateY(-1px);
+}
 
 @media (max-width: 1024px) {
 .cards-deck { width: 90%; height: 75vh; max-height: 650px; }
@@ -272,6 +302,6 @@ pointer-events: none;
 .card-text { flex: none; }
 .content-card h3 { font-size: 2rem; margin-bottom: 10px; }
 .content-card p { font-size: 1.05rem; line-height: 1.6; }
-.season-quick-nav { top: 15px; right: 50%; transform: translateX(50%); padding: 8px 18px; width: max-content; }
+.season-quick-nav { top: 70px; right: 50%; transform: translateX(50%); padding: 8px 18px; width: max-content; }
 }
 </style>
