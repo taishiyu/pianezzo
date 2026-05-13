@@ -261,37 +261,10 @@ pointer-events: none;
 .flip-hint { margin-top: auto; font-size: 0.8rem; color: #A67C52; font-style: italic; opacity: 0.6; text-align: left; padding-top: 20px; }
 
 /* 修正後的專屬導覽列美學 */
-.season-quick-nav { 
-    position: fixed; 
-    top: 140px; /* 關鍵下移：避開主選單與大標題干擾 */
-    right: 6%;  /* 稍微往內收，對齊內文視角 */
-    z-index: 1000; 
-    background: rgba(244, 241, 234, 0.85); /* 改用山屋專屬米色調，降低視覺突兀感 */
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px);
-    padding: 8px 22px; 
-    border-radius: 30px; /* 稍微收斂圓角，顯得更沉穩 */
-    display: flex; 
-    gap: 18px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06); /* 陰影放柔 */
-    border: 1px solid rgba(166, 124, 82, 0.2); /* 加上一圈淡淡的古銅色邊框呼應字卡 */
-}
+.season-quick-nav { position: fixed; top: 50%; right: 40px; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 30px; text-align: right; background: rgba(244, 241, 234, 0.4); padding: 20px 10px; border-radius: 4px; backdrop-filter: blur(5px); }
+.season-quick-nav a { font-family: 'Lora', serif; color: #5d4037; text-decoration: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; transition: all 0.3s ease; writing-mode: vertical-rl; text-orientation: mixed; }
+.season-quick-nav a:hover { color: #A67C52; transform: scale(1.1); }
 
-.season-quick-nav a { 
-    font-family: 'Lora', serif; 
-    color: #5d4037; /* 預設字體顏色調柔和 */
-    text-decoration: none; 
-    font-size: 0.85rem; 
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-/* 滑鼠移入時的優雅回饋 */
-.season-quick-nav a:hover {
-    color: #A67C52;
-    transform: translateY(-1px);
-}
 
 @media (max-width: 1024px) {
 .cards-deck { width: 90%; height: 75vh; max-height: 650px; }
@@ -302,6 +275,7 @@ pointer-events: none;
 .card-text { flex: none; }
 .content-card h3 { font-size: 2rem; margin-bottom: 10px; }
 .content-card p { font-size: 1.05rem; line-height: 1.6; }
-.season-quick-nav { top: 70px; right: 50%; transform: translateX(50%); padding: 8px 18px; width: max-content; }
+.season-quick-nav { top: 80px; right: 50%; transform: translateX(50%); flex-direction: row; writing-mode: horizontal-tb; width: max-content; padding: 8px 15px; background: rgba(244, 241, 234, 0.85); }
+.season-quick-nav a { writing-mode: horizontal-tb; }
 }
 </style>
