@@ -88,5 +88,6 @@ html { scroll-behavior: smooth; }
 .meta-item h4 { font-family: 'Lora', serif; font-size: 1rem; color: #A67C52; margin: 0 0 8px 0; }
 .meta-item p { font-family: 'Lora', serif; font-size: 0.95rem; line-height: 1.6; color: #666; margin: 0; }
 .google-map-wrapper { width: 100%; aspect-ratio: 1 / 1; border-radius: 2px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.04); border-top: 3px solid #A67C52; background: #eae6df; }
+.google-map-wrapper iframe { display: block; width: 100%; height: 100%; }
 @media (max-width: 1024px) { .contact-layout { flex-direction: column; gap: 6px; } .contact-map-section { position: relative; top: 0; margin-top: 60px; } .google-map-wrapper { aspect-ratio: 16 / 9; } }
 </style>
