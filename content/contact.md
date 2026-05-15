@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-featured_image: "/pianezzo/images/contact-cover.jpg"
+featured_image: "/pianezzo/images/contact.jpg"
 description: "聽見山林與工坊的迴響。"
 layout: "single"
 ---
@@ -11,31 +11,31 @@ layout: "single"
 
 <div class="contact-info-section">
 <h3>Inquire & Connect</h3>
-<p class="contact-intro">無論是工藝品收購詢價、客製化家具委託，或是常態導覽與季節工作坊的預約，都歡迎透過下方表單或電子信箱與我們聯繫。若你剛好路過 Ossola 山谷，也歡迎順道上山來拍拍木屑、喝杯茶。</p>
+<p class="contact-intro">Whether you are inquiring about acquiring our handcrafted pieces, discussing a bespoke furniture commission, or booking our permanent walks and seasonal workshops, please feel free to reach out through the form below or via email. And if you happen to find yourself passing through the Antrona Valley, you are always welcome to wander up the mountain, brush off the sawdust, and share a cup of tea with us.</p>
 
-<form class="pure-contact-form" action="mailto:daishiyu@daishiyus-MacBook-Air.local" method="post" enctype="text/plain">
+<form class="pure-contact-form" action="mailto:thomgoer@gmail.com,taitai88553300@gmail.com" method="post" enctype="text/plain">
 <div class="form-group">
-<label>Name ｜ 姓名</label>
+<label>Name </label>
 <input type="text" name="name" required>
 </div>
 
 <div class="form-group">
-<label>Email ｜ 電子信箱</label>
+<label>Email</label>
 <input type="email" name="email" required>
 </div>
 
 <div class="form-group">
-<label>Purpose ｜ 聯絡事由</label>
+<label>Purpose</label>
 <select name="purpose">
-<option value="artifacts">Selected Pieces ｜ 成品收購詢價</option>
-<option value="bespoke">Bespoke Commission ｜ 客製化委託洽談</option>
-<option value="gatherings">Workshops & Walks ｜ 導覽與工作坊預約</option>
-<option value="other">Collaboration ｜ 其它合作提案</option>
+<option value="artifacts">Selected Pieces</option>
+<option value="bespoke">Bespoke Commission</option>
+<option value="gatherings">Workshops & Walks</option>
+<option value="other">Other</option>
 </select>
 </div>
 
 <div class="form-group">
-<label>Message ｜ 訊息內容</label>
+<label>Message</label>
 <textarea name="message" rows="6" required></textarea>
 </div>
 
@@ -44,12 +44,12 @@ layout: "single"
 
 <div class="contact-meta-box">
 <div class="meta-item">
-<h4>Response Time ｜ 回覆時程</h4>
-<p>山林間的勞作與打磨是我們的日常。我們通常會在傍晚靜下來時認真閱讀每封來信，請靜候 24-48 小時。 (English, Italiano, Traditional Chinese OK)</p>
+<h4>Response Time</h4>
+<p>24-48 hr (English, Italiano, Traditional Chinese OK)</p>
 </div>
 <div class="meta-item">
-<h4>Welcome Drop-ins ｜ 歡迎前來走走</h4>
-<p>山屋與果園的大門對所有熱愛山林與工藝的朋友敞開。我們隨時歡迎散客與旅人順道前來交流，共享山谷的微風。 Walk-ins Welcome.</p>
+<h4>Welcome Drop-ins</h4>
+<p>Walk-ins Welcome.Take a coffee with us.</p>
 </div>
 </div>
 </div>
@@ -57,10 +57,10 @@ layout: "single"
 <div class="contact-map-section">
 <h3>Location</h3>
 <span class="location-tag">Val d'Ossola, Piedmont, Italy</span>
-<p class="map-desc">我們位於義大利北部靠近瑞士邊境的奧索拉山谷（Val d'Ossola）。最近的交通樞紐為多莫多索拉（Domodossola）火車站，自米蘭搭乘火車約 1.5 小時即可抵達。</p>
+<p class="map-desc">Near by Domodossola, around 1.5 hr from Milan by train。</p>
 
 <div class="google-map-wrapper">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44143.14923985161!2d8.257025816999238!3d46.11467472061262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786f09224998923%3A0x21a82f52298219d1!2sDomodossola%20VB!5e0!3m2!1szh-TW!2sit!4v1715781600000!5m2!1szh-TW!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="ttps://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7334.831581346374!2d8.179756786160343!3d46.05332525804184!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDbCsDAzJzIyLjAiTiA4wrAxMCc1My42IkU!5e0!3m2!1szh-TW!2sit!4v1778854926074!5m2!1szh-TW!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </div>
 
