@@ -13,7 +13,7 @@ layout: "single"
 <h3>Inquire & Connect</h3>
 <p class="contact-intro">Whether you are inquiring about acquiring our handcrafted pieces, discussing a bespoke furniture commission, or booking our permanent walks and seasonal workshops, please feel free to reach out through the form below or via email. And if you happen to find yourself passing through the Antrona Valley, you are always welcome to wander up the mountain, brush off the sawdust, and share a cup of tea with us.</p>
 
-<form class="pure-contact-form" action="mailto:https://formspree.io/f/mqenrapr" method="post" enctype="text/plain">
+<form class="pure-contact-form" action="https://formspree.io/f/mqenrapr" method="POST">
 <div class="form-group">
 <label>Name </label>
 <input type="text" name="name" required>
