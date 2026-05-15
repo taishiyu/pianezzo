@@ -13,33 +13,67 @@ layout: "single"
 <h3>Inquire & Connect</h3>
 <p class="contact-intro">Whether you are inquiring about acquiring our handcrafted pieces, discussing a bespoke furniture commission, or booking our permanent walks and seasonal workshops, please feel free to reach out through the form below or via email. And if you happen to find yourself passing through the Antrona Valley, you are always welcome to wander up the mountain, brush off the sawdust, and share a cup of tea with us.</p>
 
-<form class="pure-contact-form" action="https://formspree.io/f/mqenrapr" method="POST">
+<form class="pure-contact-form" id="alpine-contact-form" action="https://formspree.io/f/mqenrapr" method="POST">
 <div class="form-group">
-<label>Name </label>
+<label>Name</label>
 <input type="text" name="name" required>
 </div>
-
 <div class="form-group">
 <label>Email</label>
 <input type="email" name="email" required>
 </div>
-
 <div class="form-group">
 <label>Purpose</label>
 <select name="purpose">
 <option value="artifacts">Selected Pieces</option>
 <option value="bespoke">Bespoke Commission</option>
 <option value="gatherings">Workshops & Walks</option>
-<option value="other">Other</option>
+<option value="other">Collaboration</option>
 </select>
 </div>
-
 <div class="form-group">
 <label>Message</label>
 <textarea name="message" rows="6" required></textarea>
 </div>
+<button type="submit" id="submit-btn" class="contact-submit-btn">Send Message</button>
+</form>
 
-<button type="submit" class="contact-submit-btn">Send Message</button>
+<div id="form-success-status" style="display:none;padding:40px;background:#fff;border-top:3px solid #A67C52;box-shadow:0 20px 50px rgba(0,0,0,0.04);font-family:'Lora',serif;text-align:left;">
+<h4 style="color:#A67C52;font-size:1.5rem;margin:0 0 15px 0;">Thank You!</h4>
+<p style="color:#444;font-size:1.05rem;line-height:1.8;margin:0;">Your message has been sent successfully. We will brush off the sawdust and get back to you within 24-48 hours.</p>
+</div>
+
+<script>
+var form = document.getElementById("alpine-contact-form");
+var statusDiv = document.getElementById("form-success-status");
+var btn = document.getElementById("submit-btn");
+async function handleSubmit(event) {
+event.preventDefault();
+btn.disabled = true;
+btn.innerText = "Sending...";
+var data = new FormData(event.target);
+fetch(event.target.action, {
+method: form.method,
+body: data,
+headers: { 'Accept': 'application/json' }
+}).then(response => {
+if (response.ok) {
+form.style.display = "none";
+statusDiv.style.display = "block";
+form.reset();
+} else {
+alert("Oops! There was a problem. Please try again.");
+btn.disabled = false;
+btn.innerText = "Send Message";
+}
+}).catch(error => {
+alert("Connection error. Please check your network.");
+btn.disabled = false;
+btn.innerText = "Send Message";
+});
+}
+form.addEventListener("submit", handleSubmit);
+</script>
 </form>
 
 <div class="contact-meta-box">
