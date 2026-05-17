@@ -13,6 +13,12 @@ theme = 'ananke'
     weight = 10
 
 [[menus.main]]
+    name = 'Habitant'
+    url = '/habitant/'
+    weight = 15
+
+
+[[menus.main]]
     name = 'Seasons'
     url = '/seasons/'
     weight = 20
