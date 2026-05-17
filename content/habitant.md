@@ -1,6 +1,6 @@
 ---
 title: "Habitant"
-featured_image: "/pianezzo/images/habitant-cover.jpg"
+featured_image: "/pianezzo/images/habitant.jpg"
 description: "與我們共同棲居於此的生命群像。"
 layout: "single"
 ---
