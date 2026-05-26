@@ -16,10 +16,6 @@ layout: "single"
 <div class="habitant-wrapper">
 
 <section id="flora" class="deck-container">
-<div class="sticky-bg">
-<img src="/pianezzo/images/hab-flora-bg.jpg" alt="Flora Atmosphere">
-<div class="bg-overlay"></div>
-</div>
 <div class="cards-deck">
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
@@ -70,10 +66,6 @@ layout: "single"
 </section>
 
 <section id="birds" class="deck-container">
-<div class="sticky-bg">
-<img src="/pianezzo/images/hab-birds-bg.jpg" alt="Birds Atmosphere">
-<div class="bg-overlay"></div>
-</div>
 <div class="cards-deck">
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
@@ -106,10 +98,6 @@ layout: "single"
 </section>
 
 <section id="mammals" class="deck-container">
-<div class="sticky-bg">
-<img src="/pianezzo/images/hab-mammals-bg.jpg" alt="Mammals Atmosphere">
-<div class="bg-overlay"></div>
-</div>
 <div class="cards-deck">
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
@@ -142,10 +130,6 @@ layout: "single"
 </section>
 
 <section id="reptiles" class="deck-container">
-<div class="sticky-bg">
-<img src="/pianezzo/images/hab-reptiles-bg.jpg" alt="Reptiles Atmosphere">
-<div class="bg-overlay"></div>
-</div>
 <div class="cards-deck">
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
@@ -276,8 +260,8 @@ document.querySelectorAll('.deck-container').forEach(section => observer.observe
 html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y mandatory; }
 .habitant-wrapper { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background: #f4f1ea; }
 .deck-container { position: relative; height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; scroll-snap-align: start; scroll-snap-stop: always; overflow: hidden; box-sizing: border-box; }
-.sticky-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-.sticky-bg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sticky-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background-color: #f4f1ea; }
+.sticky-bg img { display: none; }
 .bg-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.25); }
 
 /* 核心字卡大舞台 */
@@ -287,7 +271,7 @@ html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y
 .nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'), w-resize; }
 .nav-zone-right { position: absolute; top: 0; right: 0; width: 70%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'), e-resize; }
 
-.content-card { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #f4f1ea; padding: 60px 80px; border-radius: 2px; box-shadow: 0 15px 50px rgba(0,0,0,0.2); display: flex; flex-direction: column; justify-content: center; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease-out; border-left: 4px solid #A67C52; box-sizing: border-box; will-change: transform, opacity; }
+.content-card { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff; padding: 60px 80px; border-radius: 2px; box-shadow: 0 10px 40px rgba(166, 124, 82, 0.07); display: flex; flex-direction: column; justify-content: center; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease-out; border-left: 4px solid #A67C52; box-sizing: border-box; will-change: transform, opacity; }
 
 /* 🎬 往後翻動畫：往左上角飛走抽離 */
 .content-card.flipping-forward { transform: translate(-60px, -40px) rotate(-6deg) scale(0.92) !important; opacity: 0 !important; }
