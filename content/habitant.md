@@ -11,6 +11,7 @@ layout: "single"
 <a href="#mammals">Mammals</a>
 <a href="#reptiles">Reptiles</a>
 <a href="#amphibians">Amphi</a>
+<a href="#insects">Insects</a> </nav>
 </nav>
 
 <div class="habitant-wrapper">
@@ -27,43 +28,126 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-fagus.jpg" alt="European Beech"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-betula.jpg" alt="Silver Birch"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 02</span>
-<h3>European Beech ｜ 歐洲山毛櫸</h3>
-<p>在攀往高山平原的溪谷陰坡，密集的山毛櫸林構成了海拔一千公尺處的沉穩骨架。牠們茂密的樹冠在夏季交織成冰涼的庇護所，深秋時則將整座奧索拉山谷染成壯麗的古銅與澄金。</p>
+<h3>Silver Birch ｜ <i>Betula pendula</i></h3>
+<p>A slender, elegant pioneer tree of the mountain slopes. Instantly recognizable by its striking white, papery bark and drooping branches, it thrives in nutrient-poor soils and brings light to the edge of the dense pine forests.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-castanea.jpg" alt="Sweet Chestnut"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-fraxinus.jpg" alt="European Ash"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 03</span>
-<h3>Sweet Chestnut ｜ 歐洲古栗</h3>
-<p>山地階邊緣的百年古栗樹，是高山農牧文化留下的溫暖印記。牠們乾枯落下的枝幹木質緊密、紋理粗糙且耐腐，常是工坊手鑿日常器皿與尋找傳統工藝靈感時最溫潤的素材來源。</p>
+<h3>European Ash ｜ <i>Fraxinus excelsior</i></h3>
+<p>A major canopy player in moist valley woodlands. Characterized by its distinctive jet-black winter buds and pale grey bark, it produces exceptionally tough yet flexible timber, traditionally favored by woodworkers for tool handles.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-acer.jpg" alt="Ravine Forest"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-acer.jpg" alt="Sycamore Maple"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 04</span>
-<h3>Ravine Forest ｜ 溪谷楓與梣</h3>
-<p>盤踞在怪石嶙峋的陡峭深谷與濕潤岩壁間，大葉槭與歐洲梣的根系深鎖著險峻的碎石坡。這些具備極高韌性與彈性的闊葉樹，在湍急的高山急流旁，默默維持著峽谷邊緣的微氣候平衡。</p>
+<h3>Sycamore Maple ｜ <i>Acer pseudoplatanus</i></h3>
+<p>A robust resident of the alpine ravine forests. It grows vigorously in cool, humid microclimates, flashing its broad, five-lobed leaves that turn into a delicate, washed bronze as the autumn air settles over the valley.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-picea.jpg" alt="Norway Spruce"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-castanea.jpg" alt="Sweet Chestnut"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 05</span>
-<h3>Montane Conifers ｜ 混生針葉林</h3>
-<p>在闊葉林逐漸退場、阿爾卑斯針葉林即將接管高山的前哨交界，歐洲雲杉與銀冷杉帶來了終年不落的墨綠。牠們挺拔筆直的身軀與散發微甜樹脂香氣的木屑，承載了無數高山屋宇的梁柱歷史。</p>
+<h3>Sweet Chestnut ｜ <i>Castanea sativa</i></h3>
+<p>The venerable provider of the alpine foothills. With deeply fissured, spiraling bark and jagged leaves, these ancient giants carry centuries of mountain heritage, offering nutritious nuts in autumn and rot-resistant timber for rural architecture.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-quercus.jpg" alt="Downy Oak"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 06</span>
+<h3>Downy Oak ｜ <i>Quercus pubescens</i></h3>
+<p>A resilient oak well-adapted to the sun-drenched, rocky limestone crags. Named for the soft, velvety fuzz beneath its leaves that prevents moisture loss, it stands firm against cold mountain winds and summer droughts alike.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-fagus.jpg" alt="European Beech"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 07</span>
+<h3>European Beech ｜ <i>Fagus sylvatica</i></h3>
+<p>The sovereign tree forming dense, silent cathedrals on the mountain slopes. Its smooth, silver-grey bark and dark green foliage create a cool, deep shade in summer, before erupting into a magnificent copper canopy in late October.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-sorbus.jpg" alt="Whitebeam"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 08</span>
+<h3>Whitebeam ｜ <i>Sorbus aria</i></h3>
+<p>A striking presence along forest edges and craggy cliffs. When ruffled by mountain breezes, its leaves flash a bright white underside covered in fine woolly hairs, followed by clusters of vibrant scarlet berries that feed migrating birds.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-populus.jpg" alt="Common Aspen"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 09</span>
+<h3>Common Aspen ｜ <i>Populus tremula</i></h3>
+<p>The restless voice of the mountain woods. Its rounded leaves have flattened stems, causing them to tremble and rustle musically in the slightest whisper of wind. A fast-growing先鋒 tree that brightens clearings with pure gold in autumn.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-corylus.jpg" alt="Common Hazel"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 10</span>
+<h3>Common Hazel ｜ <i>Corylus avellana</i></h3>
+<p>A flexible, multi-stemmed understory shrub thriving in fertile soils. It announces early spring with dangling golden catkins well before its leaves emerge, later yielding rich hazel nuts nestled in fringed husks.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-tilia.jpg" alt="Large-leaved Lime"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 11</span>
+<h3>Large-leaved Lime ｜ <i>Tilia platyphyllos</i></h3>
+<p>A stately tree of nutrient-rich slopes, boasting soft, heart-shaped leaves. In midsummer, it produces pale, delicate flowers that release a heady, sweet fragrance, attracting clouds of alpine bees and providing local herbal teas.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-picea.jpg" alt="Norway Spruce"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 12</span>
+<h3>Norway Spruce ｜ <i>Picea abies</i></h3>
+<p>The sentinel of the montane and subalpine zones. With sharp, dark-green needles and long, elegant cones hanging downward, its spire-like silhouette defines the upper forest layer, providing essential shelter for mountain fauna during harsh winters.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/flora-larix.jpg" alt="European Larch"></div>
+<div class="card-text">
+<span class="habitant-tag">Flora 13</span>
+<h3>European Larch ｜ <i>Larix decidua</i></h3>
+<p>The only native European conifer that sheds its needles. It bears soft, bright green tufts in spring, which transform into a glowing, brilliant amber in late autumn before falling, allowing winter light to reach the forest floor.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 </section>
+
 
 <section id="birds" class="deck-container">
 <div class="cards-deck">
@@ -77,25 +161,146 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-woodpecker.jpg" alt="Black Woodpecker"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-parus-major.jpg" alt="Great Tit"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 02</span>
-<h3>Black Woodpecker</h3>
-<p>黑啄木鳥規律而堅實的鑿木聲，是高山晨間最清脆的節奏。牠們在老樹幹上鑿出的樹洞，常成為其他微小鳥類在冬季的天然庇護所。</p>
+<h3>Great Tit ｜ <i>Parus major</i></h3>
+<p>A bold, highly adaptable visitor to the workshop's orchard. Sporting a distinctive black stripe down its bright yellow breast and a glossy black cap, its cheerful, metallic "tea-cher, tea-cher" song brings life to the early spring mornings.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-eagle.jpg" alt="Golden Eagle"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-cyanistes.jpg" alt="Eurasian Blue Tit"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 03</span>
-<h3>Golden Eagle</h3>
-<p>晴朗的日子裡，金雕會在山谷上方巨大的氣流中緩慢盤旋。那伸展超過兩公尺的巨大雙翼，是這片險峻高山中最令人屏息的野性景致。</p>
+<h3>Eurasian Blue Tit ｜ <i>Cyanistes caeruleus</i></h3>
+<p>A tiny, acrobatic marvel of the canopy. Brilliantly attired in cobalt blue and sulfur yellow, it performs astonishing gymnastic feats on the tips of larch and chestnut twigs, tirelessly hunting for small insects and aphids.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-periparus.jpg" alt="Coal Tit"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 04</span>
+<h3>Coal Tit ｜ <i>Periparus ater</i></h3>
+<p>A smaller, sleek mountain resident that favors the conifer forests. Marked by a neat white patch on the back of its black neck, it spent its days busily caching pine seeds under loose bark and moss for the upcoming winter months.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-poecile.jpg" alt="Marsh Tit"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 05</span>
+<h3>Marsh Tit ｜ <i>Poecile palustris</i></h3>
+<p>Despite its name, this subtle bird loves the ancient broadleaf valleys and orchard borders. Dressed in quiet greys and browns with a neat black bib and glossy cap, its explosive, sneeze-like "pitchou" call easily betrays its presence in the undergrowth.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-erithacus.jpg" alt="European Robin"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 06</span>
+<h3>European Robin ｜ <i>Erithacus rubecula</i></h3>
+<p>The companionable spirit of the garden soil. Boasting a rich orange-red breast and large, soulful dark eyes, it curiously follows any wood-carving or soil-turning activity, singing a melancholic, liquid warble even in the depths of winter.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-turdus.jpg" alt="Common Blackbird"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 07</span>
+<h3>Common Blackbird ｜ <i>Turdus merula</i></h3>
+<p>The elegant maestro of dusk and dawn. The glossy black male, contrasting sharply with its bright yellow eye-ring and bill, perches atop the tallest larch to deliver an unhurried, beautifully fluted song that echoes through the mountain valley.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-fringilla.jpg" alt="Common Chaffinch"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 08</span>
+<h3>Common Chaffinch ｜ <i>Fringilla coelebs</i></h3>
+<p>One of the most abundant voices in the open woodland. The male displays a handsome blue-grey cap and rose-red breast, flashing bold white wing-bars as it darts across glades singing its energetic, cascading spring melody.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-sitta.jpg" alt="Eurasian Nuthatch"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 09</span>
+<h3>Eurasian Nuthatch ｜ <i>Sitta europaea</i></h3>
+<p>A true master of gravity. Clothed in blue-grey upperparts with a bold black eye-stripe, it is the only alpine bird capable of walking head-first down tree trunks, jamming hazelnuts into bark crevices to crack them open with its chiseled bill.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-dendrocopos.jpg" alt="Great Spotted Woodpecker"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 10</span>
+<h3>Great Spotted Woodpecker ｜ <i>Dendrocopos major</i></h3>
+<p>The striking drummer of the forest. Dressed in stark black and white with a vibrant crimson undertail, it signals its territory with short, explosive bursts of drumming on resonant dead wood, echoing sharply across the valley.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-dryocopus.jpg" alt="Black Woodpecker"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 11</span>
+<h3>Black Woodpecker ｜ <i>Dryocopus martius</i></h3>
+<p>A prehistoric-looking giant of the deep timber. Crow-sized and clad entirely in matte black with a fierce crimson crown, its powerful drumming carves massive rectangular feeding holes in old larch trunks, creating vital nesting cavities for other wildlife.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-picus-viridis.jpg" alt="European Green Woodpecker"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 12</span>
+<h3>European Green Woodpecker ｜ <i>Picus viridis</i></h3>
+<p>An earth-loving woodpecker of the alpine meadows and orchards. Flaunting moss-green plumage and a red cap, it spends its time on the ground probing anthills with its exceptionally long, sticky tongue, announcing its flight with a loud, laughing call.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-strix-aluco.jpg" alt="Tawny Owl"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 13</span>
+<h3>Tawny Owl ｜ <i>Strix aluco</i></h3>
+<p>The nocturnal guardian of the old stone roofs and deep hollows. With intricate, bark-like mottled plumage and large dark eyes, its iconic, haunting "too-whit too-whoo" duet slices through the silent mountain nights, keeping rodent populations in perfect balance.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-falco.jpg" alt="Peregrine Falcon"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 14</span>
+<h3>Peregrine Falcon ｜ <i>Falco peregrinus</i></h3>
+<p>The sovereign of the rocky precipices overlooking the park. Sporting a dark hood and a finely barred chest, it hunts the open valleys with breath-taking speed, executing vertical hunting stoops that make it the fastest creature in the sky.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/birds-buteo.jpg" alt="Common Buzzard"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 15</span>
+<h3>Common Buzzard ｜ <i>Buteo buteo</i></h3>
+<p>A familiar, majestic silhouette soaring on the valley thermal currents. With broad, fringed wings and a short, fanned tail, it rides the mountain breezes effortlessly, venting a cat-like mewing cry that defines the sunny afternoon sky.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 </section>
+
 
 <section id="mammals" class="deck-container">
 <div class="cards-deck">
@@ -109,22 +314,92 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-deer.jpg" alt="Roe Deer"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-rupicapra.jpg" alt="Alpine Chamois"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 02</span>
-<h3>Roe Deer</h3>
-<p>破曉時分，清晨薄霧還未散去，野鹿常輕巧踏入果園尋找遺落的老品種蘋果。牠們的警覺與優雅，是高山果園最靜謐的訪客。</p>
+<h3>Alpine Chamois ｜ <i>Rupicapra rupicapra</i></h3>
+<p>The true aristocrat of the rocky alpine heights. Sporting short, slender hooks for horns and a striking facial mask, its specialized hooves allow it to navigate vertical stone walls and icy ridges with breathtaking agility and grace.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-marten.jpg" alt="Stone Marten"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-capreolus.jpg" alt="Roe Deer"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 03</span>
-<h3>Stone Marten</h3>
-<p>石貂擁有靈活的身手與夜行習性，常在古老石牆的縫隙間攀爬穿梭。牠們是工坊周邊的隱士，幫忙維持著微小齧齒類的生態平衡。</p>
+<h3>Roe Deer ｜ <i>Capreolus capreolus</i></h3>
+<p>A slender, elegant visitor that loves the forest clearings and orchard borders. Exceptionally nimble and shy, it ventures into the open meadows primarily during the quiet hours of dawn and dusk to graze on tender grass and fallen fruit.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-sus-scrofa.jpg" alt="Wild Boar"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 04</span>
+<h3>Wild Boar ｜ <i>Sus scrofa</i></h3>
+<p>A powerful, nocturnal force of the chestnut woods. Dressed in a coarse, dark coat, it uses its rigid snout to plow through the damp soil and leaf litter in search of acorns, roots, and tubers, shaping the forest floor's ecology.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-cervus.jpg" alt="Red Deer"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 05</span>
+<h3>Red Deer ｜ <i>Cervus elaphus</i></h3>
+<p>The majestic monarch of the alpine forests. The stags carry grand, branching antlers that shed and regrow annually. In autumn, their deep, primeval roars break the mountain silence, echoing powerfully across the copper valleys.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-vulpes.jpg" alt="Red Fox"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 06</span>
+<h3>Red Fox ｜ <i>Vulpes vulpes</i></h3>
+<p>An intelligent, highly versatile predator patrolling the boundaries of the land. With its rich russet fur, white-tipped bushy tail, and golden eyes, it moves like a quiet shadow through the tall grass, hunting small rodents with precise leaps.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-meles.jpg" alt="European Badger"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 07</span>
+<h3>European Badger ｜ <i>Meles meles</i></h3>
+<p>A nocturnal architect that constructs elaborate underground setts beneath old tree roots. Instantly recognizable by its striking black-and-white striped face, it wanders the orchard floor at night, foraging for earthworms, nuts, and fallen berries.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-martes-foina.jpg" alt="Stone Marten"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 08</span>
+<h3>Stone Marten ｜ <i>Martes foina</i></h3>
+<p>An agile, lithe acrobat that thrives around ancient stone architectures and woodpiles. Flaunting a pure white throat patch, it climbs vertical stone walls with ease under the cover of night, keeping the local rodent population in balance.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-glis-glis.jpg" alt="Edible Dormouse"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 09</span>
+<h3>Edible Dormouse ｜ <i>Glis glis</i></h3>
+<p>A large, large-eyed nocturnal rodent with a wonderfully bushy silver-grey tail. It spends its summer feasting on chestnuts and hazelnuts in the canopy, often nesting under old stone slate roofs before slipping into a deep seven-month winter hibernation.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-sciurus.jpg" alt="Red Squirrel"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 10</span>
+<h3>Red Squirrel ｜ <i>Sciurus vulgaris</i></h3>
+<p>The industrious, bright-eyed acrobat of the pine branches. Sporting charismatic ear tufts and a fiery red coat, it leaps effortlessly between larches and spruces, collecting and burying conifer cones that inadvertently help plant the next generation of trees.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 </section>
@@ -141,13 +416,62 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-lizard.jpg" alt="Wall Lizard"></div>
+<div class="card-image"><img src="/pianezson/images/reptiles-hierophis.jpg" alt="Green and Yellow Whip Snake"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 02</span>
-<h3>Wall Lizard</h3>
-<p>正午陽光烘烤著石造建築時，壁蜥會在乾燥的石縫間現身，一動不動地享受日照。牠們靈敏的捕食速度，是維持高山花園生態的小功臣。</p>
+<h3>Green & Yellow Whip Snake ｜ <i>Hierophis viridiflavus</i></h3>
+<p>A slender, remarkably agile hunter of the sun-drenched terraced slopes. Clad in a striking mosaic of pitch black and bright lemon-yellow scales, it moves through the dry grasses with lightning speed, keeping the open meadow ecology dynamic.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/reptiles-zamenis.jpg" alt="Aesculapian Snake"></div>
+<div class="card-text">
+<span class="habitant-tag">Reptiles 03</span>
+<h3>Aesculapian Snake ｜ <i>Zamenis longissimus</i></h3>
+<p>An elegant, olive-bronze non-venomous serpent closely tied to old stone ruins. Renowned for its exceptional tree-climbing abilities, this tranquil creature is the historical symbol of healing and medicine, living peacefully among ancient farmsteads.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/reptiles-coronella.jpg" alt="Smooth Snake"></div>
+<div class="card-text">
+<span class="habitant-tag">Reptiles 04</span>
+<h3>Smooth Snake ｜ <i>Coronella austriaca</i></h3>
+<p>A subtle, secretive resident that prefers loose rocky screes and stone walls. Dressed in quiet grey-brown tones with a dark crown marking, it possesses entirely smooth scales that give it a soft texture, spending its days largely hidden under flat slate stones.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/reptiles-natrix.jpg" alt="Barred Grass Snake"></div>
+<div class="card-text">
+<span class="habitant-tag">Reptiles 05</span>
+<h3>Barred Grass Snake ｜ <i>Natrix helvetica</i></h3>
+<p>The moisture-loving serpent of the damp orchard margins and alpine ditches. Easily identified by the pale, dark-bordered collar behind its head, it is an exceptional swimmer that hunts primarily in aquatic environments, acting as a bridge between land and water.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/reptiles-lacerta.jpg" alt="Western Green Lizard"></div>
+<div class="card-text">
+<span class="habitant-tag">Reptiles 06</span>
+<h3>Western Green Lizard ｜ <i>Lacerta bilineata</i></h3>
+<p>A breathtaking jewel of the bramble bushes and open paths. The adults flaunt a brilliant, shimmering emerald-green body, with males developing a magnificent throat of intense turquoise blue during the spring breeding season, mirroring the alpine sky.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/reptiles-podarcis.jpg" alt="Common Wall Lizard"></div>
+<div class="card-text">
+<span class="habitant-tag">Reptiles 07</span>
+<h3>Common Wall Lizard ｜ <i>Podarcis muralis</i></h3>
+<p>The most familiar and industrious companion of our stone-built architecture. Highly inquisitive and quick, it scales vertical dry-stone walls to bask in the midday heat, darting into narrow masonry crevices at the slightest shift of a shadow.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 </section>
@@ -168,18 +492,98 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/hab-salamander.jpg" alt="Alpine Salamander"></div>
+<div class="card-image"><img src="/pianezzo/images/amphi-rana.jpg" alt="Common Frog"></div>
 <div class="card-text">
 <span class="habitant-tag">Amphibians 02</span>
-<h3>Alpine Salamander</h3>
-<p>暴雨過後或潮濕的石溝陰影下，全身漆黑的高山蠑螈會緩慢現身。牠們依靠純淨的高山水質與苔蘚地質存活，是這片土地最珍規的生態指標。</p>
+<h3>Common Frog ｜ <i>Rana temporaria</i></h3>
+<p>An early-spring pioneer of the mountain waters. Often emerging while snow still lingers on the banks, its soft, low-pitched purring chorus echoes across the orchard's stone drainage channels as it lays early rafts of gelatinous spawn.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/amphi-salamandra.jpg" alt="Fire Salamander"></div>
+<div class="card-text">
+<span class="habitant-tag">Amphibians 03</span>
+<h3>Fire Salamander ｜ <i>Salamandra salamandra</i></h3>
+<p>The striking inhabitant of the damp mossy woodlands and stone wall basis. Dressed in a bold, warning mosaic of lacquer-black and vibrant sulfur-yellow patches, it ventures out on rainy evenings, relying on clean mountain humidity to breathe.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/amphi-rhinolophus.jpg" alt="Greater Horseshoe Bat"></div>
+<div class="card-text">
+<span class="habitant-tag">Amphibians 04</span>
+<h3>Greater Horseshoe Bat ｜ <i>Rhinolophus ferrumequinum</i></h3>
+<p>A majestic nocturnal flyer that roosts in old stone cellars and quiet barns. Named for the complex, horseshoe-shaped nose-leaf used to focus its precise echolocation, it glides low over orchard meadows to hunt large beetles and moths.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/amphi-pipistrellus.jpg" alt="Common Pipistrelle"></div>
+<div class="card-text">
+<span class="habitant-tag">Amphibians 05</span>
+<h3>Common Pipistrelle ｜ <i>Pipistrellus pipistrellus</i></h3>
+<p>A tiny, remarkably agile sentinel of the twilight sky. Small enough to fit inside a matchbox, it nests in narrow tree hollows and stone crevices, taking flight at dusk to execute frantic, erratic aerial twists that clear thousands of midges per hour.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 </section>
 
 </div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/insects-cetonia.jpg" alt="Rose Chafer"></div>
+<div class="card-text">
+<span class="habitant-tag">Insects 01</span>
+<h3>Rose Chafer ｜ <i>Cetonia aurata</i></h3>
+<p>A flying jewel of the midsummer garden. Instantly captivating with its brilliant, metallic emerald-green carapace and structural white flecks, it spends warm sunny afternoons clambering lazily over wild roses and orchard blossoms, feasting peacefully on pollen.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/insects-bombus.jpg" alt="Buff-tailed Bumblebee"></div>
+<div class="card-text">
+<span class="habitant-tag">Insects 02</span>
+<h3>Buff-tailed Bumblebee ｜ <i>Bombus terrestris</i></h3>
+<p>A robust, fuzzy pioneer of the early spring chill. Dressed in thick black-and-yellow velvet with a distinct buff-tinted tail, its deep, resonant buzz vibrates the entire orchard floor as it tirelessly visits the first emerging alpine blooms.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/insects-osmia-bicornis.jpg" alt="Red Mason Bee"></div>
+<div class="card-text">
+<span class="habitant-tag">Insects 03</span>
+<h3>Red Mason Bee ｜ <i>Osmia bicornis</i></h3>
+<p>An exceptional, solitary pollinator critical to the orchard's life cycle. Covered in dense, foxy-red hairs, it builds neat mud partitions within natural hollow stems and old stone crevices, carrying out its pollen-gathering duties with astonishing efficiency.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/insects-osmia-cornuta.jpg" alt="Horned Mason Bee"></div>
+<div class="card-text">
+<span class="habitant-tag">Insects 04</span>
+<h3>Horned Mason Bee ｜ <i>Osmia cornuta</i></h3>
+<p>A close relative of the Red Mason Bee, easily recognized by the female's tiny facial horns and an intensely fiery red abdomen. Emerging exceptionally early in the season, it braves cooler mountain temperatures to single-handedly jumpstart the fruit tree pollination.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/insects-apis.jpg" alt="Italian Honey Bee"></div>
+<div class="card-text">
+<span class="habitant-tag">Insects 05</span>
+<h3>Italian Honey Bee ｜ <i>Apis mellifera ligustica</i></h3>
+<p>The gentle, sub-alpine native of the Italian peninsula. Renowned worldwide for its calm temperament and golden-brown bands, this highly cooperative worker meticulously maps the entire valley flora, turning wild mountain nectar into golden honey.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
 
 <script>
 // ➡️ 往後翻頁 (點擊右側 70% 區域)
