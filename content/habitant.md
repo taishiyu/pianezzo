@@ -532,7 +532,15 @@ layout: "single"
 </div>
 </section>
 
+
+<section id="insects" class="deck-container">
+<div class="sticky-bg">
+<img src="/pianezzo/images/hab-amphibians-bg.jpg" alt="Insects Atmosphere">
+<div class="bg-overlay"></div>
 </div>
+<div class="cards-deck">
+<div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
+<div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
 <div class="content-card split-layout">
 <div class="card-image"><img src="/pianezzo/images/insects-cetonia.jpg" alt="Rose Chafer"></div>
@@ -583,6 +591,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+</section>
 
 
 <script>
