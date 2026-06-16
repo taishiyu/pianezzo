@@ -477,10 +477,6 @@ layout: "single"
 </section>
 
 <section id="amphibians" class="deck-container">
-<div class="sticky-bg">
-<img src="/pianezzo/images/hab-amphibians-bg.jpg" alt="Amphibians Atmosphere">
-<div class="bg-overlay"></div>
-</div>
 <div class="cards-deck">
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
@@ -534,10 +530,6 @@ layout: "single"
 
 
 <section id="insects" class="deck-container">
-<div class="sticky-bg">
-<img src="/pianezzo/images/hab-amphibians-bg.jpg" alt="Insects Atmosphere">
-<div class="bg-overlay"></div>
-</div>
 <div class="cards-deck">
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
