@@ -545,7 +545,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/insects-bombus.jpg" alt="Buff-tailed Bumblebee"></div>
+<div class="card-image"><img src="/pianezzo/images/insects-bombus.jpg" alt="Buff-tailed Bumblebee" title="By Marco Almbauer - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=68980020"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 02</span>
 <h3>Buff-tailed Bumblebee ｜ <i>Bombus terrestris</i></h3>
@@ -555,7 +555,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/insects-osmia-bicornis.jpg" alt="Red Mason Bee"></div>
+<div class="card-image"><img src="/pianezzo/images/insects-osmia-bicornis.jpg" alt="Red Mason Bee" title="By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=130945"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 03</span>
 <h3>Red Mason Bee ｜ <i>Osmia bicornis</i></h3>
@@ -673,10 +673,12 @@ html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y
 .cards-deck { position: relative; z-index: 10; width: 950px; height: 580px; perspective: 1000px; }
 
 /* 🎯 左右感應防禦門：凌駕於字卡之上，精準分配點擊權限 */
-.nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'), w-resize; }
-.nav-zone-right { position: absolute; top: 0; right: 0; width: 70%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'), e-resize; }
+.nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'), w-resize; pointer-events: none; }
+.nav-zone-right { position: absolute; top: 0; right: 0; width: 70%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'), e-resize; pointer-events: none; }
 
 .content-card { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff; padding: 60px 80px; border-radius: 2px; box-shadow: 0 10px 40px rgba(166, 124, 82, 0.07); display: flex; flex-direction: column; justify-content: center; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease-out; border-left: 4px solid #A67C52; box-sizing: border-box; will-change: transform, opacity; }
+
+.content-card.active-card { pointer-events: auto !important; }
 
 /* 🎬 往後翻動畫：往左上角飛走抽離 */
 .content-card.flipping-forward { transform: translate(-60px, -40px) rotate(-6deg) scale(0.92) !important; opacity: 0 !important; }
