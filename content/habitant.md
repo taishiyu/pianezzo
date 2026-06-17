@@ -21,13 +21,13 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card text-only active-card">
+<div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Flora 01</span>
 <h3>The Silent Foundation</h3>
 <p>落葉松、歐洲雲杉與百年栗樹構成了這片山林的古老骨架。初春時節，野韭菜與阿爾卑斯高山草本在果園邊緣悄然甦醒，為我們的日常提供了最純淨的滋味。</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-betula.jpg" alt="Silver Birch"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 02</span>
@@ -37,7 +37,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-fraxinus.jpg" alt="European Ash"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 03</span>
@@ -47,7 +47,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-acer.jpg" alt="Sycamore Maple"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 04</span>
@@ -57,7 +57,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-castanea.jpg" alt="Sweet Chestnut"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 05</span>
@@ -67,7 +67,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-quercus.jpg" alt="Downy Oak"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 06</span>
@@ -77,7 +77,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-fagus.jpg" alt="European Beech"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 07</span>
@@ -87,7 +87,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-sorbus.jpg" alt="Whitebeam"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 08</span>
@@ -97,7 +97,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-populus.jpg" alt="Common Aspen"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 09</span>
@@ -107,7 +107,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-corylus.jpg" alt="Common Hazel"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 10</span>
@@ -117,7 +117,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-tilia.jpg" alt="Large-leaved Lime"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 11</span>
@@ -127,7 +127,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-picea.jpg" alt="Norway Spruce"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 12</span>
@@ -137,7 +137,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/flora-larix.jpg" alt="European Larch"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 13</span>
@@ -154,13 +154,13 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card text-only active-card">
+<div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Birds 01</span>
 <h3>Sky Wardens</h3>
 <p>黑啄木鳥的規律敲擊聲是工坊最天然的背景音樂。金雕偶爾在晴朗的高空盤旋，而盤踞在灌木叢中的黑頭鶯，則用靈動的鳴叫宣告晨昏更迭。</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-parus-major.jpg" alt="Great Tit"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 02</span>
@@ -170,7 +170,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-cyanistes.jpg" alt="Eurasian Blue Tit"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 03</span>
@@ -180,7 +180,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-periparus.jpg" alt="Coal Tit"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 04</span>
@@ -190,7 +190,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-poecile.jpg" alt="Marsh Tit"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 05</span>
@@ -200,7 +200,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-erithacus.jpg" alt="European Robin"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 06</span>
@@ -210,7 +210,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-turdus.jpg" alt="Common Blackbird"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 07</span>
@@ -220,7 +220,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-fringilla.jpg" alt="Common Chaffinch"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 08</span>
@@ -230,7 +230,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-sitta.jpg" alt="Eurasian Nuthatch"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 09</span>
@@ -240,7 +240,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-dendrocopos.jpg" alt="Great Spotted Woodpecker"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 10</span>
@@ -250,7 +250,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-dryocopus.jpg" alt="Black Woodpecker"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 11</span>
@@ -260,7 +260,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-picus-viridis.jpg" alt="European Green Woodpecker"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 12</span>
@@ -270,7 +270,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-strix-aluco.jpg" alt="Tawny Owl"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 13</span>
@@ -280,7 +280,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-falco.jpg" alt="Peregrine Falcon"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 14</span>
@@ -290,7 +290,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/birds-buteo.jpg" alt="Common Buzzard"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 15</span>
@@ -307,7 +307,7 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card text-only active-card">
+<div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Mammals 01</span>
 <h3>Hidden Shadows</h3>
 <p>野鹿常在清晨或薄霧中造訪果園，品嚐散落的蘋果。石貂與狐狸則在石牆縫隙間留下一條條神祕蹤跡，牠們是這片土地最安靜的守護者。</p>
@@ -323,7 +323,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-capreolus.jpg" alt="Roe Deer"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 03</span>
@@ -333,7 +333,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-sus-scrofa.jpg" alt="Wild Boar"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 04</span>
@@ -343,7 +343,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-cervus.jpg" alt="Red Deer"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 05</span>
@@ -353,7 +353,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-vulpes.jpg" alt="Red Fox"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 06</span>
@@ -363,7 +363,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-meles.jpg" alt="European Badger"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 07</span>
@@ -373,7 +373,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-martes-foina.jpg" alt="Stone Marten"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 08</span>
@@ -383,7 +383,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-glis-glis.jpg" alt="Edible Dormouse"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 09</span>
@@ -393,7 +393,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-sciurus.jpg" alt="Red Squirrel"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 10</span>
@@ -403,7 +403,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-rhinolophus.jpg" alt="Greater Horseshoe Bat" title="Photo by Marie Jullion/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 11</span>
@@ -413,7 +413,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-pipistrellus.jpg" alt="Common Pipistrelle" title="By Barracuda1983 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2077104"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 12</span>
@@ -429,13 +429,13 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card text-only active-card">
+<div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Reptiles 01</span>
 <h3>Sunlight Bathers</h3>
 <p>在陽光烘烤的古老石牆上，爬蟲類靈巧地穿梭其間。這些冷血棲息者是果園生態系中不可或缺的一環，靜靜地見證著山谷的日照軌跡。</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezson/images/reptiles-hierophis.jpg" alt="Green and Yellow Whip Snake"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 02</span>
@@ -445,7 +445,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/reptiles-zamenis.jpg" alt="Aesculapian Snake"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 03</span>
@@ -455,7 +455,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/reptiles-coronella.jpg" alt="Smooth Snake"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 04</span>
@@ -465,7 +465,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/reptiles-natrix.jpg" alt="Barred Grass Snake"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 05</span>
@@ -475,7 +475,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/reptiles-lacerta.jpg" alt="Western Green Lizard"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 06</span>
@@ -485,7 +485,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/reptiles-podarcis.jpg" alt="Common Wall Lizard"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 07</span>
@@ -501,13 +501,13 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card text-only active-card">
+<div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Amphibians 01</span>
 <h3>Moisture Seekers</h3>
 <p>在苔蘚溪流與古老石溝的陰影下，兩棲與微小生態循環默默運行。牠們需要極度純淨的水質與無污染的地貌，是土地最嚴格的檢驗者。</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/amphi-rana.jpg" alt="Common Frog"></div>
 <div class="card-text">
 <span class="habitant-tag">Amphibians 02</span>
@@ -517,7 +517,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/amphi-salamandra.jpg" alt="Fire Salamander"></div>
 <div class="card-text">
 <span class="habitant-tag">Amphibians 03</span>
@@ -534,7 +534,7 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/insects-cetonia.jpg" alt="Rose Chafer"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 01</span>
@@ -544,7 +544,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/insects-bombus.jpg" alt="Buff-tailed Bumblebee" title="By Marco Almbauer - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=68980020"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 02</span>
@@ -554,7 +554,7 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/insects-osmia-bicornis.jpg" alt="Red Mason Bee" title="By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=130945"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 03</span>
@@ -564,8 +564,8 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/insects-osmia-cornuta.jpg" alt="Horned Mason Bee"></div>
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
+<div class="card-image"><img src="/pianezzo/images/insects-osmia-cornuta.jpg" alt="Horned Mason Bee" title="by pjt56"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 04</span>
 <h3>Horned Mason Bee ｜ <i>Osmia cornuta</i></h3>
@@ -574,8 +574,8 @@ layout: "single"
 </div>
 </div>
 
-<div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/insects-apis.jpg" alt="Italian Honey Bee"></div>
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
+<div class="card-image"><img src="/pianezzo/images/insects-apis.jpg" alt="Italian Honey Bee" title="Di Ivar Leidus - Opera propria, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=50121416"></div>
 <div class="card-text">
 <span class="habitant-tag">Insects 05</span>
 <h3>Italian Honey Bee ｜ <i>Apis mellifera ligustica</i></h3>
@@ -621,6 +621,17 @@ setTimeout(() => {
 lastCard.classList.remove('flipping-backward');
 deck.dataset.animating = 'false';
 }, 400);
+}
+
+function handleCardClick(event, deck) {
+if (deck.dataset.animating === 'true') return;
+const cardWidth = event.currentTarget.offsetWidth;
+const clickX = event.clientX - event.currentTarget.getBoundingClientRect().left;
+if (clickX < cardWidth * 0.30) {
+prevCard(deck);
+} else {
+nextCard(deck);
+}
 }
 
 // 🧮 重新動態計算景深與 zIndex
@@ -673,11 +684,9 @@ html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y
 .cards-deck { position: relative; z-index: 10; width: 950px; height: 580px; perspective: 1000px; }
 
 /* 🎯 左右感應防禦門：凌駕於字卡之上，精準分配點擊權限 */
-.nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'), w-resize; pointer-events: none; }
-.nav-zone-right { position: absolute; top: 0; right: 0; width: 70%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'), e-resize; pointer-events: none; }
-
+.nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></svg>'), w-resize; pointer-events: none; }
+.nav-zone-right { position: absolute; top: 0; right: 0; width: 70%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></svg>'), e-resize; pointer-events: none; }
 .content-card { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #ffffff; padding: 60px 80px; border-radius: 2px; box-shadow: 0 10px 40px rgba(166, 124, 82, 0.07); display: flex; flex-direction: column; justify-content: center; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.3s ease-out; border-left: 4px solid #A67C52; box-sizing: border-box; will-change: transform, opacity; }
-
 .content-card.active-card { pointer-events: auto !important; }
 
 /* 🎬 往後翻動畫：往左上角飛走抽離 */
