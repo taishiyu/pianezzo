@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-featured_image: "/pianezzo/images/projects-cover.jpg"
+featured_image: "/pianezzo/images/cover2.jpg"
 description: "人與山的深度介入與對話。"
 layout: "single"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Habitant"
-featured_image: "/pianezzo/images/habitant-cover.jpg"
+featured_image: "/pianezzo/images/cover1.jpg"
 description: "與我們共同棲居於此的生命群像。"
 layout: "single"
 ---
@@ -402,6 +402,26 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-rhinolophus.jpg" alt="Greater Horseshoe Bat" title="Photo by Marie Jullion/ Wikimedia Commons"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 11</span>
+<h3>Greater Horseshoe Bat ｜ <i>Rhinolophus ferrumequinum</i></h3>
+<p>A majestic nocturnal flyer that roosts in old stone cellars and quiet barns. Named for the complex, horseshoe-shaped nose-leaf used to focus its precise echolocation, it glides low over orchard meadows to hunt large beetles and moths.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/mammals-pipistrellus.jpg" alt="Common Pipistrelle" title="By Barracuda1983 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2077104"></div>
+<div class="card-text">
+<span class="habitant-tag">Mammals 12</span>
+<h3>Common Pipistrelle ｜ <i>Pipistrellus pipistrellus</i></h3>
+<p>A tiny, remarkably agile sentinel of the twilight sky. Small enough to fit inside a matchbox, it nests in narrow tree hollows and stone crevices, taking flight at dusk to execute frantic, erratic aerial twists that clear thousands of midges per hour.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
 </section>
 
 <section id="reptiles" class="deck-container">
@@ -503,26 +523,6 @@ layout: "single"
 <span class="habitant-tag">Amphibians 03</span>
 <h3>Fire Salamander ｜ <i>Salamandra salamandra</i></h3>
 <p>The striking inhabitant of the damp mossy woodlands and stone wall basis. Dressed in a bold, warning mosaic of lacquer-black and vibrant sulfur-yellow patches, it ventures out on rainy evenings, relying on clean mountain humidity to breathe.</p>
-<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
-</div>
-</div>
-
-<div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/amphi-rhinolophus.jpg" alt="Greater Horseshoe Bat"></div>
-<div class="card-text">
-<span class="habitant-tag">Amphibians 04</span>
-<h3>Greater Horseshoe Bat ｜ <i>Rhinolophus ferrumequinum</i></h3>
-<p>A majestic nocturnal flyer that roosts in old stone cellars and quiet barns. Named for the complex, horseshoe-shaped nose-leaf used to focus its precise echolocation, it glides low over orchard meadows to hunt large beetles and moths.</p>
-<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
-</div>
-</div>
-
-<div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/amphi-pipistrellus.jpg" alt="Common Pipistrelle"></div>
-<div class="card-text">
-<span class="habitant-tag">Amphibians 05</span>
-<h3>Common Pipistrelle ｜ <i>Pipistrellus pipistrellus</i></h3>
-<p>A tiny, remarkably agile sentinel of the twilight sky. Small enough to fit inside a matchbox, it nests in narrow tree hollows and stone crevices, taking flight at dusk to execute frantic, erratic aerial twists that clear thousands of midges per hour.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>

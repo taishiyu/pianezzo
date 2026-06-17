@@ -1,6 +1,6 @@
 ---
 title: "The Seasons"
-featured_image: "/pianezzo/images/seasons.jpg"
+featured_image: "/pianezzo/images/cover3.jpg"
 description: "The breathing rhythm of Alpe Pianezzo."
 layout: "single"
 ---
