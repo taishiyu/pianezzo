@@ -38,7 +38,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-fraxinus.jpg" alt="European Ash"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-fraxinus.jpg" alt="European Ash" title="By No machine-readable author provided. MPF assumed (based on copyright claims). - No machine-readable source provided. Own work assumed (based on copyright claims)., CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=762825"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 03</span>
 <h3>European Ash ｜ <i>Fraxinus excelsior</i></h3>
@@ -48,7 +48,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-acer.jpg" alt="Sycamore Maple"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-acer.jpg" alt="Sycamore Maple" title="By Willow - Own work, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=2713300"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 04</span>
 <h3>Sycamore Maple ｜ <i>Acer pseudoplatanus</i></h3>
@@ -313,7 +313,7 @@ layout: "single"
 <p>野鹿常在清晨或薄霧中造訪果園，品嚐散落的蘋果。石貂與狐狸則在石牆縫隙間留下一條條神祕蹤跡，牠們是這片土地最安靜的守護者。</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
-<div class="content-card split-layout">
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-rupicapra.jpg" alt="Alpine Chamois" title="Photo by  Giles Laurent/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 02</span>
@@ -437,7 +437,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezson/images/reptiles-hierophis.jpg" alt="Green and Yellow Whip Snake" title="By Maurizio.amendolia - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=144960841"></div>
+<div class="card-image"><img src="/pianezson/images/reptiles-hierophi.jpg" alt="Green and Yellow Whip Snake" title="By Maurizio.amendolia - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=144960841"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 02</span>
 <h3>Green & Yellow Whip Snake ｜ <i>Hierophis viridiflavus</i></h3>
@@ -467,7 +467,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-natrix.jpg" alt="Barred Grass Snake" title"By Benny Trapp - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61661110
+<div class="card-image"><img src="/pianezzo/images/reptiles-natrix.jpg" alt="Barred Grass Snake" title="By Benny Trapp - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61661110
 <div class="content-card split-layout">"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 05</span>
@@ -488,7 +488,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-podarcis.jpg" alt="Common Wall Lizard" title"By Mariomassone - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131145219" ></div>
+<div class="card-image"><img src="/pianezzo/images/reptiles-podarcis.jpg" alt="Common Wall Lizard" title="By Mariomassone - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131145219" ></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 07</span>
 <h3>Common Wall Lizard ｜ <i>Podarcis muralis</i></h3>
