@@ -28,7 +28,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-betula.jpg" alt="Silver Birch"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-betula.jpg" alt="Silver Birch" title="Photo by Percita/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 02</span>
 <h3>Silver Birch ｜ <i>Betula pendula</i></h3>
@@ -58,7 +58,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-castanea.jpg" alt="Sweet Chestnut"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-castanea.jpg" alt="Sweet Chestnut" title="Photo by shih yu tai"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 05</span>
 <h3>Sweet Chestnut ｜ <i>Castanea sativa</i></h3>
@@ -78,7 +78,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-fagus.jpg" alt="European Beech"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-fagus.jpg" alt="European Beech" title="Photo by GooseCanada/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 07</span>
 <h3>European Beech ｜ <i>Fagus sylvatica</i></h3>
@@ -98,7 +98,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-populus.jpg" alt="Common Aspen"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-populus.jpg" alt="Common Aspen" title="Photo by Šarūnas Šimkus/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 09</span>
 <h3>Common Aspen ｜ <i>Populus tremula</i></h3>
@@ -118,7 +118,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-tilia.jpg" alt="Large-leaved Lime"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-tilia.jpg" alt="Large-leaved Lime" title="Photo by Chmee2/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 11</span>
 <h3>Large-leaved Lime ｜ <i>Tilia platyphyllos</i></h3>
@@ -128,7 +128,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-picea.jpg" alt="Norway Spruce"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-picea.jpg" alt="Norway Spruce" title="Photo by Ivar Leidus / Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 12</span>
 <h3>Norway Spruce ｜ <i>Picea abies</i></h3>
@@ -138,7 +138,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-larix.jpg" alt="European Larch"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-larix.jpg" alt="European Larch" title="Photo by Sciadopitys / Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 13</span>
 <h3>European Larch ｜ <i>Larix decidua</i></h3>
@@ -161,7 +161,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-parus-major.jpg" alt="Great Tit"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-parus-major.jpg" alt="Great Tit" title="Photo by Youatt / Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 02</span>
 <h3>Great Tit ｜ <i>Parus major</i></h3>
@@ -171,7 +171,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-cyanistes.jpg" alt="Eurasian Blue Tit"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-cyanistes.jpg" alt="Eurasian Blue Tit" title="Photo by Sławek Staszczuk/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 03</span>
 <h3>Eurasian Blue Tit ｜ <i>Cyanistes caeruleus</i></h3>
@@ -181,7 +181,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-periparus.jpg" alt="Coal Tit"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-periparus.jpg" alt="Coal Tit" title="Photo by Aviceda/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 04</span>
 <h3>Coal Tit ｜ <i>Periparus ater</i></h3>
@@ -191,7 +191,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-poecile.jpg" alt="Marsh Tit"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-poecile.jpg" alt="Marsh Tit" title="Photo by Steffen Hannert/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 05</span>
 <h3>Marsh Tit ｜ <i>Poecile palustris</i></h3>
@@ -201,7 +201,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-erithacus.jpg" alt="European Robin"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-erithacus.jpg" alt="European Robin" title="Photo by  Francis C. Franklin/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 06</span>
 <h3>European Robin ｜ <i>Erithacus rubecula</i></h3>
@@ -211,7 +211,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-turdus.jpg" alt="Common Blackbird"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-turdus.jpg" alt="Common Blackbird" title="Photo by Andreas Trepte/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 07</span>
 <h3>Common Blackbird ｜ <i>Turdus merula</i></h3>
@@ -221,7 +221,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-fringilla.jpg" alt="Common Chaffinch"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-fringilla.jpg" alt="Common Chaffinch" title="Photo by caroline legg/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 08</span>
 <h3>Common Chaffinch ｜ <i>Fringilla coelebs</i></h3>
@@ -231,7 +231,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-sitta.jpg" alt="Eurasian Nuthatch"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-sitta.jpg" alt="Eurasian Nuthatch" title="photo by Di Chme82 - Opera propria, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=79419497"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 09</span>
 <h3>Eurasian Nuthatch ｜ <i>Sitta europaea</i></h3>
@@ -241,7 +241,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-dendrocopos.jpg" alt="Great Spotted Woodpecker"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-dendrocopos.jpg" alt="Great Spotted Woodpecker" title="Photo by stuart Burns/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 10</span>
 <h3>Great Spotted Woodpecker ｜ <i>Dendrocopos major</i></h3>
@@ -251,7 +251,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-dryocopus.jpg" alt="Black Woodpecker"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-dryocopus.jpg" alt="Black Woodpecker" title="Photo by Dion Art/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 11</span>
 <h3>Black Woodpecker ｜ <i>Dryocopus martius</i></h3>
@@ -261,7 +261,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-picus-viridis.jpg" alt="European Green Woodpecker"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-picus-viridis.jpg" alt="European Green Woodpecker" title="Photo by Charles J. Sharp/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 12</span>
 <h3>European Green Woodpecker ｜ <i>Picus viridis</i></h3>
@@ -271,7 +271,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-strix-aluco.jpg" alt="Tawny Owl"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-strix-aluco.jpg" alt="Tawny Owl" title="Photo by Martin Mecnarowski/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 13</span>
 <h3>Tawny Owl ｜ <i>Strix aluco</i></h3>
@@ -281,7 +281,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-falco.jpg" alt="Peregrine Falcon"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-falco.jpg" alt="Peregrine Falcon" title="Photo by FlightEditor/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 14</span>
 <h3>Peregrine Falcon ｜ <i>Falco peregrinus</i></h3>
@@ -291,7 +291,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/birds-buteo.jpg" alt="Common Buzzard"></div>
+<div class="card-image"><img src="/pianezzo/images/birds-buteo.jpg" alt="Common Buzzard" title="Photo by caroline legg/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Birds 15</span>
 <h3>Common Buzzard ｜ <i>Buteo buteo</i></h3>
@@ -314,7 +314,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/mammals-rupicapra.jpg" alt="Alpine Chamois"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-rupicapra.jpg" alt="Alpine Chamois" title="Photo by  Giles Laurent/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 02</span>
 <h3>Alpine Chamois ｜ <i>Rupicapra rupicapra</i></h3>
@@ -324,7 +324,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-capreolus.jpg" alt="Roe Deer"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-capreolus.jpg" alt="Roe Deer" title="Photo by Dott.elia/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 03</span>
 <h3>Roe Deer ｜ <i>Capreolus capreolus</i></h3>
@@ -334,7 +334,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-sus-scrofa.jpg" alt="Wild Boar"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-sus-scrofa.jpg" alt="Wild Boar" title="Photo by Valentin Panzirsch/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 04</span>
 <h3>Wild Boar ｜ <i>Sus scrofa</i></h3>
@@ -344,7 +344,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-cervus.jpg" alt="Red Deer"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-cervus.jpg" alt="Red Deer" title="Photo by  Olivier Deme/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 05</span>
 <h3>Red Deer ｜ <i>Cervus elaphus</i></h3>
@@ -354,7 +354,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-vulpes.jpg" alt="Red Fox"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-vulpes.jpg" alt="Red Fox" title="Photo by Airwolfhound / Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 06</span>
 <h3>Red Fox ｜ <i>Vulpes vulpes</i></h3>
@@ -364,7 +364,8 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-meles.jpg" alt="European Badger"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-meles.jpg" alt="European Badger" title="Photo by caroline legg/ Wikimedia Commons"></div>
+<div class="card-text"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 07</span>
 <h3>European Badger ｜ <i>Meles meles</i></h3>
@@ -374,7 +375,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-martes-foina.jpg" alt="Stone Marten"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-martes-foina.jpg" alt="Stone Marten" title="Photo by M.zlinko/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 08</span>
 <h3>Stone Marten ｜ <i>Martes foina</i></h3>
@@ -384,7 +385,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-glis-glis.jpg" alt="Edible Dormouse"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-glis-glis.jpg" alt="Edible Dormouse" title="Photo by Loir Gris/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 09</span>
 <h3>Edible Dormouse ｜ <i>Glis glis</i></h3>
@@ -394,7 +395,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/mammals-sciurus.jpg" alt="Red Squirrel"></div>
+<div class="card-image"><img src="/pianezzo/images/mammals-sciurus.jpg" alt="Red Squirrel" title="Photo by Toivo Toivanen & Tiina Toppila/ Wikimedia Commons"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 10</span>
 <h3>Red Squirrel ｜ <i>Sciurus vulgaris</i></h3>
@@ -436,7 +437,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezson/images/reptiles-hierophis.jpg" alt="Green and Yellow Whip Snake"></div>
+<div class="card-image"><img src="/pianezson/images/reptiles-hierophis.jpg" alt="Green and Yellow Whip Snake" title="By Maurizio.amendolia - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=144960841"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 02</span>
 <h3>Green & Yellow Whip Snake ｜ <i>Hierophis viridiflavus</i></h3>
@@ -446,7 +447,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-zamenis.jpg" alt="Aesculapian Snake"></div>
+<div class="card-image"><img src="/pianezzo/images/reptiles-zamenis.jpg" alt="Aesculapian Snake" title="By FelixReimann - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7433690"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 03</span>
 <h3>Aesculapian Snake ｜ <i>Zamenis longissimus</i></h3>
@@ -456,7 +457,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-coronella.jpg" alt="Smooth Snake"></div>
+<div class="card-image"><img src="/pianezzo/images/reptiles-coronella.jpg" alt="Smooth Snake" title="Di Christian Fischer, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4668766"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 04</span>
 <h3>Smooth Snake ｜ <i>Coronella austriaca</i></h3>
@@ -466,7 +467,8 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-natrix.jpg" alt="Barred Grass Snake"></div>
+<div class="card-image"><img src="/pianezzo/images/reptiles-natrix.jpg" alt="Barred Grass Snake" title"By Benny Trapp - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61661110
+<div class="content-card split-layout">"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 05</span>
 <h3>Barred Grass Snake ｜ <i>Natrix helvetica</i></h3>
@@ -476,7 +478,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-lacerta.jpg" alt="Western Green Lizard"></div>
+<div class="card-image"><img src="/pianezzo/images/reptiles-lacerta.jpg" alt="Western Green Lizard" title="Di Mariomassone - Opera propria, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=133129192"></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 06</span>
 <h3>Western Green Lizard ｜ <i>Lacerta bilineata</i></h3>
@@ -486,7 +488,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/reptiles-podarcis.jpg" alt="Common Wall Lizard"></div>
+<div class="card-image"><img src="/pianezzo/images/reptiles-podarcis.jpg" alt="Common Wall Lizard" title"By Mariomassone - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=131145219" ></div>
 <div class="card-text">
 <span class="habitant-tag">Reptiles 07</span>
 <h3>Common Wall Lizard ｜ <i>Podarcis muralis</i></h3>
@@ -508,7 +510,7 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/amphi-rana.jpg" alt="Common Frog"></div>
+<div class="card-image"><img src="/pianezzo/images/amphi-rana.jpg" alt="Common Frog" title="By Richard Bartz, Munich aka Makro Freak Image:MFB.jpg - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=4336610"></div>
 <div class="card-text">
 <span class="habitant-tag">Amphibians 02</span>
 <h3>Common Frog ｜ <i>Rana temporaria</i></h3>
@@ -518,7 +520,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/amphi-salamandra.jpg" alt="Fire Salamander"></div>
+<div class="card-image"><img src="/pianezzo/images/amphi-salamandra.jpg" alt="Fire Salamander" title="Di Iacopo Buttini - Opera propria, Pubblico dominio, https://commons.wikimedia.org/w/index.php?curid=14496504"></div>
 <div class="card-text">
 <span class="habitant-tag">Amphibians 03</span>
 <h3>Fire Salamander ｜ <i>Salamandra salamandra</i></h3>
@@ -534,14 +536,11 @@ layout: "single"
 <div class="nav-zone-left" onclick="prevCard(this.parentNode); event.stopPropagation();"></div>
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
-<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/insects-cetonia.jpg" alt="Rose Chafer"></div>
-<div class="card-text">
+<div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Insects 01</span>
-<h3>Rose Chafer ｜ <i>Cetonia aurata</i></h3>
-<p>A flying jewel of the midsummer garden. Instantly captivating with its brilliant, metallic emerald-green carapace and structural white flecks, it spends warm sunny afternoons clambering lazily over wild roses and orchard blossoms, feasting peacefully on pollen.</p>
+<h3>Moisture Seekers</h3>
+<p>在苔蘚溪流與古老石溝的陰影下，兩棲與微小生態循環默默運行。牠們需要極度純淨的水質與無污染的地貌，是土地最嚴格的檢驗者。</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
-</div>
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -580,6 +579,16 @@ layout: "single"
 <span class="habitant-tag">Insects 05</span>
 <h3>Italian Honey Bee ｜ <i>Apis mellifera ligustica</i></h3>
 <p>The gentle, sub-alpine native of the Italian peninsula. Renowned worldwide for its calm temperament and golden-brown bands, this highly cooperative worker meticulously maps the entire valley flora, turning wild mountain nectar into golden honey.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
+<div class="card-image"><img src="/pianezzo/images/insects-cetonia.jpg" alt="Rose Chafer" title="Di I, Chrumps, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2521547" ></div>
+<div class="card-text">
+<span class="habitant-tag">Insects 06</span>
+<h3>Rose Chafer ｜ <i>Cetonia aurata</i></h3>
+<p>A flying jewel of the midsummer garden. Instantly captivating with its brilliant, metallic emerald-green carapace and structural white flecks, it spends warm sunny afternoons clambering lazily over wild roses and orchard blossoms, feasting peacefully on pollen.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
