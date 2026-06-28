@@ -68,7 +68,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-quercus.jpg" alt="Downy Oak"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-quercus.jpg" alt="Downy Oak" totle="By Franz Xaver - Self-photographed, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4213200"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 06</span>
 <h3>Downy Oak ｜ <i>Quercus pubescens</i></h3>
@@ -88,7 +88,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-sorbus.jpg" alt="Whitebeam"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-sorbus.jpg" alt="Whitebeam" title="Di Julie Anne Workman - Opera propria, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=7804430"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 08</span>
 <h3>Whitebeam ｜ <i>Sorbus aria</i></h3>
@@ -108,7 +108,7 @@ layout: "single"
 </div>
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
-<div class="card-image"><img src="/pianezzo/images/flora-corylus.jpg" alt="Common Hazel"></div>
+<div class="card-image"><img src="/pianezzo/images/flora-corylus.jpg" alt="Common Hazel" title="by shih you tai"></div>
 <div class="card-text">
 <span class="habitant-tag">Flora 10</span>
 <h3>Common Hazel ｜ <i>Corylus avellana</i></h3>
@@ -299,6 +299,17 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
+<div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
+<div class="card-image"><img src="/pianezzo/images/birds-jay.jpg" alt="Common Buzzard" title="By I, Luc Viatour, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5933620"></div>
+<div class="card-text">
+<span class="habitant-tag">Birds 15</span>
+<h3>Eurasian Jay ｜ <i>Garrulus glandarius</i></h3>
+<p>A flying squadron accompanied by whistling calls, rushing toward the valley just as dawn breaks, flashing bright streaks of blue.
+Its cry sounds just like a cat's meow..</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
 </section>
 
 
@@ -365,7 +376,6 @@ layout: "single"
 
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
 <div class="card-image"><img src="/pianezzo/images/mammals-meles.jpg" alt="European Badger" title="Photo by caroline legg/ Wikimedia Commons"></div>
-<div class="card-text"></div>
 <div class="card-text">
 <span class="habitant-tag">Mammals 07</span>
 <h3>European Badger ｜ <i>Meles meles</i></h3>
