@@ -24,7 +24,7 @@ layout: "single"
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Flora 01</span>
 <h3>The Silent Foundation</h3>
-<p>落葉松、歐洲雲杉與百年栗樹構成了這片山林的古老骨架。初春時節，野韭菜與阿爾卑斯高山草本在果園邊緣悄然甦醒，為我們的日常提供了最純淨的滋味。</p>
+<p>Trrees frame the space, creating the sanctuary. The trailblazers nurture the soil; the latecomers take the baton, ensuring the forest endures. High above, the canopies leave a measured distance for the sunlight; deep below, the root systems weave a network of messages.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -157,7 +157,8 @@ layout: "single"
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Birds 01</span>
 <h3>Sky Wardens</h3>
-<p>黑啄木鳥的規律敲擊聲是工坊最天然的背景音樂。金雕偶爾在晴朗的高空盤旋，而盤踞在灌木叢中的黑頭鶯，則用靈動的鳴叫宣告晨昏更迭。</p>
+<p>They warn, they court, they fall silent.
+Amidst these polyphonic melodies, they busily weave through the fabric of life.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -321,7 +322,8 @@ Its cry sounds just like a cat's meow..</p>
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Mammals 01</span>
 <h3>Hidden Shadows</h3>
-<p>野鹿常在清晨或薄霧中造訪果園，品嚐散落的蘋果。石貂與狐狸則在石牆縫隙間留下一條條神祕蹤跡，牠們是這片土地最安靜的守護者。</p>
+<p>Nighttime visitors dash along forest paths and whisper upon rooftops. Dogs bark; a pair of glowing eyes locks gazes with yours.
+Leaving only a tuft of fur in the morning dew, and a hoofprint in the mud.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -443,7 +445,8 @@ Its cry sounds just like a cat's meow..</p>
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Reptiles 01</span>
 <h3>Sunlight Bathers</h3>
-<p>在陽光烘烤的古老石牆上，爬蟲類靈巧地穿梭其間。這些冷血棲息者是果園生態系中不可或缺的一環，靜靜地見證著山谷的日照軌跡。</p>
+<p>Cold-blooded creatures, encountered only on warmer days,
+Slither into the grass—some swift, some slow. Rustle, rustle...</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -516,7 +519,8 @@ Its cry sounds just like a cat's meow..</p>
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Amphibians 01</span>
 <h3>Moisture Seekers</h3>
-<p>在苔蘚溪流與古老石溝的陰影下，兩棲與微小生態循環默默運行。牠們需要極度純淨的水質與無污染的地貌，是土地最嚴格的檢驗者。</p>
+<p>Emerging from the water, shedding tails and expanding limbs, they climb up the slopes onto dry land.
+And so they arrived, from the very dawn of life.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -549,7 +553,8 @@ Its cry sounds just like a cat's meow..</p>
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Insects 01</span>
 <h3>Moisture Seekers</h3>
-<p>在苔蘚溪流與古老石溝的陰影下，兩棲與微小生態循環默默運行。牠們需要極度純淨的水質與無污染的地貌，是土地最嚴格的檢驗者。</p>
+<p>Anchoring on the crests of petals, sailing into the harbors of blossoms, they load their bodies with golden pollen.
+Following the fragrant shores, they deliver the promises entrusted to them.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 
