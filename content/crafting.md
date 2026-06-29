@@ -69,9 +69,9 @@ layout: "single"
 <div class="artifact-image-wrapper">
 <img src="/pianezzo/images/craft-teaset.jpg" alt="teaset">
 </div>
-<div class="Teaset">
+<div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
-<h3>Kitchen Utensils</h3>
+<h3>Tea set</h3>
 <p>The rustic wooden jar locks in the tea’s aroma, poured into a cup of that very same texture, and savored.</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
