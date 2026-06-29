@@ -162,7 +162,7 @@ layout: "single"
 <div class="gallery-container">
 
 <div class="project-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/walk-ecology.jpg" alt="Alpine Stewardship Walks"></div>
+<div class="card-image"><img src="/pianezzo/images/gardenround.jpg" alt="Alpine Stewardship Walks"></div>
 <div class="card-text">
 <span class="project-time-tag">PERMANENT ｜ ECOLOGY</span>
 <h3>Alpine Walks & Stewardship</h3>
@@ -175,7 +175,7 @@ layout: "single"
 </div>
 
 <div class="project-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/workshop-baking.jpg" alt="Seasonal Workshops"></div>
+<div class="card-image"><img src="/pianezzo/images/workshop-cake.jpg" alt="Seasonal Workshops"></div>
 <div class="card-text">
 <span class="project-time-tag">SEASONAL ｜ GATHERINGS</span>
 <h3>The Seasonal Cycle Workshops</h3>
