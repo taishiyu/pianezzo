@@ -24,7 +24,7 @@ layout: "single"
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Flora 01</span>
 <h3>The Silent Foundation</h3>
-<p>Trrees frame the space, creating the sanctuary. The trailblazers nurture the soil; the latecomers take the baton, ensuring the forest endures. High above, the canopies leave a measured distance for the sunlight; deep below, the root systems weave a network of messages.</p>
+<p>Trees frame the space, creating the sanctuary. The trailblazers nurture the soil; the latecomers take the baton, ensuring the forest endures. High above, the canopies leave a measured distance for the sunlight; deep below, the root systems weave a network of messages.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout" onclick="handleCardClick(event, this.parentNode)">
@@ -552,7 +552,7 @@ And so they arrived, from the very dawn of life.</p>
 
 <div class="content-card text-only active-card" onclick="handleCardClick(event, this.parentNode)">
 <span class="habitant-tag">Insects 01</span>
-<h3>Moisture Seekers</h3>
+<h3>flora Voyager</h3>
 <p>Anchoring on the crests of petals, sailing into the harbors of blossoms, they load their bodies with golden pollen.
 Following the fragrant shores, they deliver the promises entrusted to them.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>

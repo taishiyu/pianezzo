@@ -22,12 +22,27 @@ layout: "single"
 
 <div class="artifact-card">
 <div class="artifact-image-wrapper">
-<img src="/pianezzo/images/craft-chair.jpg" alt="Solid Wood Chair">
+<img src="/pianezzo/images/craft-cup.jpg" alt="cups">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">LARCH WOOD</span>
-<h3>Solid Wood Chair</h3>
-<p>Synthesis of T-spline digital modeling and artisanal hand-carving. Shaped from locally sourced alpine larch, preserving organic honesty.</p>
+<span class="artifact-tag">Muti wood</span>
+<h3>Wooden Cup</h3>
+<p>Different woods possess distinct textures—the golden grains of birch, the pristine whiteness of maple, and the contrasting hues of cherry—all serving as masterpieces crafted by nature itself.</p>
+<div class="artifact-footer">
+<span class="artifact-status">3 Pieces Left</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-ricespoon.jpg" alt="Kitchen Utensils">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">BATCH 01</span>
+<h3>Kitchen Utensils</h3>
+<p>Spoons, forks, spatulas, and turners—nearly every utensil needed from cooking to dining can be crafted by hand.</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -37,14 +52,104 @@ layout: "single"
 
 <div class="artifact-card">
 <div class="artifact-image-wrapper">
-<img src="/pianezzo/images/craft-utensils.jpg" alt="Kitchen Utensils">
+<img src="/pianezzo/images/craft-board.jpg" alt="cutting board">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">muti shapes</span>
+<h3>Kitchen Utensils</h3>
+<p>The ultimate companion for bread, cheese, salami, and desserts—framed by the elegant grain of the wood, every meal looks all the more delicious!</p>
+<div class="artifact-footer">
+<span class="artifact-status">Bespoke</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-teasetjpg" alt="Kitchen Utensils">
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
 <h3>Kitchen Utensils</h3>
-<p>Each piece is individually carved from timber salvaged during seasonal orchard pruning. Finished with organic food-safe oil.</p>
+<p>The rustic wooden jar locks in the tea’s aroma, poured into a cup of that very same texture, and savored.</p>
 <div class="artifact-footer">
-<span class="artifact-status">3 Pieces Left</span>
+<span class="artifact-status">Bespoke</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-walnutplate.jpg" alt="walnutplate">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">BATCH 01</span>
+<h3>Kitchen Utensils</h3>
+<p>Carved in harmony with its natural grain, the large platter of warm, polished walnut exudes an aura of steady elegance.</p>
+<div class="artifact-footer">
+<span class="artifact-status">1 left</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-shoehorn.jpg" alt="shoehorn">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">BATCH 01</span>
+<h3>Kitchen Utensils</h3>
+<p>With its comfortable curves and contours, it seamlessly blends practicality with beauty.</p>
+<div class="artifact-footer">
+<span class="artifact-status">Bespoke</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-birdfood.jpg" alt="circle">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">BATCH 01</span>
+<h3>Kitchen Utensils</h3>
+<p>The center can be filled with bird feed, or it can simply be displayed as a standalone decorative piece.</p>
+<div class="artifact-footer">
+<span class="artifact-status">Bespoke</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-birdhouse.jpg" alt="birdhouse">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">BATCH 01</span>
+<h3>Kitchen Utensils</h3>
+<p>Crafted from chestnut wood, these birdhouses brave the wind and rain with ease. Each one boasts its own unique character, with entrances tailored to different avian species. Elongated houses designed specifically for bats are also available..</p>
+<div class="artifact-footer">
+<span class="artifact-status">Bespoke</span>
+<a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
+</div>
+</div>
+</div>
+
+<div class="artifact-card">
+<div class="artifact-image-wrapper">
+<img src="/pianezzo/images/craft-table.jpg" alt="table">
+</div>
+<div class="artifact-content">
+<span class="artifact-tag">BATCH 01</span>
+<h3>Kitchen Utensils</h3>
+<p>A chestnut wood dining table, perfectly suited for outdoor spaces, blending seamlessly with the natural landscape.</p>
+<div class="artifact-footer">
+<span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
 </div>
 </div>
