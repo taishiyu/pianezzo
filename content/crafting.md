@@ -25,9 +25,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-cup.jpg" alt="cups">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">Muti wood</span>
 <h3>Wooden Cup</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-1" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Different woods possess distinct textures—the golden grains of birch, the pristine whiteness of maple, and the contrasting hues of cherry—all serving as masterpieces crafted by nature itself.</p>
+</div>
+<label for="art-1" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">3 Pieces Left</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -40,9 +45,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-ricespoon.jpg" alt="Kitchen Utensils">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>Kitchen Utensils</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-2" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Spoons, forks, spatulas, and turners—nearly every utensil needed from cooking to dining can be crafted by hand.</p>
+</div>
+<label for="art-2" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -55,9 +65,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-board.jpg" alt="cutting board">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">muti shapes</span>
 <h3>Cutting Board</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-3" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>The ultimate companion for bread, cheese, salami, and desserts—framed by the elegant grain of the wood, every meal looks all the more delicious!</p>
+</div>
+<label for="art-3" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -70,9 +85,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-teaset.jpg" alt="teaset">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>Tea set</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-4" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>The rustic wooden jar locks in the tea’s aroma, poured into a cup of that very same texture, and savored.</p>
+</div>
+<label for="art-4" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -85,9 +105,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-walnutplate.jpg" alt="walnutplate">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>walnutplate</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-5" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Carved in harmony with its natural grain, the large platter of warm, polished walnut exudes an aura of steady elegance.</p>
+</div>
+<label for="art-5" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">1 left</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -100,9 +125,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-shoehorn.jpg" alt="shoehorn">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>Shoehorn</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-6" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>With its comfortable curves and contours, it seamlessly blends practicality with beauty.</p>
+</div>
+<label for="art-6" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -115,9 +145,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-birdfood.jpg" alt="circle">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>Bird's table</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-7" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>The center can be filled with bird feed, or it can simply be displayed as a standalone decorative piece.</p>
+</div>
+<label for="art-7" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -130,9 +165,14 @@ layout: "single"
 <img src="/pianezzo/images/craft-birdhouse.jpg" alt="birdhouse">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>Birdhouse</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-8" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Crafted from chestnut wood, these birdhouses brave the wind and rain with ease. Each one boasts its own unique character, with entrances tailored to different avian species. Elongated houses designed specifically for bats are also available..</p>
+</div>
+<label for="art-8" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
@@ -145,14 +185,18 @@ layout: "single"
 <img src="/pianezzo/images/craft-table.jpg" alt="table">
 </div>
 <div class="artifact-content">
-<span class="artifact-tag">BATCH 01</span>
 <h3>Table</h3>
+<div class="expand-container">
+<input type="checkbox" id="art-9" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>A chestnut wood dining table, perfectly suited for outdoor spaces, blending seamlessly with the natural landscape.</p>
+</div>
+<label for="art-9" class="expand-btn"></label>
+</div>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
 <a href="/pianezzo/contact/" class="artifact-link">Inquire</a>
 </div>
-<label for="workshop-expand" class="expand-btn"></label>
 </div>
 </div>
 
@@ -198,6 +242,15 @@ layout: "single"
 </div>
 
 <style>
+.artifact-content .expand-container { position: relative; text-align: left; width: 100%; margin-bottom: 15px; }
+.artifact-content .expand-content { max-height: 45px; overflow: hidden; transition: max-height 0.5s ease; position: relative; text-align: left; }
+.artifact-content .expand-content::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 20px; background: linear-gradient(transparent, #ffffff); transition: opacity 0.3s; }
+.artifact-content .expand-btn { display: inline-block; margin-top: 8px; color: #A67C52; font-family: 'Lora', serif; font-size: 0.75rem; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+.artifact-content .expand-btn::before { content: "Read Details"; }
+.artifact-content .expand-toggle:checked + .expand-content { max-height: 300px; }
+.artifact-content .expand-toggle:checked + .expand-content::after { opacity: 0; }
+.artifact-content .expand-toggle:checked ~ .expand-btn::before { content: "Show Less"; }
+
 html { scroll-behavior: smooth; }
 .crafting-master-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background: #f4f1ea; min-height: 100vh; padding-bottom: 150px; overflow-x: hidden; }
 .crafting-nav { position: sticky; top: 20px; z-index: 100; width: max-content; margin: 40px auto 80px auto; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); padding: 6px 12px; border-radius: 50px; display: flex; gap: 5px; box-shadow: 0 4px 25px rgba(0,0,0,0.06); border: 1px solid rgba(166, 124, 82, 0.15); }
@@ -215,7 +268,7 @@ html { scroll-behavior: smooth; }
 .artifact-content { padding: 25px; text-align: left; display: flex; flex-direction: column; flex-grow: 1; }
 .artifact-tag { font-family: 'Lora', serif; font-size: 0.75rem; letter-spacing: 2px; color: #A67C52; margin-bottom: 8px; display: block; }
 .artifact-card h3 { font-family: 'Lora', serif; font-size: 1.35rem; margin: 0 0 12px 0; color: #1a1a1a; text-align: left; }
-.artifact-content p { font-family: 'Lora', serif; font-size: 0.95rem; line-height: 1.6; color: #555; margin: 0 0 20px 0; text-align: left; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.artifact-content p { font-family: 'Lora', serif; font-size: 0.95rem; line-height: 1.6; color: #555; margin: 0; text-align: left; }
 .artifact-footer { margin-top: auto; padding-top: 15px; border-top: 1px solid #f5f2eb; display: flex; justify-content: space-between; align-items: center; }
 .artifact-status { font-family: 'Lora', serif; font-size: 0.8rem; font-style: italic; color: #777; }
 .artifact-link { font-family: 'Lora', serif; font-size: 0.75rem; font-weight: bold; color: #A67C52; text-decoration: none; border: 1px solid #A67C52; padding: 6px 14px; border-radius: 2px; transition: all 0.3s; text-transform: uppercase; letter-spacing: 0.5px; }
@@ -233,14 +286,14 @@ html { scroll-behavior: smooth; }
 .status-tag { font-family: 'Lora', serif; font-size: 0.85rem; font-style: italic; color: #666; }
 .inquire-btn { font-family: 'Lora', serif; font-size: 0.85rem; font-weight: bold; color: #A67C52; text-decoration: none; border: 1px solid #A67C52; padding: 10px 20px; border-radius: 2px; transition: all 0.3s; text-transform: uppercase; letter-spacing: 1px; }
 .inquire-btn:hover { background: #A67C52; color: #fff; }
-.expand-container { position: relative; text-align: left; }
-.expand-content { max-height: 80px; overflow: hidden; transition: max-height 0.5s ease; position: relative; text-align: left; }
-.expand-content::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background: linear-gradient(transparent, #fff); transition: opacity 0.3s; }
-.expand-btn { display: inline-block; margin-top: 20px; color: #A67C52; font-family: 'Lora', serif; font-size: 0.85rem; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
-.expand-btn::before { content: "Read Full Details"; }
-.expand-toggle:checked + .expand-content { max-height: 800px; }
-.expand-toggle:checked + .expand-content::after { opacity: 0; }
-.expand-toggle:checked ~ .expand-btn::before { content: "Show Less"; }
+.gallery-container .expand-container { position: relative; text-align: left; }
+.gallery-container .expand-content { max-height: 80px; overflow: hidden; transition: max-height 0.5s ease; position: relative; text-align: left; }
+.gallery-container .expand-content::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background: linear-gradient(transparent, #fff); transition: opacity 0.3s; }
+.gallery-container .expand-btn { display: inline-block; margin-top: 20px; color: #A67C52; font-family: 'Lora', serif; font-size: 0.85rem; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+.gallery-container .expand-btn::before { content: "Read Full Details"; }
+.gallery-container .expand-toggle:checked + .expand-content { max-height: 800px; }
+.gallery-container .expand-toggle:checked + .expand-content::after { opacity: 0; }
+.gallery-container .expand-toggle:checked ~ .expand-btn::before { content: "Show Less"; }
 @media (max-width: 1024px) { .artifacts-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } .project-card { padding: 40px 25px; } .split-layout { flex-direction: column; gap: 25px; } .card-image { width: 100%; } .acquisition-box { flex-direction: column; align-items: flex-start; } }
 @media (max-width: 768px) { .artifacts-grid { grid-template-columns: 1fr; gap: 25px; } }
 </style>
