@@ -246,10 +246,10 @@ layout: "single"
 .artifact-content .expand-content { max-height: 45px; overflow: hidden; transition: max-height 0.5s ease; position: relative; text-align: left; }
 .artifact-content .expand-content::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 20px; background: linear-gradient(transparent, #ffffff); transition: opacity 0.3s; }
 .artifact-content .expand-btn { display: inline-block; margin-top: 8px; color: #A67C52; font-family: 'Lora', serif; font-size: 0.75rem; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
-.artifact-content .expand-btn::before { content: "Read Details"; }
+.artifact-content .expand-btn::before { content: "More"; }
 .artifact-content .expand-toggle:checked + .expand-content { max-height: 300px; }
 .artifact-content .expand-toggle:checked + .expand-content::after { opacity: 0; }
-.artifact-content .expand-toggle:checked ~ .expand-btn::before { content: "Show Less"; }
+.artifact-content .expand-toggle:checked ~ .expand-btn::before { content: "Less"; }
 
 html { scroll-behavior: smooth; }
 .crafting-master-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background: #f4f1ea; min-height: 100vh; padding-bottom: 150px; overflow-x: hidden; }
