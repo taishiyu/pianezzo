@@ -56,7 +56,7 @@ layout: "single"
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">muti shapes</span>
-<h3>Kitchen Utensils</h3>
+<h3>Cutting Board</h3>
 <p>The ultimate companion for bread, cheese, salami, and desserts—framed by the elegant grain of the wood, every meal looks all the more delicious!</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
@@ -67,9 +67,9 @@ layout: "single"
 
 <div class="artifact-card">
 <div class="artifact-image-wrapper">
-<img src="/pianezzo/images/craft-teasetjpg" alt="Kitchen Utensils">
+<img src="/pianezzo/images/craft-teaset.jpg" alt="teaset">
 </div>
-<div class="artifact-content">
+<div class="Teaset">
 <span class="artifact-tag">BATCH 01</span>
 <h3>Kitchen Utensils</h3>
 <p>The rustic wooden jar locks in the tea’s aroma, poured into a cup of that very same texture, and savored.</p>
@@ -86,7 +86,7 @@ layout: "single"
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
-<h3>Kitchen Utensils</h3>
+<h3>walnutplate</h3>
 <p>Carved in harmony with its natural grain, the large platter of warm, polished walnut exudes an aura of steady elegance.</p>
 <div class="artifact-footer">
 <span class="artifact-status">1 left</span>
@@ -101,7 +101,7 @@ layout: "single"
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
-<h3>Kitchen Utensils</h3>
+<h3>Shoehorn</h3>
 <p>With its comfortable curves and contours, it seamlessly blends practicality with beauty.</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
@@ -116,7 +116,7 @@ layout: "single"
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
-<h3>Kitchen Utensils</h3>
+<h3>Bird's table</h3>
 <p>The center can be filled with bird feed, or it can simply be displayed as a standalone decorative piece.</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
@@ -131,7 +131,7 @@ layout: "single"
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
-<h3>Kitchen Utensils</h3>
+<h3>Birdhouse</h3>
 <p>Crafted from chestnut wood, these birdhouses brave the wind and rain with ease. Each one boasts its own unique character, with entrances tailored to different avian species. Elongated houses designed specifically for bats are also available..</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
@@ -146,7 +146,7 @@ layout: "single"
 </div>
 <div class="artifact-content">
 <span class="artifact-tag">BATCH 01</span>
-<h3>Kitchen Utensils</h3>
+<h3>Table</h3>
 <p>A chestnut wood dining table, perfectly suited for outdoor spaces, blending seamlessly with the natural landscape.</p>
 <div class="artifact-footer">
 <span class="artifact-status">Bespoke</span>
