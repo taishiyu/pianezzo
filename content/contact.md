@@ -94,7 +94,7 @@ form.addEventListener("submit", handleSubmit);
 <p class="map-desc">Near by Domodossola, around 1.5 hr from Milan by train。</p>
 
 <div class="google-map-wrapper">
-<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7334.831581346374!2d8.179756786160343!3d46.05332525804184!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDbCsDAzJzIyLjAiTiA4wrAxMCc1My42IkU!5e0!3m2!1szh-TW!2sit!4v1778854926074!5m2!1szh-TW!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5386.08258031556!2d8.176406158691409!3d46.05609899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4785f90072002d0f%3A0xa4a57eb5647973da!2sAlpe%20pianezzo!5e1!3m2!1szh-TW!2sit!4v1782757617732!5m2!1szh-TW!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </div>
 

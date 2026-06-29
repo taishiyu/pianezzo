@@ -204,6 +204,15 @@ html { scroll-behavior: smooth; }
 .craft-section { display: none; animation: craftFadeIn 0.5s ease forwards; }
 #craft-tab-artifacts:checked ~ .crafting-wrapper #section-artifacts, #craft-tab-experiences:checked ~ .crafting-wrapper #section-experiences { display: block; }
 #craft-tab-artifacts:checked ~ .crafting-nav label[for="craft-tab-artifacts"], #craft-tab-experiences:checked ~ .crafting-nav label[for="craft-tab-experiences"] { background: #A67C52; color: #fff; }
+.expand-container { position: relative; text-align: left; }
+.expand-content { max-height: 80px; overflow: hidden; transition: max-height 0.5s ease; position: relative; text-align: left; }
+.expand-content::after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background: linear-gradient(transparent, #fff); transition: opacity 0.3s; }
+.expand-btn { display: inline-block; margin-top: 20px; color: #A67C52; font-family: 'Lora', serif; font-size: 0.85rem; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+.expand-btn::before { content: "Read Full Details"; }
+.expand-toggle:checked + .expand-content { max-height: 800px; }
+.expand-toggle:checked + .expand-content::after { opacity: 0; }
+.expand-toggle:checked ~ .expand-btn::before { content: "Show Less"; }
+
 @keyframes craftFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 .artifacts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; max-width: 1200px; margin: 0 auto; padding: 0 5%; }
 .artifact-card { background: #fff; border-top: 3px solid #A67C52; box-shadow: 0 15px 40px rgba(0,0,0,0.03); display: flex; flex-direction: column; height: 100%; }
