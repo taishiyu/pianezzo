@@ -26,33 +26,53 @@ layout: "single"
 <div class="content-card text-only active-card">
 <span class="season-tag">Spring 01</span>
 <h3>The Sequence of Life</h3>
-<p>When spring quietly arrives at 1,100 meters, a delicate sequence of life begins to unfold. From the damp earth, resilient wild nettles emerge first.</p>
+<p>Everythings stir restlessly, waiting for the first rumble of spring thunder, waiting for the first rain to fall.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/spring-vibe-1.jpg" alt="Spring detail"></div>
+<div class="card-image"><img src="/pianezzo/images/spring1.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 02</span>
 <h3>The Return of Birds</h3>
-<p>The canopy fills with the industrious sounds of nest-building. Parent birds weave dried grass and moss into safe havens.</p>
+<p>Fresh greenery meanders up from the valleys to the peaks, as bird songs leap onto the branches in the crisp, cool morning.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/spring-vibe-2.jpg" alt="Spring detail"></div>
+<div class="card-image"><img src="/pianezzo/images/spring2.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 03</span>
 <h3>The Nettle Harvest</h3>
-<p>Nettles provide our first fresh nutrients. We gather them while the morning dew still clings to the leaves.</p>
+<p>The first blossom of spring is the snowdrop.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/spring-vibe-3.jpg" alt="Spring detail"></div>
+<div class="card-image"><img src="/pianezzo/images/spring3.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 04</span>
 <h3>Emerging Blooms</h3>
-<p>By late spring, the alpine flora reaches its peak. Every corner of the land is a nursery for new life.</p>
+<p>Overnight, plum, cherry, and apple trees light up the forest with clusters of snowy-white torches.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/spring4.jpg" alt="Spring detail"></div>
+<div class="card-text">
+<span class="season-tag">Spring 05</span>
+<h3>Emerging Blooms</h3>
+<p>Then comes the moment for wild garlic and nettles—even the droppings of wild deer transform from hard pellets into smooth, long coils.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/spring5.jpg" alt="Spring detail"></div>
+<div class="card-text">
+<span class="season-tag">Spring 06</span>
+<h3>Emerging Blooms</h3>
+<p>On the apple branches, tender leaves cloaked in silver fuzz open like the faces of infants.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
@@ -71,27 +91,49 @@ layout: "single"
 <div class="content-card text-only active-card">
 <span class="season-tag">Summer 01</span>
 <h3>Sunlight & Abundance</h3>
-<p>Under the brilliant sun, the mountain enters the fullness of summer, pulsing with vibrant energy. The massive canopy deepens into a rich, dense green.</p>
+<p>The great banner waves, whipping up the wind. Baring chests and spreading palms wide, they leap into a wild, untamed dance.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/summer-vibe-1.jpg" alt="Summer detail"></div>
+<div class="card-image"><img src="/pianezzo/images/summer1.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 02</span>
 <h3>A Shaded Sanctuary</h3>
-<p>The thick foliage weaves a cool sanctuary across the land, offering respite from the midday heat. Pure mountain currents flow stronger.</p>
+<p>Leaves deepen into a darker green; grasslands swell into jungles.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/summer-vibe-2.jpg" alt="Summer detail"></div>
+<div class="card-image"><img src="/pianezzo/images/summer2.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 03</span>
 <h3>Swelling Harvest</h3>
-<p>Nourished by intense sunshine, the fruit on the branches swells and ripens. A faint sweetness fills the air as every piece silently gathers weight.</p>
+<p>Thousands of roses burst into full bloom, as bees and butterflies busily weave through.
+</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/summer3.jpg" alt="Summer detail"></div>
+<div class="card-text">
+<span class="season-tag">Summer 04</span>
+<h3>Swelling Harvest</h3>
+<p>Tadpoles shed their tails and leap ashore, while fledglings flutter their wings and look around.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/summer4.jpg" alt="Summer detail"></div>
+<div class="card-text">
+<span class="season-tag">Summer 05</span>
+<h3>Swelling Harvest</h3>
+<p>The chestnut trees blossom, holding high their golden ribbons, their heavy fragrance painting the evening glow.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -111,20 +153,52 @@ layout: "single"
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/autumn-vibe-1.jpg" alt="Autumn detail"></div>
+<div class="card-image"><img src="/pianezzo/images/autumn1.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 02</span>
 <h3>The Micro-World</h3>
-<p>Beneath the thick carpet of fallen leaves, clusters of wild mushrooms and fungi emerge with the gentle autumn dampness.</p>
+<p>The grape trellises block out the light, hanging with heavy clusters of plump fruit.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/autumn-vibe-2.jpg" alt="Autumn detail"></div>
+<div class="card-image"><img src="/pianezzo/images/autumn2.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 03</span>
 <h3>Alpine Resonance</h3>
-<p>Across the crisp air, the deep, resonant calls of mating animals break the silence. These powerful echoes pierce through the copper forest.</p>
+<p>Thick mist blankets the woods, as mushrooms poke their heads up beside the trails.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/autumn3.jpg" alt="Autumn detail"></div>
+<div class="card-text">
+<span class="season-tag">Autumn 04</span>
+<h3>Alpine Resonance</h3>
+<p>Stags bellow high and low in courtship, shadowed by the echoing cracks of hunting rifles.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/autumn4.jpg" alt="Autumn detail"></div>
+<div class="card-text">
+<span class="season-tag">Autumn 05</span>
+<h3>Alpine Resonance</h3>
+<p>Fruit turns red, one by one.
+
+At the end of red, they fall.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/autumn5.jpg" alt="Autumn detail"></div>
+<div class="card-text">
+<span class="season-tag">Autumn 06</span>
+<h3>Alpine Resonance</h3>
+<p>Until the entire mountain ripens to its end, and drops.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
