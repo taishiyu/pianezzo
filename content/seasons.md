@@ -366,7 +366,7 @@ box-sizing: border-box;
 
 .card-text { flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .card-text .season-tag { text-align: center; font-size: 0.9rem; }
-.card-text p { font-size: 2rem !important; line-height: 2.5 !important; text-align: center !important; margin: 25px 0 !important; color: #2c2c2c; }
+.card-text p { font-size: 1.4rem !important; line-height: 1.9 !important; text-align: center !important; margin: 25px 0 !important; color: #2c2c2c; }
 .card-text .flip-hint { text-align: center; margin-top: 20px; }
 /* 🏹 左右感應防禦區 */
 .nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'), w-resize; }
