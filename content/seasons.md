@@ -33,7 +33,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/spring1.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 02</span>
-<h3>The Return of Birds</h3>
 <p>Fresh greenery meanders up from the valleys to the peaks, as bird songs leap onto the branches in the crisp, cool morning.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -42,7 +41,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/spring2.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 03</span>
-<h3>The Nettle Harvest</h3>
 <p>The first blossom of spring is the snowdrop.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -51,7 +49,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/spring3.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 04</span>
-<h3>Emerging Blooms</h3>
 <p>Overnight, plum, cherry, and apple trees light up the forest with clusters of snowy-white torches.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -61,7 +58,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/spring4.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 05</span>
-<h3>Emerging Blooms</h3>
 <p>Then comes the moment for wild garlic and nettles—even the droppings of wild deer transform from hard pellets into smooth, long coils.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -71,7 +67,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/spring5.jpg" alt="Spring detail"></div>
 <div class="card-text">
 <span class="season-tag">Spring 06</span>
-<h3>Emerging Blooms</h3>
 <p>On the apple branches, tender leaves cloaked in silver fuzz open like the faces of infants.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -89,8 +84,8 @@ layout: "single"
 <div class="nav-zone-right" onclick="nextCard(this.parentNode); event.stopPropagation();"></div>
 
 <div class="content-card text-only active-card">
+<h3>Swelling Harvest</h3>
 <span class="season-tag">Summer 01</span>
-<h3>Sunlight & Abundance</h3>
 <p>The great banner waves, whipping up the wind. Baring chests and spreading palms wide, they leap into a wild, untamed dance.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -98,7 +93,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/summer1.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 02</span>
-<h3>A Shaded Sanctuary</h3>
 <p>Leaves deepen into a darker green; grasslands swell into jungles.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -107,7 +101,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/summer2.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 03</span>
-<h3>Swelling Harvest</h3>
 <p>Thousands of roses burst into full bloom, as bees and butterflies busily weave through.
 </p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
@@ -118,7 +111,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/summer3.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 04</span>
-<h3>Swelling Harvest</h3>
 <p>Tadpoles shed their tails and leap ashore, while fledglings flutter their wings and look around.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -128,7 +120,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/summer4.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 05</span>
-<h3>Swelling Harvest</h3>
 <p>The chestnut trees blossom, holding high their golden ribbons, their heavy fragrance painting the evening glow.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -156,7 +147,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/autumn1.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 02</span>
-<h3>The Micro-World</h3>
 <p>The grape trellises block out the light, hanging with heavy clusters of plump fruit.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -165,7 +155,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/autumn2.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 03</span>
-<h3>Alpine Resonance</h3>
 <p>Thick mist blankets the woods, as mushrooms poke their heads up beside the trails.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -175,7 +164,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/autumn3.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 04</span>
-<h3>Alpine Resonance</h3>
 <p>Stags bellow high and low in courtship, shadowed by the echoing cracks of hunting rifles.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -185,7 +173,6 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/autumn4.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 05</span>
-<h3>Alpine Resonance</h3>
 <p>Fruit turns red, one by one.
 
 At the end of red, they fall.</p>
@@ -197,7 +184,6 @@ At the end of red, they fall.</p>
 <div class="card-image"><img src="/pianezzo/images/autumn5.jpg" alt="Autumn detail"></div>
 <div class="card-text">
 <span class="season-tag">Autumn 06</span>
-<h3>Alpine Resonance</h3>
 <p>Until the entire mountain ripens to its end, and drops.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -378,6 +364,10 @@ box-sizing: border-box;
 
 .cards-deck { position: relative; z-index: 10; width: 950px; height: 580px; perspective: 1000px; }
 
+.card-text { flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.card-text .season-tag { text-align: center; font-size: 0.9rem; }
+.card-text p { font-size: 2rem !important; line-height: 2.5 !important; text-align: center !important; margin: 25px 0 !important; color: #2c2c2c; }
+.card-text .flip-hint { text-align: center; margin-top: 20px; }
 /* 🏹 左右感應防禦區 */
 .nav-zone-left { position: absolute; top: 0; left: 0; width: 30%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>'), w-resize; }
 .nav-zone-right { position: absolute; top: 0; right: 0; width: 70%; height: 100%; z-index: 999; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23A67C52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>'), e-resize; }
