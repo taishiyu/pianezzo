@@ -149,7 +149,7 @@ layout: "single"
 <div class="content-card text-only active-card">
 <span class="season-tag">Autumn 01</span>
 <h3>Colors & Echoes</h3>
-<p>As the days shorten, the forest undergoes a magnificent transition, shifting from lush green to deep russets, bronzes, and golds.</p>
+<p>The sky grows ever more distant; in the end, it is I who am falling.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
@@ -217,27 +217,47 @@ At the end of red, they fall.</p>
 <div class="content-card text-only active-card">
 <span class="season-tag">Winter 01</span>
 <h3>The Great Rest</h3>
-<p>Eventually, a great silence falls over the land. Heavy snow descends, blanketing all colors and movement across Alpe Pianezzo.</p>
+<p>A blanket of pure white smooths over the earth;
+Only a single line of footprints remains, coming from where they begin.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/winter-vibe-1.jpg" alt="Winter detail"></div>
+<div class="card-image"><img src="/pianezzo/images/winter1.jpg" alt="Winter detail"></div>
 <div class="card-text">
 <span class="season-tag">Winter 02</span>
-<h3>Deep Slumber</h3>
-<p>The forest quiets entirely. Both flora and fauna enter a deep, restful slumber beneath a thick white blanket of snow.</p>
+<p>Only the swaying reeds remain, rustling in the wind.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
 <div class="content-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/winter-vibe-2.jpg" alt="Winter detail"></div>
+<div class="card-image"><img src="/pianezzo/images/winter2.jpg" alt="Winter detail"></div>
 <div class="card-text">
 <span class="season-tag">Winter 03</span>
-<h3>Gathering Strength</h3>
-<p>This extreme stillness is not an end, but a vital deep breath. The mountain rests deeply, quietly accumulating strength for the next awakening.</p>
+<p>Deep in the valley, the sunlight bids a temporary farewell.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/winter3.jpg" alt="Winter detail"></div>
+<div class="card-text">
+<span class="season-tag">Winter 04</span>
+<p>Snow falls, sweeping away all that lingers,
+restoring the very roots of the forest.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/winter4.jpg" alt="Winter detail"></div>
+<div class="card-text">
+<span class="season-tag">Winter 05</span>
+<p>Pines stand on the ridges, like single strands of bristling hair.
+The mountain crests have long since turned white.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
 </div>
 </section>
 
