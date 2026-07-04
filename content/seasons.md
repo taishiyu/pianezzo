@@ -86,7 +86,8 @@ layout: "single"
 <div class="content-card text-only active-card">
 <h3>Swelling Harvest</h3>
 <span class="season-tag">Summer 01</span>
-<p>The great banner waves, whipping up the wind. Baring chests and spreading palms wide, they leap into a wild, untamed dance.</p>
+<p>The great banner waves, whipping up the wind. 
+Baring chests and spreading palms wide, they leap into a wild, untamed dance.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 <div class="content-card split-layout">
@@ -111,7 +112,7 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/summer3.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 04</span>
-<p>Tadpoles shed their tails and leap ashore, while fledglings flutter their wings and look around.</p>
+<p>Apples blush with red, and cherries hang like dark constellations of stars.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
@@ -120,6 +121,15 @@ layout: "single"
 <div class="card-image"><img src="/pianezzo/images/summer4.jpg" alt="Summer detail"></div>
 <div class="card-text">
 <span class="season-tag">Summer 05</span>
+<p>Tadpoles shed their tails and leap ashore, while fledglings flutter their wings and look around.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/summer5.jpg" alt="Summer detail"></div>
+<div class="card-text">
+<span class="season-tag">Summer 06</span>
 <p>The chestnut trees blossom, holding high their golden ribbons, their heavy fragrance painting the evening glow.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
@@ -238,8 +248,16 @@ restoring the very roots of the forest.</p>
 <div class="card-image"><img src="/pianezzo/images/winter4.jpg" alt="Winter detail"></div>
 <div class="card-text">
 <span class="season-tag">Winter 05</span>
-<p>Pines stand on the ridges, like single strands of bristling hair.
-The mountain crests have long since turned white.</p>
+<p>Pines stand on the ridges, like single strands of bristling hair.</p>
+<div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
+</div>
+</div>
+
+<div class="content-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/winter5.jpg" alt="Winter detail"></div>
+<div class="card-text">
+<span class="season-tag">Winter 06</span>
+<p>The mountain crests have long since turned white.</p>
 <div class="flip-hint">← Click Left to Prev ｜ Right to Next →</div>
 </div>
 </div>
