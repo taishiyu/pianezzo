@@ -47,17 +47,150 @@ layout: "single"
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="project-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/project-birdhouse.jpg" alt="Nesting Boxes Stewardship"></div>
+<div class="card-image"><img src="/pianezzo/images/project-grafting.jpg" alt="Fruit Tree Grafting"></div>
 <div class="card-text">
-<span class="project-time-tag">MAR - MAY ｜ WILDLIFE</span>
-<h3>Nesting Boxes</h3>
+<span class="project-time-tag">MAR - APR ｜ SPRING ECOLOGY</span>
+<h3>Fruit Tree Grafting</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-1" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>As the sap begins to rise in early spring, we practice the ancient craft of grafting. By joining fresh scions to established rootstocks, we preserve and propagate resilient heritage fruit varieties.</p>
+<p class="more">Grafting at Alpe Pianezzo is a form of temporal bridge-building. We focus on high-altitude, traditional apple and pear varieties that can withstand late mountain frosts, ensuring the biodiversity of our alpine orchard remains thriving for future seasons.</p>
+</div>
+<label for="expand-1" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-pruning.jpg" alt="Pruning and Canopy Thinning"></div>
+<div class="card-text">
+<span class="project-time-tag">MAR - MAY ｜ ORCHARD MANAGEMENT</span>
+<h3>Pruning & Canopy Thinning</h3>
 <div class="expand-container">
 <input type="checkbox" id="expand-2" class="expand-toggle" hidden>
 <div class="expand-content">
-<p>To support local biodiversity, hand-carved nesting boxes are securely placed throughout the larch and chestnut canopy.</p>
-<p class="more">Carefully proportioned entry holes protect native tits and finches from larger alpine predators. We use locally sourced timber that naturally weathers to match the surrounding trees, minimizing our visual footprint while providing vital nesting sanctuaries for high-altitude avian residents.</p>
+<p>Before the buds burst, we selectively prune fruit trees and mature canopies to invite sunlight and airflow deep into the orchard layers.</p>
+<p class="more">Pruning is a delicate balance between structure and health. Removing dead wood and guiding new growth prevents disease, shapes the trees for optimal harvest access, and leaves behind valuable branches for spring composting.</p>
 </div>
 <label for="expand-2" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-sowing.jpg" alt="Soil Prep and Nesting Boxes"></div>
+<div class="card-text">
+<span class="project-time-tag">APR - MAY ｜ LAND & WILDLIFE</span>
+<h3>Soil Prep, Sowing & Nesting Boxes</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-3" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>Spring is the season of soil preparation, seed sowing, repotting, and installing handcrafted nesting boxes across the stone walls and trees.</p>
+<p class="more">We clear weeds, turn active compost into garden beds, and transplant young nursery seedlings. Mountable wooden boxes are placed around the orchard to welcome back returning insectivorous birds and bats, jumpstarting natural pest management.</p>
+</div>
+<label for="expand-3" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-mowing.jpg" alt="Meadow Mowing and Fencing"></div>
+<div class="card-text">
+<span class="project-time-tag">JUN - AUG ｜ LAND STEWARDSHIP</span>
+<h3>Meadow Mowing & Fencing</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-4" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>Summer brings rapid growth. Mowing meadows and repairing dry-stone boundaries or wooden fences keep paths clear and protect young crops.</p>
+<p class="more">Mowing is executed in rotational patches, leaving refuge zones for wild pollinators and ground-nesting insects. Maintaining traditional fence lines defines the working zones while honoring the historic terraced topography of the valley.</p>
+</div>
+<label for="expand-4" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-jam.jpg" alt="Fruit Preserving"></div>
+<div class="card-text">
+<span class="project-time-tag">JUL - SEP ｜ PANTRY & CRAFT</span>
+<h3>Fruit Preserving & Jam Making</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-5" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>As wild berries and summer fruits ripen under the alpine sun, we harvest and simmer them into artisanal jams and pantry preserves.</p>
+<p class="more">Using traditional low-sugar copper pot boiling methods, we capture the vibrant flavors of berries and stone fruits at peak ripeness. Each batch seals the warm essence of summer for the cold winter months ahead.</p>
+</div>
+<label for="expand-5" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-harvest.jpg" alt="Autumn Mountain Harvest"></div>
+<div class="card-text">
+<span class="project-time-tag">SEP - NOV ｜ HARVEST & STORAGE</span>
+<h3>The Mountain Harvest</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-6" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>Autumn is the rewarding culmination of the year, bringing harvests of potatoes, heritage apples, chestnuts, and golden persimmons.</p>
+<p class="more">Chestnuts are gathered from surrounding groves, while apples and persimmons are carefully hand-picked. Potatoes are stored in dark stone root cellars, and sliced fruits are strung up for slow air-drying near wood-burning stoves.</p>
+</div>
+<label for="expand-6" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-wood.jpg" alt="Timber and Firewood"></div>
+<div class="card-text">
+<span class="project-time-tag">DEC - FEB ｜ FORESTRY & PROVISIONING</span>
+<h3>Timber Felling & Firewood Stacking</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-7" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>When dormancy settles over the forest, we fell selected timber for future lumber and replenish the firewood stacks alongside the house.</p>
+<p class="more">Winter felling ensures low moisture content in the timber. Logs are split and neatly stacked under eaves to season for upcoming winters, securing essential warmth for the hearth and raw material for spring building projects.</p>
+</div>
+<label for="expand-7" class="expand-btn"></label>
+</div>
+</div>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="project-card split-layout">
+<div class="card-image"><img src="/pianezzo/images/project-woodcraft.jpg" alt="Winter Woodcrafting"></div>
+<div class="card-text">
+<span class="project-time-tag">JAN - FEB ｜ WORKSHOP PRACTICE</span>
+<h3>Winter Woodcrafting & Nest Box Fabrication</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-8" class="expand-toggle" hidden>
+<div class="expand-content">
+<p>During the coldest weeks, activity shifts indoors to the woodshop to carve utensils and build new nesting boxes for the approaching spring.</p>
+<p class="more">Using seasoned local chestnut, walnut, and birch, winter days are spent shaping hand-carved tableware, birdhouses, and bat shelters. It is a contemplative season where raw timber transforms into functional art.</p>
+</div>
+<label for="expand-8" class="expand-btn"></label>
 </div>
 </div>
 </div>
