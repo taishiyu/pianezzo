@@ -8,14 +8,12 @@ layout: "single"
 <div class="projects-master-container">
 
 <input type="radio" id="tab-stewardship" name="project-tabs" checked hidden>
-<input type="radio" id="tab-architecture" name="project-tabs" hidden>
-<input type="radio" id="tab-woodcraft" name="project-tabs" hidden>
+<input type="radio" id="tab-ongoing" name="project-tabs" hidden>
 <input type="radio" id="tab-future" name="project-tabs" hidden>
 
 <nav class="projects-nav">
 <label for="tab-stewardship">Stewardship</label>
-<label for="tab-architecture">Architecture</label>
-<label for="tab-woodcraft">Woodcraft</label>
+<label for="tab-ongoing">Ongoing</label>
 <label for="tab-future">Future</label>
 </nav>
 
@@ -180,10 +178,10 @@ layout: "single"
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="project-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/project-woodcraft.jpg" alt="Winter Woodcrafting"></div>
+<div class="card-image"><img src="/pianezzo/images/project-woodcraft.jpg" alt=" Woodcrafting"></div>
 <div class="card-text">
 <span class="project-time-tag">JAN - FEB ｜ WORKSHOP PRACTICE</span>
-<h3>Winter Woodcrafting & Nest Box Fabrication</h3>
+<h3>Woodcrafting</h3>
 <div class="expand-container">
 <input type="checkbox" id="expand-8" class="expand-toggle" hidden>
 <div class="expand-content">
@@ -199,40 +197,55 @@ layout: "single"
 </div>
 </section>
 
-<section id="section-architecture" class="project-section">
+<section id="section-ongoing" class="project-section">
 <div class="static-gallery-container">
 <div class="project-card split-layout static-layout">
-<div class="card-image"><img src="/pianezzo/images/project-arch.jpg" alt="Architecture"></div>
+<div class="card-image"><img src="/pianezzo/images/project-arch.jpg" alt="Ongoing"></div>
 <div class="card-text">
 <span class="project-time-tag">ARCHITECTURE ｜ STRUCTURE</span>
 <h3>Stone & Timber Integration</h3>
 <p>Ongoing restoration of traditional dry-stone walls and spatial staging of the mountain property.</p>
 </div>
 </div>
-</div>
-</section>
 
-<section id="section-woodcraft" class="project-section">
-<div class="static-gallery-container">
 <div class="project-card split-layout static-layout">
-<div class="card-image"><img src="/pianezzo/images/project-wood.jpg" alt="Woodcraft"></div>
+<div class="card-image"><img src="/pianezzo/images/project-orchard.jpg" alt="Heritage Orchard Conservation"></div>
 <div class="card-text">
-<span class="project-time-tag">WOODCRAFT ｜ ARTISANAL</span>
-<h3>Organic Curves</h3>
-<p>Synthesis of traditional carving techniques and precision CNC machinery on locally sourced larch.</p>
+<span class="project-time-tag">BOTANY ｜ CONSERVATION</span>
+<h3>Heritage Orchard Conservation</h3>
+<p>Ongoing collection, grafting, and long-term preservation of historical European apple and pear varieties suited for high-altitude microclimates.</p>
 </div>
 </div>
+
+<div class="project-card split-layout static-layout">
+<div class="card-image"><img src="/pianezzo/images/project-foodforest.jpg" alt="High-Altitude Food Forest"></div>
+<div class="card-text">
+<span class="project-time-tag">PERMACULTURE ｜ ECOLOGY</span>
+<h3>High-Altitude Food Forest</h3>
+<p>Developing a multi-layered, resilient agroforestry system that integrates nut trees, berry shrubs, and perennial herbs into the alpine forest edge.</p>
+</div>
+</div>
+
 </div>
 </section>
 
-<section id="section-future" class="project-section">
-<div class="static-gallery-container">
+
+
 <div class="project-card split-layout static-layout future-layout">
-<div class="card-image"><img src="/pianezzo/images/project-future.jpg" alt="Future"></div>
+<div class="card-image"><img src="/pianezzo/images/project-greenhouse.jpg" alt="Alpine Greenhouse Construction"></div>
 <div class="card-text">
-<span class="project-time-tag">FUTURE ｜ BLUEPRINTS</span>
-<h3>Closed-Loop Living</h3>
-<p>Visions for small-scale water loops, soil regeneration, and artisanal sourdough infrastructures.</p>
+<span class="project-time-tag">INFRASTRUCTURE ｜ MICROCLIMATE</span>
+<h3>Alpine Greenhouse Construction</h3>
+<p>Designing and constructing a climate-resilient greenhouse using local timber and stone thermal mass to extend short mountain growing seasons.</p>
+</div>
+</div>
+
+<div class="project-card split-layout static-layout future-layout">
+<div class="card-image"><img src="/pianezzo/images/project-beekeeping.jpg" alt="Apiculture & Alpine Beekeeping"></div>
+<div class="card-text">
+<span class="project-time-tag">APICULTURE ｜ POLLONATION</span>
+<h3>Apiculture & Alpine Beekeeping</h3>
+<p>Introducing native Italian honey bees to boost orchard pollination while harvesting high-altitude wild blossom honey and beeswax for studio crafts.</p>
 </div>
 </div>
 </div>
