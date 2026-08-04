@@ -177,7 +177,6 @@ layout: "single"
 
 </div>
 </section>
-
 <section id="section-ongoing" class="project-section">
 <div class="static-gallery-container">
 
@@ -186,7 +185,14 @@ layout: "single"
 <div class="card-text">
 <span class="project-time-tag">ARCHITECTURE ｜ STRUCTURE</span>
 <h3>Stone & Timber Integration</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-ongoing-1" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Ongoing restoration of traditional dry-stone walls and spatial staging of the mountain property.</p>
+<p class="more">Rebuilding dry-stone masonry without mortar allows natural drainage while creating vital micro-habitats for mountain reptiles and insects. We salvage local slate and chestnut timber to restore historical terraces, blending structural longevity with ecological heritage.</p>
+</div>
+<label for="expand-ongoing-1" class="expand-btn"></label>
+</div>
 </div>
 </div>
 
@@ -195,7 +201,14 @@ layout: "single"
 <div class="card-text">
 <span class="project-time-tag">BOTANY ｜ CONSERVATION</span>
 <h3>Heritage Orchard Conservation</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-ongoing-2" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Ongoing collection, grafting, and long-term preservation of historical European apple and pear varieties suited for high-altitude microclimates.</p>
+<p class="more">By mapping and propagating old fruit varieties found across Valle d'Ossola, we safeguard genetic diversity resistant to local pests and unexpected weather shifts. Each grafted tree serves as a living archive of regional agricultural history.</p>
+</div>
+<label for="expand-ongoing-2" class="expand-btn"></label>
+</div>
 </div>
 </div>
 
@@ -204,7 +217,14 @@ layout: "single"
 <div class="card-text">
 <span class="project-time-tag">PERMACULTURE ｜ ECOLOGY</span>
 <h3>High-Altitude Food Forest</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-ongoing-3" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Developing a multi-layered, resilient agroforestry system that integrates nut trees, berry shrubs, and perennial herbs into the alpine forest edge.</p>
+<p class="more">Designed after natural woodland ecosystems, the food forest layers canopy chestnut and walnut trees above berry bushes, nitrogen-fixing groundcovers, and medicinal herbs. This self-sustaining system builds rich topsoil while producing diverse year-round yields.</p>
+</div>
+<label for="expand-ongoing-3" class="expand-btn"></label>
+</div>
 </div>
 </div>
 
@@ -219,7 +239,14 @@ layout: "single"
 <div class="card-text">
 <span class="project-time-tag">FUTURE ｜ BLUEPRINTS</span>
 <h3>Closed-Loop Living</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-future-1" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Visions for small-scale water loops, soil regeneration, and artisanal sourdough infrastructures.</p>
+<p class="more">Our long-term blueprint aims for full homestead self-reliance. Plans include harvesting alpine rainwater for orchard irrigation, expanding natural bio-char composting, and integrating a traditional stone oven for wood-fired wild yeast sourdough baking.</p>
+</div>
+<label for="expand-future-1" class="expand-btn"></label>
+</div>
 </div>
 </div>
 
@@ -228,7 +255,14 @@ layout: "single"
 <div class="card-text">
 <span class="project-time-tag">INFRASTRUCTURE ｜ MICROCLIMATE</span>
 <h3>Alpine Greenhouse Construction</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-future-2" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Designing and constructing a climate-resilient greenhouse using local timber and stone thermal mass to extend short mountain growing seasons.</p>
+<p class="more">To overcome short alpine summers and early frosts, the greenhouse will incorporate heavy stone backwalls to absorb daytime sun heat and release it overnight. This passive thermal mass design will enable early spring seed starting and cold-hardy winter greens cultivation.</p>
+</div>
+<label for="expand-future-2" class="expand-btn"></label>
+</div>
 </div>
 </div>
 
@@ -237,13 +271,19 @@ layout: "single"
 <div class="card-text">
 <span class="project-time-tag">APICULTURE ｜ POLLINATION</span>
 <h3>Apiculture & Alpine Beekeeping</h3>
+<div class="expand-container">
+<input type="checkbox" id="expand-future-3" class="expand-toggle" hidden>
+<div class="expand-content">
 <p>Introducing native Italian honey bees to boost orchard pollination while harvesting high-altitude wild blossom honey and beeswax for studio crafts.</p>
+<p class="more">We plan to establish handcrafted wooden top-bar hives tailored for native Italian honey bees (*Apis mellifera ligustica*). Beyond boosting fruit yields across the valley, harvested beeswax will be purified in the studio for natural wood finishes and botanical salve crafting.</p>
+</div>
+<label for="expand-future-3" class="expand-btn"></label>
+</div>
 </div>
 </div>
 
 </div>
 </section>
-
 </div>
 </div>
 
