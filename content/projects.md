@@ -28,25 +28,6 @@ layout: "single"
 <div class="project-card split-layout">
 <div class="card-image"><img src="/pianezzo/images/project-grafting.jpg" alt="Fruit Tree Grafting"></div>
 <div class="card-text">
-<span class="project-time-tag">MAR - APR ｜ ECOLOGY</span>
-<h3>Fruit Tree Grafting</h3>
-<div class="expand-container">
-<input type="checkbox" id="expand-1" class="expand-toggle" hidden>
-<div class="expand-content">
-<p>As the sap begins to rise in early spring, we practice the ancient craft of grafting. By joining fresh scions to established rootstocks, we introduce resilient heritage fruit varieties.</p>
-<p class="more">Beyond the technical skill, grafting at Alpe Pianezzo is a form of temporal bridge-building. We are currently experimenting with high-altitude varieties that can withstand late frosts, ensuring the food forest remains productive even as mountain climates shift. Each successful bond is a testament to the resilience of these slopes.</p>
-</div>
-<label for="expand-1" class="expand-btn"></label>
-</div>
-</div>
-</div>
-</div>
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="project-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/project-grafting.jpg" alt="Fruit Tree Grafting"></div>
-<div class="card-text">
 <span class="project-time-tag">MAR - APR ｜ SPRING ECOLOGY</span>
 <h3>Fruit Tree Grafting</h3>
 <div class="expand-container">
@@ -178,7 +159,7 @@ layout: "single"
 <div class="timeline-item">
 <div class="timeline-dot"></div>
 <div class="project-card split-layout">
-<div class="card-image"><img src="/pianezzo/images/project-woodcraft.jpg" alt=" Woodcrafting"></div>
+<div class="card-image"><img src="/pianezzo/images/project-woodcraft.jpg" alt="Woodcrafting"></div>
 <div class="card-text">
 <span class="project-time-tag">JAN - FEB ｜ WORKSHOP PRACTICE</span>
 <h3>Woodcrafting</h3>
@@ -199,6 +180,7 @@ layout: "single"
 
 <section id="section-ongoing" class="project-section">
 <div class="static-gallery-container">
+
 <div class="project-card split-layout static-layout">
 <div class="card-image"><img src="/pianezzo/images/project-arch.jpg" alt="Ongoing"></div>
 <div class="card-text">
@@ -229,7 +211,17 @@ layout: "single"
 </div>
 </section>
 
+<section id="section-future" class="project-section">
+<div class="static-gallery-container">
 
+<div class="project-card split-layout static-layout future-layout">
+<div class="card-image"><img src="/pianezzo/images/project-future.jpg" alt="Future"></div>
+<div class="card-text">
+<span class="project-time-tag">FUTURE ｜ BLUEPRINTS</span>
+<h3>Closed-Loop Living</h3>
+<p>Visions for small-scale water loops, soil regeneration, and artisanal sourdough infrastructures.</p>
+</div>
+</div>
 
 <div class="project-card split-layout static-layout future-layout">
 <div class="card-image"><img src="/pianezzo/images/project-greenhouse.jpg" alt="Alpine Greenhouse Construction"></div>
@@ -243,11 +235,12 @@ layout: "single"
 <div class="project-card split-layout static-layout future-layout">
 <div class="card-image"><img src="/pianezzo/images/project-beekeeping.jpg" alt="Apiculture & Alpine Beekeeping"></div>
 <div class="card-text">
-<span class="project-time-tag">APICULTURE ｜ POLLONATION</span>
+<span class="project-time-tag">APICULTURE ｜ POLLINATION</span>
 <h3>Apiculture & Alpine Beekeeping</h3>
 <p>Introducing native Italian honey bees to boost orchard pollination while harvesting high-altitude wild blossom honey and beeswax for studio crafts.</p>
 </div>
 </div>
+
 </div>
 </section>
 
@@ -261,12 +254,10 @@ html { scroll-behavior: smooth; }
 .projects-nav label { font-family: 'Lora', serif; font-size: 0.9rem; font-weight: bold; color: #666; padding: 10px 22px; border-radius: 30px; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px; }
 .project-section { display: none; animation: fadeIn 0.5s ease forwards; }
 #tab-stewardship:checked ~ .projects-wrapper #section-stewardship,
-#tab-architecture:checked ~ .projects-wrapper #section-architecture,
-#tab-woodcraft:checked ~ .projects-wrapper #section-woodcraft,
+#tab-ongoing:checked ~ .projects-wrapper #section-ongoing,
 #tab-future:checked ~ .projects-wrapper #section-future { display: block; }
 #tab-stewardship:checked ~ .projects-nav label[for="tab-stewardship"],
-#tab-architecture:checked ~ .projects-nav label[for="tab-architecture"],
-#tab-woodcraft:checked ~ .projects-nav label[for="tab-woodcraft"],
+#tab-ongoing:checked ~ .projects-nav label[for="tab-ongoing"],
 #tab-future:checked ~ .projects-nav label[for="tab-future"] { background: #A67C52; color: #fff; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .timeline-container { position: relative; max-width: 1200px; margin: 0 auto; padding: 0 5%; }
@@ -282,7 +273,7 @@ html { scroll-behavior: smooth; }
 .project-card h3 { font-family: 'Lora', serif; font-size: 2.2rem; margin-bottom: 25px; }
 .project-card p { font-family: 'Lora', serif; font-size: 1.1rem; line-height: 1.8; color: #444; }
 .static-gallery-container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
-.static-layout { margin-left: 0; width: 100%; padding: 80px; }
+.static-layout { margin-left: 0; width: 100%; padding: 80px; margin-bottom: 60px; }
 
 /* 展開功能 CSS */
 .expand-container { position: relative; }
