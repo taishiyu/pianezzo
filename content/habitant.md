@@ -739,16 +739,16 @@ html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y
 .habitant-quick-nav a.active::after { content: " •"; font-size: 1.2rem; vertical-align: middle; }
 
 @media (max-width: 1024px) {
-.cards-deck { width: 90%; height: 75vh; max-height: 650px; }
-.nav-zone-left { width: 50%; } /* 行動端改為左右各半，方便大拇指盲操作 */
+.cards-deck { width: 92%; height: auto; min-height: 520px; max-height: 80vh; }
+.nav-zone-left { width: 50%; }
 .nav-zone-right { width: 50%; }
-.content-card { padding: 35px 30px; }
-.split-layout { flex-direction: column; gap: 20px; justify-content: flex-start; }
+.content-card { padding: 25px 20px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.split-layout { flex-direction: column; gap: 15px; justify-content: flex-start; }
 .card-image { width: 100%; flex: none; }
-.card-image img { max-height: 220px; }
-.card-text { flex: none; }
-.content-card h3 { font-size: 1.8rem; margin-bottom: 10px; }
-.content-card p { font-size: 1rem; line-height: 1.6; }
-.habitant-quick-nav { top: 80px; right: 50%; transform: translateX(50%); flex-direction: row; width: max-content; padding: 8px 15px; background: rgba(244, 241, 234, 0.85); }
+.card-image img { max-height: 180px; width: 100%; object-fit: cover; }
+.card-text { flex: 1; width: 100%; }
+.content-card h3 { font-size: 1.35rem; margin-bottom: 8px; word-break: break-word; }
+.content-card p { font-size: 0.95rem; line-height: 1.55; }
+.habitant-quick-nav { top: 75px; right: 50%; transform: translateX(50%); flex-direction: row; width: 90%; max-width: max-content; overflow-x: auto; white-space: nowrap; padding: 6px 12px; background: rgba(244, 241, 234, 0.9); }
 }
 </style>
