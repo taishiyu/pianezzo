@@ -746,11 +746,11 @@ html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y
 .split-layout { display: flex; flex-direction: column; gap: 12px; align-items: stretch; justify-content: flex-start; height: 100%; }
 .card-image { width: 100%; flex: 0 0 auto; height: 45%; overflow: hidden; border-radius: 2px; }
 .card-image img { width: 100%; height: 100%; object-fit: cover; }
-.card-text { width: 100%; flex: 1; display: flex; flex-direction: column; text-align: left; }
-.card-text .habitant-tag, .card-text .season-tag { font-size: 0.8rem; margin-bottom: 4px; }
-.content-card h3 { font-size: 1.35rem; margin: 0 0 8px 0; line-height: 1.3; word-break: break-word; }
-.content-card p { font-size: 0.98rem; line-height: 1.6; margin: 0 0 10px 0; color: #333; }
-.card-text .flip-hint { margin-top: auto; padding-top: 6px; font-size: 0.72rem; opacity: 0.6; text-align: center; }
+.card-text { width: 100%; max-width: 320px; margin: 0 auto; flex: 1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.card-text .habitant-tag, .card-text .season-tag { font-size: 0.8rem; margin-bottom: 4px; text-align: left; }
+.content-card h3 { font-size: 1.35rem; margin: 0 0 8px 0; line-height: 1.3; text-align: left; word-break: break-word; }
+.content-card p { font-size: 0.98rem; line-height: 1.6; margin: 0 0 10px 0; color: #333; text-align: left; }
+.card-text .flip-hint { width: 100%; margin-top: auto; padding-top: 6px; font-size: 0.72rem; opacity: 0.6; text-align: center; }
 .habitant-quick-nav { top: 70px; right: 50%; transform: translateX(50%); flex-direction: row; width: 92%; max-width: max-content; overflow-x: auto; white-space: nowrap; padding: 6px 14px; background: rgba(244, 241, 234, 0.92); }
 }
 </style>
