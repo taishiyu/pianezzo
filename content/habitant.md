@@ -746,7 +746,7 @@ html, body { margin: 0; padding: 0; scroll-behavior: smooth; scroll-snap-type: y
 .split-layout { display: flex; flex-direction: column; gap: 12px; align-items: stretch; justify-content: flex-start; height: 100%; }
 .card-image { width: 100%; flex: 0 0 auto; height: 45%; overflow: hidden; border-radius: 2px; }
 .card-image img { width: 100%; height: 100%; object-fit: cover; }
-.card-text { width: 100%; max-width: 320px; margin: 0 auto; flex: 1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.card-text { width: 70%; max-width: 70%; margin: 0 auto; flex: 1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
 .card-text .habitant-tag, .card-text .season-tag { font-size: 0.8rem; margin-bottom: 4px; text-align: left; }
 .content-card h3 { font-size: 1.35rem; margin: 0 0 8px 0; line-height: 1.3; text-align: left; word-break: break-word; }
 .content-card p { font-size: 0.98rem; line-height: 1.6; margin: 0 0 10px 0; color: #333; text-align: left; }
