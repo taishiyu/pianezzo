@@ -432,16 +432,20 @@ will-change: transform, opacity;
 .season-quick-nav a.active::after { content: " •"; font-size: 1.2rem; vertical-align: middle; }
 
 @media (max-width: 1024px) {
-.cards-deck { width: 90%; height: 75vh; max-height: 650px; }
-.nav-zone-left { width: 50%; }
-.nav-zone-right { width: 50%; }
-.content-card { padding: 35px 30px; }
-.split-layout { flex-direction: column; gap: 20px; justify-content: flex-start; }
-.card-image { width: 100%; flex: none; }
-.card-image img { max-height: 220px; }
-.card-text { flex: none; }
-.content-card h3 { font-size: 1.8rem; margin-bottom: 10px; }
-.content-card p { font-size: 1rem; line-height: 1.6; }
-.season-quick-nav { top: 80px; right: 50%; transform: translateX(50%); flex-direction: row; width: max-content; padding: 8px 15px; background: rgba(244, 241, 234, 0.85); }
+.cards-deck { width: 95%; max-width: none; height: 58vh; min-height: 420px; max-height: none; margin: 20px auto 30px auto; }
+.nav-zone-left { width: 50%; height: 100%; z-index: 999; }
+.nav-zone-right { width: 50%; height: 100%; z-index: 999; }
+.content-card { padding: 18px 18px; display: flex; flex-direction: column; justify-content: flex-start; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.content-card.text-only { justify-content: center; align-items: center; }
+.split-layout { display: flex; flex-direction: column; gap: 12px; align-items: stretch; justify-content: flex-start; height: 100%; }
+.card-image { width: 100%; flex: 0 0 auto; height: 45%; overflow: hidden; border-radius: 2px; }
+.card-image img { width: 100%; height: 100%; object-fit: cover; }
+.card-text { width: 70%; max-width: 70%; margin: 0 auto; flex: 1; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.card-text .season-tag, .season-tag { font-size: 0.8rem; margin-bottom: 4px; text-align: left; }
+.content-card h3 { font-size: 1.35rem; margin: 0 0 8px 0; line-height: 1.3; text-align: left; word-break: break-word; }
+.content-card p { font-size: 0.98rem; line-height: 1.6; margin: 0 0 10px 0; color: #333; text-align: left; }
+.content-card.text-only p { width: 75%; margin: 0 auto; text-align: center; }
+.card-text .flip-hint, .flip-hint { width: 100%; margin-top: auto; padding-top: 6px; font-size: 0.72rem; opacity: 0.6; text-align: center; }
+.season-quick-nav { top: 70px; right: 50%; transform: translateX(50%); flex-direction: row; width: 92%; max-width: max-content; overflow-x: auto; white-space: nowrap; padding: 6px 14px; background: rgba(244, 241, 234, 0.92); }
 }
 </style>
